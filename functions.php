@@ -113,6 +113,7 @@ add_action( 'widgets_init', 'devonatlas_widgets_init' );
  * Enqueue scripts and styles.
  */
 function devonatlas_scripts() {
+	 wp_enqueue_script( 'devonatlas-config', get_template_directory_uri() . '/js/config.js', array(), true );
 	// wp_enqueue_style( 'devonatlas-style', get_stylesheet_uri() );
 
 	// wp_enqueue_script( 'devonatlas-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );

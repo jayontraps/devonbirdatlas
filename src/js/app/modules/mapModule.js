@@ -1,9 +1,4 @@
 function MapModule(domContext) {
-    this.configs = {
-        folder: '/devon_atlas',
-        themeUrl: '/wp-content/themes/devonatlas',
-        mapAjaxUrl: '/wp-content/themes/devonatlas/ajax/'
-    };
     this.context = domContext;
     this.tetrad = {
         active: false,
@@ -75,7 +70,7 @@ MapModule.prototype.getTetradData = function() {
     };
 
     $.ajax({
-        url: this.configs.folder + this.configs.mapAjaxUrl + 'tetradData.php',
+        url: config.folder + config.themeUrl + '/ajax/tetradData.php',
         type: 'POST',
         dataType: 'json',
         data: postData,
@@ -193,7 +188,7 @@ MapModule.prototype.getData = function() {
     this.startUpdatingEls();
 
     $.ajax({
-            url: this.configs.subdomain + this.configs.mapAjaxUrl + 'speciesData.php',
+            url: config.folder + config.themeUrl + '/ajax/speciesData.php',
             type: 'POST',
             dataType: 'json',
             data:  formData,
