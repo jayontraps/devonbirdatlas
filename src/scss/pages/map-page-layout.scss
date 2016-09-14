@@ -1,0 +1,202 @@
+// .tetrad-maps {
+//     .container  {
+//         .map-full {
+//             .column-map {
+//                 .controls {}
+//                 .map-options {}
+//                 .map-border {
+//                     .map-container {
+//                         .spinner-wrapper {}
+//                         .overlay-wrap {}
+//                         .map-row {}
+//                     }
+//                 }
+//             }
+//             .column-meta {
+//                 .species-titles {}
+//                 .overlay-controls {}
+//                 .tetrad-meta {}
+//             }
+//         }
+//     }
+// }
+
+
+.tetrad-maps {
+    width: $max_width;
+    margin: 0 auto;
+    padding: $default_spacing 0;
+    position: relative;
+
+    &.double {
+        width: $max_width_double;
+        display: flex;
+    }
+}
+
+
+#m2_ {
+    display: none;
+}
+.double #m2_ {
+    display: block;
+}
+
+/* .container */
+
+.container {
+    // width: $max_width;
+    width: 100%;
+}
+
+.double {
+    .container {
+        // width: $max_width_double / 2;
+        width: 50%;
+    }
+}
+
+
+/* .map-full */
+
+.map-full {
+    @extend .group;
+    display: flex;
+}
+.double {
+    .map-full {
+        flex-direction: column;
+    }
+}
+#m2_ {
+    .map-full {
+        align-items: flex-end;
+    }
+}
+
+
+
+
+/* .column-map */
+
+.column-map {
+    width: $lg-map-width;
+    float: left;
+    position: relative;
+}
+.double {
+    .column-map {
+        width: $sm-map-width;
+    }
+}
+
+
+
+/* .column-meta */
+
+.column-meta {
+    width: $max_width - $lg-map-width;
+    position: relative;
+    padding-left: $default_spacing;
+}
+.double {
+    .column-meta {
+        width: $sm-map-width;
+        padding-left: 0;
+    }
+}
+
+
+/* .tetrad-meta */
+
+.tetrad-meta {
+    border: $devon_border;
+    margin-top: $default_spacing;
+    padding: $default_spacing;
+    position: absolute;
+    bottom: $keys-height;
+    min-height: 50%;
+    width: 90%;
+}
+
+.double {
+    .tetrad-meta {
+        width: 100%;
+        position: relative;
+        bottom: auto;
+    }
+}
+
+
+
+.map-border {
+     @extend .group;
+     border: $devon_border;
+     overflow: hidden;
+}
+
+
+
+
+
+
+/* .map-container */
+
+
+.map-container {
+    width: $lg-map-width;
+    height: $lg-map-width;
+    position: relative;
+}
+.double {
+    .map-container {
+        width: $sm-map-width;
+        height: $sm-map-width;
+    }
+}
+
+
+
+@media screen and (max-width: 1025px) {
+    .tetrad-maps {
+        width: 100%;
+        margin: 0 auto;
+        padding: $default_spacing / 2;
+    }
+
+    .column-map {
+        width: $tablet-map-width;
+    }
+
+    .column-meta {
+        width: 1024px - $tablet-map-width - 21px;
+    }
+
+    .map-container {
+        width: $tablet-map-width;
+        height: $tablet-map-width;
+        position: relative;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .tetrad-maps {
+        width: 100%;
+        max-width: $tablet-map-width;
+        margin: 0 auto;
+    }
+    .map-full {
+        flex-direction: column;
+    }
+    .tetrad-meta {
+        position: relative;
+        bottom: auto;
+        width: 100%;
+    }
+    .column-meta {
+        padding-left: 0;
+    }
+}
+
+

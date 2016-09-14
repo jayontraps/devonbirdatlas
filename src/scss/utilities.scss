@@ -1,0 +1,36 @@
+.clearfix {
+	
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.center--text {
+	text-align: center;
+}
+
+.nav{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+
+    > li{
+
+        &.active > a {
+            }        
+        &,
+        > a{
+            display: inline-block;
+           *display: inline;
+            zoom: 1;
+            text-decoration: none;
+            &:hover {
+                text-decoration: none;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,5 @@
+.DS_Store
+node_modules
+ajax/config.php
+ajax/db.inc.php
+

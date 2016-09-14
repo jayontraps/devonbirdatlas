@@ -1,0 +1,2472 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"st",
+				"startUpdatingEls (fn)"
+			],
+			[
+				"lo",
+				"logModule (fn)"
+			],
+			[
+				"inn",
+				"innerHTML"
+			],
+			[
+				"ov",
+				"ovPage"
+			],
+			[
+				"ai",
+				"ai-c	align-items: center;"
+			],
+			[
+				"map",
+				"mapPage"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"data",
+				"dataset (?)"
+			],
+			[
+				"prev",
+				"previous"
+			],
+			[
+				"clas",
+				"classToRemain (str)"
+			],
+			[
+				"pare",
+				"parentEl (?)"
+			],
+			[
+				"tet",
+				"tetradList (str)"
+			],
+			[
+				"cals",
+				"classList"
+			],
+			[
+				"appen",
+				"appendChild"
+			],
+			[
+				"spa",
+				"spanEl"
+			],
+			[
+				"the",
+				"theCode (?)"
+			],
+			[
+				"dat",
+				"dataset"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"va",
+				"var_dump"
+			],
+			[
+				"gM",
+				"gMapWrap (?)"
+			],
+			[
+				"po",
+				"pos-a	position: absolute;"
+			],
+			[
+				"css",
+				"css	.css() - single"
+			],
+			[
+				"pos",
+				"pos-r	position: relative;"
+			],
+			[
+				"over",
+				"overlay"
+			],
+			[
+				"has",
+				"hasClass	.hasClass()"
+			],
+			[
+				"selec",
+				"selected"
+			],
+			[
+				"sel",
+				"selected"
+			],
+			[
+				"Map",
+				"MapModule (fn)"
+			],
+			[
+				"bgi",
+				"bgi-n	background-image: none;"
+			],
+			[
+				"inde",
+				"indexOf (fn)"
+			],
+			[
+				"new",
+				"newArr ([])"
+			],
+			[
+				"ind",
+				"indexOf (fn)"
+			],
+			[
+				"tetrad",
+				"tetrad-box"
+			],
+			[
+				"upda",
+				"updateSums (fn)"
+			],
+			[
+				"sum",
+				"sumConfirmed (num)"
+			],
+			[
+				"sump",
+				"sumProbable (num)"
+			],
+			[
+				"db",
+				"dbreed"
+			],
+			[
+				"toggl",
+				"toggles (?)"
+			],
+			[
+				"cur",
+				"currentArra"
+			],
+			[
+				"key",
+				"keyEls (?)"
+			],
+			[
+				"ke",
+				"keyEls (?)"
+			],
+			[
+				"pre",
+				"present"
+			],
+			[
+				"e",
+				"each	.each()"
+			],
+			[
+				"update",
+				"updateDatasetHeadings (fn)"
+			],
+			[
+				"attr",
+				"attr	.attr() - single"
+			],
+			[
+				"remove",
+				"removeClass	.removeClass()"
+			],
+			[
+				"up",
+				"updateHeadings"
+			],
+			[
+				"d",
+				"d-tbc	display: table-cell;"
+			],
+			[
+				"rem",
+				"removeClass	.removeClass()"
+			],
+			[
+				"jc",
+				"jc-sa	justify-content: space-around;"
+			],
+			[
+				"p",
+				"pos-a	position: absolute;"
+			],
+			[
+				"j",
+				"jc-sb	justify-content: space-between;"
+			],
+			[
+				"ta",
+				"ta-r	text-align: right;"
+			],
+			[
+				"latin",
+				"latinName (bool)"
+			],
+			[
+				"ap",
+				"appendTo	.appendTo()"
+			],
+			[
+				"ma",
+				"maps (obj)"
+			],
+			[
+				"bgr",
+				"bgr-n	background-repeat: no-repeat;"
+			],
+			[
+				"cont",
+				"container"
+			],
+			[
+				"att",
+				"attr	.attr() - single"
+			],
+			[
+				"add",
+				"addClass	.addClass()"
+			],
+			[
+				"sta",
+				"startSpinner"
+			],
+			[
+				"set",
+				"setDataset"
+			],
+			[
+				"sle",
+				"select-species"
+			],
+			[
+				"proto",
+				"prototype (obj)"
+			],
+			[
+				"app",
+				"appendTo	.appendTo()"
+			],
+			[
+				"species",
+				"speciesList"
+			],
+			[
+				"spec",
+				"speciesList"
+			],
+			[
+				"dt",
+				"dataset (?)"
+			],
+			[
+				"tera",
+				"tetradId (?)"
+			],
+			[
+				"stop",
+				"stopSpinner (fn)"
+			],
+			[
+				"ad",
+				"addClass	.addClass()"
+			],
+			[
+				"conte",
+				"context (?)"
+			],
+			[
+				"da",
+				"delay	.delay()"
+			],
+			[
+				"js",
+				"json_encode"
+			],
+			[
+				"test",
+				"testSelect (?)"
+			],
+			[
+				"modu",
+				"modules"
+			],
+			[
+				"ter",
+				"tetradId (str)"
+			],
+			[
+				"te",
+				"tetrads ([])"
+			],
+			[
+				"paren",
+				"parentId (?)"
+			],
+			[
+				"di",
+				"d-ib	display: inline-block;"
+			],
+			[
+				"con",
+				"console	console"
+			],
+			[
+				"mov",
+				"moveForward"
+			],
+			[
+				"au",
+				"autoSlide"
+			],
+			[
+				"mover",
+				"moveBackward"
+			],
+			[
+				"mo",
+				"moveForward"
+			],
+			[
+				"in",
+				"increment"
+			],
+			[
+				"fun",
+				"func"
+			],
+			[
+				"anim",
+				"animationIn"
+			],
+			[
+				"ani",
+				"isAnimating"
+			],
+			[
+				"is",
+				"isAnimating"
+			],
+			[
+				"an",
+				"animationEnd"
+			],
+			[
+				"re",
+				"removeClasses"
+			],
+			[
+				"nex",
+				"nextSlide"
+			],
+			[
+				"pr",
+				"prevSlide"
+			],
+			[
+				"ne",
+				"next"
+			],
+			[
+				"ca",
+				"carousel__item--ontop"
+			],
+			[
+				"list",
+				"list-n	list-style-type: none;"
+			],
+			[
+				"page_1",
+				"page_1_transitions"
+			],
+			[
+				"pa",
+				"page_transitions"
+			],
+			[
+				"ef",
+				"effeckt-page-animating"
+			],
+			[
+				"liste",
+				"listen"
+			],
+			[
+				"sc",
+				"scale-down"
+			],
+			[
+				"t",
+				"tempUrl"
+			],
+			[
+				"or",
+				"organisation"
+			],
+			[
+				"tech",
+				"techniques"
+			],
+			[
+				"bg",
+				"bgp	background-position: ${1:0} ${2:0};"
+			],
+			[
+				"o",
+				"ovx	overflow-x: ${1:hidden};"
+			],
+			[
+				"devel",
+				"development"
+			],
+			[
+				"bac",
+				"back_to_menu_btn"
+			],
+			[
+				"page",
+				"page_state"
+			],
+			[
+				"home",
+				"homepage"
+			],
+			[
+				"back",
+				"backToMenu"
+			],
+			[
+				"image",
+				"image_1"
+			],
+			[
+				"desi",
+				"design"
+			],
+			[
+				"equa",
+				"equalHeightItems"
+			],
+			[
+				"intro",
+				"intro-item-child"
+			],
+			[
+				"mw",
+				"miw	min-width"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"dev",
+				"development"
+			],
+			[
+				"deve",
+				"developer"
+			],
+			[
+				"sho",
+				"short_dec"
+			],
+			[
+				"get",
+				"get	Get Elements"
+			],
+			[
+				"th",
+				"theTitle"
+			],
+			[
+				"scroll",
+				"scrollTop"
+			],
+			[
+				"on",
+				"onScroll"
+			],
+			[
+				"ch",
+				"check_if_in_view"
+			],
+			[
+				"let",
+				"letters"
+			],
+			[
+				"loca",
+				"location"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/scss/components/tetrad-grid-overview.scss",
+			"settings":
+			{
+				"buffer_size": 11615,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/scss/components/_map-controls.scss",
+			"settings":
+			{
+				"buffer_size": 213,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "page-maps-overview.php",
+			"settings":
+			{
+				"buffer_size": 3769,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/scss/pages/overview-page-layout.scss",
+			"settings":
+			{
+				"buffer_size": 1664,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/js/app/modules/mapModule.js",
+			"settings":
+			{
+				"buffer_size": 17091,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/js/app/entry.js",
+			"settings":
+			{
+				"buffer_size": 5107,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/js/scripts/main.js",
+			"settings":
+			{
+				"buffer_size": 1616,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/scss/components/tetrad-grid.scss",
+			"settings":
+			{
+				"buffer_size": 9303,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/scss/components/_map-keys.scss",
+			"settings":
+			{
+				"buffer_size": 2963,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 20 files for \"keysq brst poss\"\n\n/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/map-keys.php:\n   14                      <td class=\"headTd\"></td>\n   15                      <td><span class=\"keysq brst present\"></span></td>\n   16:                     <td><span class=\"keysq brst poss\"></span></td>\n   17                      <td><span class=\"keysq brst prob\"></span></td>\n   18                      <td><span class=\"keysq brst confirmed\"></span></td>\n\n1 match in 1 file\n\n\nSearching 30 files for \"rgba(0, 11, 140, 0.7)\"\n\n0 matches\n\nSearching 30 files for \"dwdensity\"\n\n/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/_map-keys.scss:\n  122  }\n  123  \n  124: .dwdensity {\n  125  	.keysq {\n  126: 		// background-color: $dwdensity;\n  127  	}\n  128  }\n\n/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/tetrad-backgrounds.scss:\n  100  \n  101  \n  102: [data-set=\"dwdensity\"] {\n  103  \n  104      .code-9 {\n\n/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/variables.scss:\n   62  // datasets\n   63  $dbdensity : red;\n   64: $dwdensity : blue;\n   65  $sitters: orange;\n   66  \n\n4 matches across 3 files\n",
+			"settings":
+			{
+				"buffer_size": 1234,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "src/scss/components/tetrad-backgrounds.scss",
+			"settings":
+			{
+				"buffer_size": 2696,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "inc/maps/map-keys.php",
+			"settings":
+			{
+				"buffer_size": 662,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "inc/maps/map-key-density.php",
+			"settings":
+			{
+				"buffer_size": 615,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/scss/variables.scss",
+			"settings":
+			{
+				"buffer_size": 1360,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 247.0,
+		"last_filter": "copy",
+		"selected_items":
+		[
+			[
+				"copy",
+				"GitHub: Copy Gist to Clipboard"
+			],
+			[
+				"cop",
+				"GitHub: Copy Gist to Clipboard"
+			],
+			[
+				"COP",
+				"GitHub: Copy Gist to Clipboard"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"copt",
+				"GitHub: Copy Gist to Clipboard"
+			],
+			[
+				"packa in",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"clos",
+				"File: Close All"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 521.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/build",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/build/js",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js/app",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js/app/modules",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js/scripts",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/pages"
+	],
+	"file_history":
+	[
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/build/js/all.min.js",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js/scripts/main.js",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/map-dbreed-key.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/pages/overview-page-layout.scss",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/tetrad-grid.scss",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/page-maps-overview.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/main.scss",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js/app/entry.js",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/_map-layout.scss",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/pages/map-page-layout.scss",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/variables.scss",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/gulpfile.js",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/page-maps-tetradmaps.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/global.scss",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js/app/modules/mapModule.js",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/header.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/header-maps.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/grid.scss",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/overlays.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/overlays-overview.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/tetrad-box.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js/scripts/chosen.jquery.min.js",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js/scripts/jquery-3.1.0.min.js",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/spinner.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/page-home.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/footer.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/index.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/custom_functions.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/functions.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/devonatlas.sublime-project",
+		"/Users/jasonrighelato/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Applications/MAMP/htdocs/devon-atlas/build/inc/map-grid-3.php",
+		"/Applications/MAMP/htdocs/devon-atlas/build/inc/map-grid-2.php",
+		"/Applications/MAMP/htdocs/devon-atlas/build/inc/map-grid-1.php",
+		"/Applications/MAMP/htdocs/devon-atlas/src/scss/components/tetrad-backgrounds.scss",
+		"/Applications/MAMP/htdocs/devon-atlas/src/scss/components/_map-tetrad-box.scss",
+		"/Applications/MAMP/htdocs/devon-atlas/build/gmap.php",
+		"/Applications/MAMP/htdocs/devon-atlas/build/inc/overlay-controls.php",
+		"/Applications/MAMP/htdocs/devon-atlas/src/scss/components/_map-layout.scss",
+		"/Applications/MAMP/htdocs/devon-atlas/src/scss/components/tetrad-grid.scss",
+		"/Applications/MAMP/htdocs/devon-atlas/build/inc/map-keys.php",
+		"/Applications/MAMP/htdocs/devon-atlas/src/js/app/entry.js",
+		"/Applications/MAMP/htdocs/devon-atlas/src/js/scripts/tenkSpecies.js",
+		"/Applications/MAMP/htdocs/devon-atlas/build/index.php",
+		"/Applications/MAMP/htdocs/devon-atlas/build/inc/tetrad-box.php",
+		"/Applications/MAMP/htdocs/devon-atlas/ajax/tenk-species-list.php",
+		"/Users/jasonrighelato/Downloads/dbreed10.xlsx",
+		"/Applications/MAMP/htdocs/devon-atlas/build/test.php",
+		"/Applications/MAMP/htdocs/devon-atlas/src/js/app/modules/mapModule.js",
+		"/Applications/MAMP/htdocs/devon-atlas/build/inc/overlays.php",
+		"/Applications/MAMP/htdocs/devon-atlas/gulpfile.js",
+		"/Applications/MAMP/htdocs/devon-atlas/src/scss/components/checkbox.scss",
+		"/Applications/MAMP/htdocs/devon-atlas/ajax/tetradData.php",
+		"/Applications/MAMP/htdocs/devon-atlas/ajax/speciesData.php",
+		"/Applications/MAMP/htdocs/devon-atlas/build/inc/map-error.php",
+		"/Applications/MAMP/htdocs/devon-atlas/build/inc/map-page.php",
+		"/Applications/MAMP/htdocs/devon-atlas/src/scss/components/spinner.scss",
+		"/Applications/MAMP/htdocs/devon-atlas/src/scss/variables.scss",
+		"/Applications/MAMP/htdocs/devon-atlas/src/scss/components/_button.scss",
+		"/Applications/MAMP/htdocs/devon-atlas/src/scss/global.scss",
+		"/Applications/MAMP/htdocs/devon-atlas/src/scss/main.scss",
+		"/Applications/MAMP/htdocs/devon-atlas/src/scss/components/error-msg.scss",
+		"/Applications/MAMP/htdocs/devon-atlas/src/scss/components/bunttons.scss",
+		"/Applications/MAMP/htdocs/devon-atlas/src/js/mapModule/mapModule.js",
+		"/Applications/MAMP/htdocs/devon-atlas/src/js/core/main.js",
+		"/Applications/MAMP/htdocs/devon-atlas/src/js/scripts/chosen.jquery.min.js",
+		"/Applications/MAMP/htdocs/devon-atlas/src/js/scripts/main.js",
+		"/Applications/MAMP/htdocs/devon-atlas/build/js/scripts.js",
+		"/Applications/MAMP/htdocs/devon-atlas/src/js/core/mapModule.js",
+		"/Applications/MAMP/htdocs/devon-atlas/src/js/app/modules/overlay.js",
+		"/Applications/MAMP/htdocs/devon-atlas/build/js/bundle.js",
+		"/Applications/MAMP/htdocs/devon-atlas/build/js/all.js",
+		"/Applications/MAMP/htdocs/devon-atlas/src/js/core/foo/mapModule.js",
+		"/Applications/MAMP/htdocs/devon-atlas/src/js/core/mapModule/mapModule.js",
+		"/Applications/MAMP/htdocs/devon-atlas/src/js/plugins/modernizr-custom.js",
+		"/Applications/MAMP/htdocs/devon-atlas/src/js/plugins/main.js",
+		"/Applications/MAMP/htdocs/devon-atlas/src/scss/components/map-meta.scss",
+		"/Applications/MAMP/htdocs/devon-atlas/src/scss/components/_map-keys.scss",
+		"/Applications/MAMP/htdocs/devon-atlas/src/js/app/modules/mapModuleUpdateDOM.js",
+		"/Applications/MAMP/htdocs/devon-atlas/src/js/app/modules/mapModuleData.js",
+		"/Applications/MAMP/htdocs/devon-atlas/build/inc/overview-page.php",
+		"/Applications/MAMP/htdocs/devon-atlas/build/inc/spinner.php",
+		"/Applications/MAMP/htdocs/devon-atlas/node_modules/browserify/test/entry.js",
+		"/Applications/MAMP/htdocs/devon-atlas/src/js/app/modules/failed-sitters-module.js",
+		"/Applications/MAMP/htdocs/devon-atlas/build/inc/map-breeding-toggle.php",
+		"/Applications/MAMP/htdocs/devon-atlas/build/inc/map-title.php",
+		"/Applications/MAMP/htdocs/devon-atlas/build/inc/map-controls.php",
+		"/Applications/MAMP/htdocs/devon-atlas/src/scss/vendor/chosen.scss",
+		"/Applications/MAMP/htdocs/devon-atlas/src/scss/components/map-breeding-toggles.scss",
+		"/Applications/MAMP/htdocs/devon-atlas/src/scss/components/state.scss",
+		"/Applications/MAMP/htdocs/devon-atlas/src/scss/components/select-inputs.scss",
+		"/Applications/MAMP/htdocs/devon-atlas/src/scss/navigation/main-nav.scss",
+		"/Applications/MAMP/htdocs/devon-atlas/src/scss/components/_chosen.scss",
+		"/Applications/MAMP/htdocs/devon-atlas/src/scss/components/_map-controls.scss",
+		"/Applications/MAMP/htdocs/devon-atlas/src/scss/components/overlay.scss",
+		"/Applications/MAMP/htdocs/devon-atlas/src/scss/grid.scss",
+		"/Applications/MAMP/htdocs/devon-atlas/src/js/app/mapPageTemplating.js",
+		"/Applications/MAMP/htdocs/devon-atlas/src/js/plugins/species-names.js",
+		"/Applications/MAMP/htdocs/devon-atlas/src/js/plugins/latinNames.js",
+		"/Applications/MAMP/htdocs/devon-atlas/src/scss/components/overlay-controls.scss",
+		"/Applications/MAMP/htdocs/devon-atlas/build/overview.php",
+		"/Users/jasonrighelato/Downloads/species_meta.csv",
+		"/Users/jasonrighelato/Dropbox (Personal)/projects/BOC/data/test/Combined surveys with meta data/Sheet1-Table 1.csv",
+		"/Users/jasonrighelato/Downloads/species_meta.sql",
+		"/Applications/MAMP/htdocs/devon-atlas/src/scss/pages/map-page-layout.scss",
+		"/Applications/MAMP/htdocs/devon-atlas/src/scss/pages/overview-page-layout.scss",
+		"/Applications/MAMP/htdocs/devon-atlas/build/img/circle-4.svg",
+		"/Applications/MAMP/htdocs/devon-atlas/build/img/DEVON-outline.svg",
+		"/Applications/MAMP/htdocs/devon-atlas/src/js/app/modules/overlays.js",
+		"/Applications/MAMP/htdocs/devon-atlas/build/inc/overview-container.php",
+		"/Applications/MAMP/htdocs/devon-atlas/src/scss/components/10k-grid.scss",
+		"/Applications/MAMP/htdocs/devon-atlas/build/inc/map-container.php",
+		"/Users/jasonrighelato/Dropbox (Personal)/junk/DEVON/layers/10k.svg",
+		"/Applications/MAMP/htdocs/devon-atlas/build/img/10k.svg",
+		"/Applications/MAMP/htdocs/devon-atlas/src/js/app/speciesList.js",
+		"/Applications/MAMP/htdocs/devon-atlas/ajax/speciesList.php",
+		"/Applications/MAMP/htdocs/devon-atlas/ajax/getCompleteSpeciesList.php",
+		"/Users/jasonrighelato/Dropbox (Personal)/projects/Devon-atlas/data/renton/devondatafiles/csv/dbreed.csv",
+		"/Users/jasonrighelato/Dropbox (Personal)/junk/DEVON/win-dbreed.csv",
+		"/Users/jasonrighelato/Dropbox (Personal)/projects/Devon-atlas/data/renton/devondatafiles/csv/jason-dbreed.csv",
+		"/Applications/MAMP/htdocs/devon-atlas/src/js/app/modules/test-select.js",
+		"/Applications/MAMP/htdocs/devon-atlas/build/inc/map-grid.php",
+		"/Applications/MAMP/htdocs/devon-atlas/ajax/test.php",
+		"/Applications/MAMP/htdocs/devon-atlas/node_modules/gulp-jshint/node_modules/jshint/src/vars.js",
+		"/Applications/MAMP/htdocs/devon-atlas/build/css/main.css",
+		"/Applications/MAMP/htdocs/devon-atlas/src/scss/utilities.scss",
+		"/Applications/MAMP/htdocs/devon-atlas/.gitignore",
+		"/Applications/MAMP/htdocs/devon-atlas/src/scss/components/chosen.scss"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss",
+			"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps",
+			"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss",
+			"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src",
+			"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js",
+			"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas",
+			"/Applications/MAMP/htdocs/devon-atlas/src/scss",
+			"/Applications/MAMP/htdocs/devon-atlas/src/js",
+			"/Applications/MAMP/htdocs/devon-atlas/src/scss",
+			"/Applications/MAMP/htdocs/devon-atlas/src/js",
+			"/Applications/MAMP/htdocs/devon-atlas/src",
+			"/Applications/MAMP/htdocs/devon-atlas",
+			"/Applications/MAMP/htdocs/devon-atlas/src/scss",
+			"/Applications/MAMP/htdocs/devon-atlas/src",
+			"/Applications/MAMP/htdocs/devon-atlas",
+			"/Applications/MAMP/htdocs/devon-atlas/src",
+			"/Applications/MAMP/htdocs/devon-atlas/src/scss",
+			"/Applications/MAMP/htdocs/devon-atlas/src/js",
+			"/Applications/MAMP/htdocs/devon-atlas/src/js/app/modules",
+			"/Applications/MAMP/htdocs/devon-atlas/src/js",
+			"/Applications/MAMP/htdocs/devon-atlas",
+			"/Applications/MAMP/htdocs/devon-atlas/build/inc",
+			"/Applications/MAMP/htdocs/devon-atlas",
+			"/Applications/MAMP/htdocs/devon-atlas/src/js",
+			"/Applications/MAMP/htdocs/devon-atlas/src/js/app/modules",
+			"/Applications/MAMP/htdocs/devon-atlas/src/scss",
+			"/Applications/MAMP/htdocs/devon-atlas/src/js/app",
+			"/Applications/MAMP/htdocs/devon-atlas/src/js",
+			"/Applications/MAMP/htdocs/devon-atlas/src/scss/components",
+			"/Applications/MAMP/htdocs/devon-atlas/src",
+			"/Applications/MAMP/htdocs/devon-atlas/src/scss",
+			"/Applications/MAMP/htdocs/devon-atlas/src",
+			"/Applications/MAMP/htdocs/devon-atlas",
+			"/Applications/MAMP/htdocs/devon-atlas/src/scss",
+			"/Applications/MAMP/htdocs/devon-atlas/src/scss/components",
+			"/Applications/MAMP/htdocs/devon-atlas/src/js",
+			"/Applications/MAMP/htdocs/devon-atlas/build/js",
+			"/Applications/MAMP/htdocs/devon-atlas/build/inc",
+			"/Applications/MAMP/htdocs/devon-atlas",
+			"/Applications/MAMP/htdocs/devon-atlas/src/scss",
+			"/Applications/MAMP/htdocs/devon-atlas/src/js",
+			"/Applications/MAMP/htdocs/devon-atlas/src/scss",
+			"/Applications/MAMP/htdocs/devon-atlas/src/js/app",
+			"/Applications/MAMP/htdocs/devon-atlas/src/js",
+			"/Applications/MAMP/htdocs/devon-atlas/src/scss",
+			"/Applications/MAMP/htdocs/devon-atlas",
+			"/Applications/MAMP/htdocs/devon-atlas/src/scss",
+			"/Applications/MAMP/htdocs/devon-atlas/build/js",
+			"/Applications/MAMP/htdocs/devon-atlas/src/scss",
+			"/Applications/MAMP/htdocs/devon-atlas/src/js",
+			"/Applications/MAMP/htdocs/devon-atlas/src/scss",
+			"/Users/jasonrighelato/Documents/js-playground/src/js/app",
+			"/Applications/MAMP/htdocs/test-wp-rest-api/wp-content/themes/Picard-master",
+			"/Applications/MAMP/htdocs/test-wp-rest-api/wp-content/themes/Picard-master/components",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/scss",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/js/app",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/scss",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/scss",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/scss",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/scss/effeckt",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/scss",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/js/app",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/scss",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/scss",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/js/app",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/scss",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/js/app",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/scss",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/js/app",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/scss",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/scss/base",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/scss",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/js/app",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/scss",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/js/app",
+			"/Users/jasonrighelato/Downloads/jquery-template-master",
+			"/Users/jasonrighelato/Downloads/jquery-template-master/Examples",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/scss",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/scss/components",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/js/app",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src",
+			"/Users/jasonrighelato/Downloads/Ex_Files_JavaScript_Templating/Exercise Files/02_jqTempl",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/scss/effeckt",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/scss",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/js/app",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/scss",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/scss",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/js/app",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/js/app",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/scss",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/js/app",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/js/app",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/scss",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/js/app/modules",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/js/app",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/js/app/modules",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/js/app",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/js/app/modules",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/scss",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/js/app",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/js/app/modules",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/js/app",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/js/app/modules",
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/js/app",
+			"/Applications/MAMP/htdocs/portfolio/wp-content/themes/jr_portfolio/src/js",
+			"/Applications/MAMP/htdocs/portfolio/wp-content/themes/jr_portfolio/src/js/app",
+			"/Applications/MAMP/htdocs/portfolio/wp-content/themes/jr_portfolio/src/js",
+			"/Applications/MAMP/htdocs/portfolio/wp-content/themes/jr_portfolio/src/js/app",
+			"/Applications/MAMP/htdocs/portfolio/wp-content/themes/jr_portfolio/src/scss",
+			"/Applications/MAMP/htdocs/portfolio/wp-content/themes/jr_portfolio/src/js/app/modules",
+			"/Applications/MAMP/htdocs/portfolio/wp-content/themes/jr_portfolio"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"startUpdatingEls",
+			"updateStateEls.start",
+			"document.getElementById(",
+			".request = '';",
+			"updateHeadings",
+			"ovPage",
+			"!== 'undefined' &&",
+			"undefined",
+			"!==  'undefined' && ",
+			"ovPage",
+			"updateHeadings",
+			"title",
+			"classList",
+			".startSpinner();",
+			"classList",
+			"<h4>",
+			"h3",
+			"10px",
+			"$lg-map-2k-width * 1.5",
+			"lg-map-2k-width * 1.5",
+			"data-set=\"dwdensity\"",
+			"dwdensity",
+			"rgba(0, 11, 140, 0.7)",
+			"<?php include('inc/maps/map-key-density.php'); ?>",
+			"inc/map-key",
+			"<?php include 'map-key-",
+			"map-key-dbreed",
+			"<?php include 'map-key-dbreed.php'; ?>",
+			"<div class=\"ov-map-title\">Title goes here</div>",
+			"keysq brst poss",
+			"$tablet-map",
+			"ov-map-lg",
+			"$tablet-map-2k-width",
+			"$sm-ov-map-2k-width",
+			"$sm-ov-map-10k-width",
+			"$lg-map-width",
+			"row",
+			"$sm-ov-",
+			"$lg-map-2k-width",
+			"$lg-map-10k-width",
+			"$lg-map-2k-width",
+			".species-ov",
+			"map-container",
+			"#m2_",
+			"id=\"m",
+			"id=\"",
+			"$lg-map-width",
+			"$sm-ov-map-",
+			"$lg-",
+			"$lg-map-10k-width",
+			"lg",
+			"#mp2_",
+			"#m2_",
+			"class=\"container\" ",
+			"#m2_",
+			"overlays-overview",
+			"<?php include('inc/maps/spinner.php'); ?>",
+			"<div id=\"m3_\" class=\"container\" data-set=\"\">",
+			"over",
+			"species-overview",
+			"overview",
+			"typeof",
+			"currentDataSet",
+			"value",
+			"concat",
+			"gravatar",
+			"include('inc/",
+			"filterForTenkSpecies",
+			"this.configs.subdomain + this.configs.mapAjaxUrl +",
+			" url: this.configs.mapAjaxUrl + '",
+			"url: this.configs.mapAjaxUrl +  '",
+			"url: '../ajax/",
+			"',\n",
+			"url: '../ajax/",
+			"url: '../",
+			"$.ajax",
+			"'inc/",
+			"tetrad-box.php",
+			"include('inc/",
+			"<?php bloginfo( 'name' ); ?></a></h1>",
+			"<a href=\"<?php echo esc_url( home_url( '/' ) ); ?>\" rel=\"home\">",
+			"jquery.js",
+			"JSON.pars",
+			"JSON.st",
+			" }, 1000);",
+			"settime",
+			"timeout",
+			"class=\"tenk ",
+			"class=\"tenk\"",
+			"class=\"tenk ",
+			"class=\"tenk\"",
+			".parent",
+			"class=\"tenk ",
+			"class=\"tenk\"",
+			"speciesName",
+			".tenk",
+			"tenk",
+			".pres",
+			"pres",
+			"TenkSpecies",
+			"tenkSpecies",
+			"filterForTenkSpecies",
+			"$('#' + this.context)",
+			"data[i]",
+			"document.getElementById(obj.context + prevResults[",
+			"this",
+			"filterForTenkSpecies",
+			"this.tenkSpecies",
+			"var ",
+			".parent",
+			"for (var",
+			"setFetchingData",
+			"console.log(this.spe",
+			"hideCurrentlySelectedTetradInfo",
+			"code-",
+			"code-6",
+			"code-7",
+			", ",
+			"'",
+			", ",
+			";",
+			"('.tetrad-meta')",
+			"tetrad-meta",
+			"speciesTitle",
+			"dataSetTitles",
+			"speciesTitle",
+			"console.log(",
+			"querySelectorAll"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"$tablet-map-2k-width",
+			"$sm-ov-map-2k-width",
+			"$sm-ov-map-10k-width",
+			".map-row > div",
+			"column-meta",
+			"column-map",
+			"$sm-map-2k-width",
+			"$sm-map-width",
+			"$lg-map-2k-width*4",
+			"$lg-map-2k-width*3",
+			"$lg-map-2k-width*2",
+			"$lg-map-2k-width",
+			"$lg-map-width",
+			"updateTetradsPresent",
+			"key-group",
+			"key-table",
+			".",
+			"$full-scale",
+			"$select-height",
+			"$select-font-size",
+			"m3_",
+			"id=\"m2_",
+			"id=\"m1_",
+			"stroke-width=\"0\"",
+			"fill=\"#000000\"",
+			"page-active",
+			"page-animating",
+			".page",
+			"js_page_1",
+			"slide-in-from-right",
+			"scale-down",
+			"http://jasonrighelato.net/work",
+			"#js_page_2",
+			"work_menu",
+			"readAddressBar",
+			"id",
+			"request",
+			"loaded_pages",
+			"overlay",
+			"$('body')",
+			"cle\" id=\"c1\" ",
+			"circle",
+			"Interests",
+			"$interests",
+			"rcp_interests",
+			"img",
+			"$accent_color_1",
+			"mid_grey",
+			"light_grey",
+			"<div id=\"main\"",
+			"",
+			"<?php // get_sidebar(); ?>",
+			"",
+			"main-content",
+			"tr_btn",
+			"page_link",
+			"link_text",
+			"troon",
+			"troon_",
+			"<div role=\"main\" id=\"main\">",
+			".wide-tagline",
+			"<div class=\"wide-tagline innerWrap\">",
+			"class=\"wide-tagline\"",
+			"",
+			"-column",
+			"controls-2.png",
+			"top-left",
+			"-compressor.jpg",
+			"$body_color_dark",
+			"<svg ",
+			"0 0 400 200",
+			"class=\"ace-time-line\"",
+			"ace-item-info",
+			"item-info",
+			"ace-item",
+			"$black",
+			"wrap-close",
+			"viewBox=\"0 0 48 48\"",
+			"",
+			"$white",
+			"",
+			"thumb-compressor.png",
+			"$body_color",
+			"80px",
+			"60px",
+			"tagline",
+			"",
+			"Map",
+			"search",
+			"btn_grid",
+			"featurePanel",
+			"column",
+			"whoFeed",
+			"background-color: $expacare_color_light;",
+			"defineCols",
+			"'",
+			"duration(0.8s);",
+			"heading_font",
+			"$body_color_light;",
+			"right",
+			"ric_bacon",
+			"itemIntro",
+			"archiveList",
+			"tab_land",
+			"tab_port"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/scss/components/tetrad-grid-overview.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11615,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								58,
+								58
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/scss/components/_map-controls.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 213,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								200,
+								204
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "page-maps-overview.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3769,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								93,
+								99
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/scss/pages/overview-page-layout.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1664,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								599,
+								599
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/js/app/modules/mapModule.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17091,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10375,
+								10375
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5390.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/js/app/entry.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5107,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4709,
+								4709
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1082.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/js/scripts/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1616,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								69,
+								69
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/scss/components/tetrad-grid.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9303,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								27,
+								32
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/scss/components/_map-keys.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2963,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1319,
+								1319
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 582.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1234,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										305,
+										320
+									],
+									[
+										732,
+										741
+									],
+									[
+										792,
+										801
+									],
+									[
+										969,
+										978
+									],
+									[
+										1157,
+										1166
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								966,
+								966
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 3,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ 	].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 255.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "src/scss/components/tetrad-backgrounds.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2696,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1678,
+								1658
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1496.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "inc/maps/map-keys.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 662,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								172,
+								211
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "inc/maps/map-key-density.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 615,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								125,
+								125
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "src/scss/variables.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1360,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								254,
+								270
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "devonatlas.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"tetrad",
+				"src/scss/components/tetrad-grid.scss"
+			],
+			[
+				"entry",
+				"src/js/app/entry.js"
+			],
+			[
+				"map-keys",
+				"src/scss/components/_map-keys.scss"
+			],
+			[
+				"map-con",
+				"src/scss/components/_map-controls.scss"
+			],
+			[
+				"varia",
+				"src/scss/variables.scss"
+			],
+			[
+				"main",
+				"src/scss/main.scss"
+			],
+			[
+				"var",
+				"src/scss/variables.scss"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"over",
+				"inc/maps/overlays.php"
+			],
+			[
+				"map-la",
+				"src/scss/components/_map-layout.scss"
+			],
+			[
+				"header",
+				"header.php"
+			],
+			[
+				"spinner.php",
+				"inc/maps/spinner.php"
+			],
+			[
+				"footer",
+				"footer.php"
+			],
+			[
+				"custom",
+				"inc/custom_functions.php"
+			],
+			[
+				"map-layout",
+				"src/scss/components/_map-layout.scss"
+			],
+			[
+				"map",
+				"src/js/app/modules/mapModule.js"
+			],
+			[
+				"map-tetr",
+				"src/scss/components/_map-tetrad-box.scss"
+			],
+			[
+				"tetrad-box",
+				"build/inc/tetrad-box.php"
+			],
+			[
+				"tetrad-bo",
+				"build/inc/tetrad-box.php"
+			],
+			[
+				"spinner",
+				"src/scss/components/spinner.scss"
+			],
+			[
+				"button",
+				"src/scss/components/_button.scss"
+			],
+			[
+				"checkbox",
+				"src/scss/components/checkbox.scss"
+			],
+			[
+				"tet",
+				"src/scss/components/tetrad-backgrounds.scss"
+			],
+			[
+				"map-l",
+				"src/scss/components/_map-layout.scss"
+			],
+			[
+				"gulpf",
+				"gulpfile.js"
+			],
+			[
+				"map-meta",
+				"src/scss/components/map-meta.scss"
+			],
+			[
+				"-grid",
+				"src/scss/components/tetrad-grid.scss"
+			],
+			[
+				"mapmod",
+				"src/js/app/modules/mapModule.js"
+			],
+			[
+				"map-key",
+				"src/scss/components/_map-keys.scss"
+			],
+			[
+				"mapm",
+				"src/js/app/modules/mapModule.js"
+			],
+			[
+				"map-lay",
+				"src/scss/components/_map-layout.scss"
+			],
+			[
+				"vari",
+				"src/scss/variables.scss"
+			],
+			[
+				"map-ke",
+				"src/scss/components/_map-keys.scss"
+			],
+			[
+				"breedin",
+				"src/scss/components/map-breeding-toggles.scss"
+			],
+			[
+				"mapmo",
+				"src/js/app/modules/mapModule.js"
+			],
+			[
+				"breeding",
+				"build/inc/map-breeding-toggle.php"
+			],
+			[
+				"title",
+				"build/inc/map-title.php"
+			],
+			[
+				"toggle",
+				"src/scss/components/map-breeding-toggles.scss"
+			],
+			[
+				"meta",
+				"src/scss/components/map-meta.scss"
+			],
+			[
+				"va",
+				"src/scss/variables.scss"
+			],
+			[
+				"tetrad-gr",
+				"src/scss/components/tetrad-grid.scss"
+			],
+			[
+				"map-contr",
+				"src/scss/components/_map-controls.scss"
+			],
+			[
+				"tetrad-grid",
+				"src/scss/components/tetrad-grid.scss"
+			],
+			[
+				"map-layou",
+				"src/scss/components/_map-layout.scss"
+			],
+			[
+				"breed",
+				"build/inc/map-breeding-toggle.php"
+			],
+			[
+				"chosen",
+				"src/scss/vendor/chosen.scss"
+			],
+			[
+				"chose",
+				"src/scss/vendor/chosen.scss"
+			],
+			[
+				"selec",
+				"src/scss/components/select-inputs.scss"
+			],
+			[
+				"map-controls.php",
+				"build/inc/map-controls.php"
+			],
+			[
+				"overlay-controls.php",
+				"build/inc/overlay-controls.php"
+			],
+			[
+				"entr",
+				"src/js/app/entry.js"
+			],
+			[
+				"en",
+				"src/js/app/entry.js"
+			],
+			[
+				"ent",
+				"src/js/app/entry.js"
+			],
+			[
+				"speci",
+				"build/inc/species-list.php"
+			],
+			[
+				"vars",
+				"node_modules/gulp-jshint/node_modules/jshint/src/vars.js"
+			],
+			[
+				"page",
+				"jr_portfolio/page-portfolio.php"
+			],
+			[
+				"sin",
+				"jr_portfolio/single.php"
+			],
+			[
+				"logo",
+				"jr_portfolio/src/scss/components/logo.scss"
+			],
+			[
+				"foo",
+				"jr_portfolio/footer-portfolio.php"
+			],
+			[
+				"he",
+				"jr_portfolio/header-portfolio.php"
+			],
+			[
+				"head",
+				"jr_portfolio/header.php"
+			],
+			[
+				"intro",
+				"jr_portfolio/src/scss/components/_intro-grid.scss"
+			],
+			[
+				"prtfol",
+				"jr_portfolio/page-portfolio.php"
+			],
+			[
+				"base",
+				"jr_portfolio/src/scss/base/_base.scss"
+			],
+			[
+				"po",
+				"jr_portfolio/page-portfolio.php"
+			],
+			[
+				"port",
+				"jr_portfolio/page-portfolio.php"
+			],
+			[
+				"re",
+				"jr_portfolio/src/js/app/modules/renderTemplates.js"
+			],
+			[
+				"ajax",
+				"jr_portfolio/src/js/app/modules/ajaxCall.js"
+			],
+			[
+				"wrap",
+				"jr_portfolio/src/js/app/modules/animations/wrapLetters.js"
+			],
+			[
+				"anim",
+				"jr_portfolio/src/js/app/modules/animations/animateHeading.js"
+			],
+			[
+				"animate",
+				"jr_portfolio/src/js/app/modules/animations/animateHeading.js"
+			],
+			[
+				"fire",
+				"jr_portfolio/src/js/app/modules/fireTransition.js"
+			],
+			[
+				"ren",
+				"jr_portfolio/src/js/app/modules/renderTemplates.js"
+			],
+			[
+				"aj",
+				"jr_portfolio/src/js/app/modules/ajaxCall.js"
+			],
+			[
+				"pages",
+				"jr_portfolio/src/scss/base/_pages.scss"
+			],
+			[
+				"back",
+				"jr_portfolio/src/js/app/modules/backToMenu.js"
+			],
+			[
+				"backto",
+				"jr_portfolio/src/scss/components/_back-to-menu.scss"
+			],
+			[
+				"basse",
+				"jr_portfolio/src/scss/base/_base.scss"
+			],
+			[
+				"which",
+				"jr_portfolio/src/js/app/modules/animations/animation_utils/whichAnimationEvent.js"
+			],
+			[
+				"portfolio",
+				"jr_portfolio/page-portfolio.php"
+			],
+			[
+				"dom",
+				"jr_portfolio/src/js/app/modules/domEls.js"
+			],
+			[
+				"templ",
+				"jr_portfolio/inc/template.php"
+			],
+			[
+				"render",
+				"jr_portfolio/src/js/app/modules/renderTemplates.js"
+			],
+			[
+				"single",
+				"jr_portfolio/src/scss/components/single-item-ajaxed.scss"
+			],
+			[
+				"por",
+				"jr_portfolio/page-portfolio.php"
+			],
+			[
+				"fp",
+				"jr_portfolio/footer-portfolio.php"
+			],
+			[
+				"git",
+				"jr_portfolio/.gitignore"
+			],
+			[
+				"",
+				"jr_portfolio/src/scss/components/_single-item.scss"
+			],
+			[
+				"sing",
+				"jr_portfolio/src/scss/components/_single-item.scss"
+			],
+			[
+				"read",
+				"jr_portfolio/src/js/app/modules/readAddressBar.js"
+			],
+			[
+				"inject",
+				"jr_portfolio/src/js/app/modules/injectSpinner.js"
+			],
+			[
+				"packaeg",
+				"jr_portfolio/package.json"
+			],
+			[
+				"tit",
+				"jr_portfolio/src/scss/effeckt/_animate-title.scss"
+			],
+			[
+				"variables",
+				"jr_portfolio/src/scss/helpers/_variables.scss"
+			],
+			[
+				"typ",
+				"jr_portfolio/src/scss/base/_typography.scss"
+			],
+			[
+				"helper",
+				"jr_portfolio/src/scss/helpers/_helpers.scss"
+			],
+			[
+				"but",
+				"jr_portfolio/inc/inc-effeckt-buttons.php"
+			],
+			[
+				"wor",
+				"jr_portfolio/inc/inc-work-menu.php"
+			],
+			[
+				"help",
+				"jr_portfolio/src/scss/helpers/_helpers.scss"
+			],
+			[
+				"items",
+				"jr_portfolio/src/scss/components/_single-item.scss"
+			],
+			[
+				"singl",
+				"jr_portfolio/single.php"
+			],
+			[
+				"header.php",
+				"jr_portfolio/header-portfolio.php"
+			],
+			[
+				"bac",
+				"jr_portfolio/src/scss/components/_back-to-menu.scss"
+			],
+			[
+				"variable",
+				"jr_portfolio/src/scss/helpers/_variables.scss"
+			],
+			[
+				"inc-wo",
+				"jr_portfolio/inc/inc-work-menu.php"
+			],
+			[
+				"inview",
+				"jr_portfolio/src/js/app/modules/animations/inView.js"
+			],
+			[
+				"anima",
+				"jr_portfolio/src/js/app/modules/animations/animateHeading.js"
+			],
+			[
+				"aja",
+				"jr_portfolio/src/js/app/modules/ajaxCall.js"
+			],
+			[
+				"build",
+				"jr_portfolio/src/js/app/modules/buildTemplate.js"
+			],
+			[
+				"content",
+				"jasonrighelato.net/content.txt"
+			],
+			[
+				"mixin",
+				"jasonrighelato.net/sass/_mixins.scss"
+			],
+			[
+				"test",
+				"jr_portfolio/src/js/app/modules/animations/animate_js/testAnimateJs.js"
+			],
+			[
+				"buil",
+				"src/js/app/modules/buildTemplate.js"
+			],
+			[
+				"isload",
+				"src/js/app/modules/isLoaded.js"
+			],
+			[
+				"gulpfil",
+				"gulpfile.js"
+			],
+			[
+				"entry.js",
+				"src/js/app/entry.js"
+			],
+			[
+				"firetransitio",
+				"jr_portfolio/src/js/app/modules/fireTransition.js"
+			],
+			[
+				"pageport",
+				"jr_portfolio/page-portfolio.php"
+			],
+			[
+				"_base",
+				"jr_portfolio/src/scss/base/_base.scss"
+			],
+			[
+				"portpage",
+				"jr_portfolio/page.php"
+			],
+			[
+				"gitign",
+				"jr_portfolio/.gitignore"
+			],
+			[
+				"wrapl",
+				"jr_portfolio/src/js/app/modules/animations/wrapLetters.js"
+			],
+			[
+				"portfoliopage",
+				"jr_portfolio/page-portfolio.php"
+			],
+			[
+				"demo",
+				"jr_portfolio/src/scss/page-transitions/Effeckt/_demo.scss"
+			],
+			[
+				"work-menu",
+				"jr_portfolio/inc/inc-work-menu.php"
+			],
+			[
+				"gulpfile",
+				"jr_portfolio/gulpfile.js"
+			],
+			[
+				"grunt",
+				"jasonrighelato.net/Gruntfile.js"
+			],
+			[
+				"domel",
+				"jr_portfolio/src/js/app/modules/domEls.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "devonwp",
+		"selected_items":
+		[
+			[
+				"devonwp",
+				"/Applications/MAMP/htdocs/sublime-projects/devonwp.sublime-workspace"
+			],
+			[
+				"bbp",
+				"/Applications/MAMP/htdocs/sublime-projects/bbp.sublime-project"
+			],
+			[
+				"boc",
+				"/Applications/MAMP/htdocs/sublime-projects/boc.sublime-project"
+			],
+			[
+				"coa",
+				"/Applications/MAMP/htdocs/sublime-projects/coasters.sublime-project"
+			],
+			[
+				"jose",
+				"/Applications/MAMP/htdocs/sublime-projects/jose_wp.sublime-project"
+			],
+			[
+				"pap",
+				"/Applications/MAMP/htdocs/sublime-projects/papaparse.sublime-project"
+			],
+			[
+				"expa",
+				"/Applications/MAMP/htdocs/sublime-projects/expacare_wp.sublime-project"
+			],
+			[
+				"lab",
+				"/Applications/MAMP/htdocs/sublime-projects/lab.sublime-project"
+			],
+			[
+				"play",
+				"/Applications/MAMP/htdocs/sublime-projects/playground.sublime-project"
+			],
+			[
+				"ace",
+				"/Applications/MAMP/htdocs/sublime-projects/acedance.sublime-project"
+			],
+			[
+				"f",
+				"/Applications/MAMP/htdocs/sublime-projects/foll.sublime-project"
+			],
+			[
+				"troo",
+				"/Applications/MAMP/htdocs/sublime-projects/troon.sublime-project"
+			],
+			[
+				"ac",
+				"/Applications/MAMP/htdocs/sublime-projects/acedance.sublime-project"
+			],
+			[
+				"bpm",
+				"/Applications/MAMP/htdocs/sublime-projects/bpmarsh.sublime-project"
+			],
+			[
+				"exp",
+				"/Applications/MAMP/htdocs/sublime-projects/expacare_wp.sublime-project"
+			],
+			[
+				"sce",
+				"/Applications/MAMP/htdocs/sublime-projects/ace_wp.sublime-project"
+			],
+			[
+				"grunt",
+				"/Applications/MAMP/htdocs/sublime-projects/playground.sublime-project"
+			],
+			[
+				"start",
+				"/Applications/MAMP/htdocs/sublime-projects/starter.sublime-project"
+			],
+			[
+				"expac",
+				"/Applications/MAMP/htdocs/sublime-projects/expacare_wp.sublime-project"
+			],
+			[
+				"bbag",
+				"/Applications/MAMP/htdocs/sublime-projects/bbag.sublime-project"
+			],
+			[
+				"ex",
+				"/Applications/MAMP/htdocs/sublime-projects/expacare_wp.sublime-project"
+			],
+			[
+				"kurtz",
+				"/Applications/MAMP/htdocs/sublime-projects/kurtz-2014.sublime-project"
+			],
+			[
+				"ric",
+				"/Applications/MAMP/htdocs/sublime-projects/ric_bacon.sublime-project"
+			],
+			[
+				"tom",
+				"/Applications/MAMP/htdocs/sublime-projects/tom2014.sublime-project"
+			],
+			[
+				"tu",
+				"/Applications/MAMP/htdocs/sublime-projects/tu-nav.sublime-project"
+			],
+			[
+				"kurt",
+				"/Applications/MAMP/htdocs/sublime-projects/kurtz-2014.sublime-project"
+			],
+			[
+				"joe",
+				"/Applications/MAMP/htdocs/sublime-projects/jose.sublime-project"
+			],
+			[
+				"edf",
+				"/Applications/MAMP/htdocs/sublime-projects/edf_2014.sublime-project"
+			],
+			[
+				"ed",
+				"/Applications/MAMP/htdocs/sublime-projects/edf_2014.sublime-project"
+			],
+			[
+				"jos",
+				"/Applications/MAMP/htdocs/sublime-projects/jose.sublime-project"
+			],
+			[
+				"ku",
+				"/Applications/MAMP/htdocs/sublime-projects/kurtz-2014.sublime-project"
+			],
+			[
+				"oel",
+				"/Applications/MAMP/htdocs/sublime-projects/old_electric.sublime-project"
+			],
+			[
+				"e",
+				"/Applications/MAMP/htdocs/sublime-projects/eyre-project.sublime-project"
+			],
+			[
+				"kur",
+				"/Applications/MAMP/htdocs/sublime-projects/kurtz-2014.sublime-project"
+			],
+			[
+				"hom",
+				"/Applications/MAMP/htdocs/sublime-projects/old_electric.sublime-project"
+			],
+			[
+				"bp",
+				"/Applications/MAMP/htdocs/sublime-projects/bpmarsh.sublime-project"
+			],
+			[
+				"",
+				"/Applications/MAMP/htdocs/sublime-projects/bpmarsh.sublime-project"
+			],
+			[
+				"gb",
+				"/Applications/MAMP/htdocs/sublime-projects/gbonline_2.sublime-project"
+			],
+			[
+				"ol",
+				"/Applications/MAMP/htdocs/sublime-projects/old_electric.sublime-project"
+			],
+			[
+				"bpma",
+				"/Applications/MAMP/htdocs/sublime-projects/bpmarsh.sublime-project"
+			],
+			[
+				"old",
+				"/Applications/MAMP/htdocs/sublime-projects/old_electric.sublime-project"
+			],
+			[
+				"js",
+				"/Applications/MAMP/htdocs/sublime-projects/js-notes.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 300.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,17 @@
+.controls {
+    margin-bottom: $default_spacing;
+}
+
+.select-controls {
+    width: 45%;
+    float: left;
+    &:last-of-type {
+        float: right;
+    }
+}
+
+.ov {
+    .select-controls {
+        float: left;
+    }
+}

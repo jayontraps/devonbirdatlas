@@ -1,0 +1,88 @@
+.tetrad-meta-wrapper {
+   display: block;
+    position: relative;
+    &.hide {
+        display: none;
+    }
+}
+
+.tetrad-list-wrapper {
+    height: 0;
+}
+
+
+.tetrad-active {
+    .tetrad-list-wrapper {
+        height: 275px;
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .tetrad-active {
+        .tetrad-list-wrapper {
+            height: 220px;
+        }
+    }
+}
+
+.tet-sums {
+    display: none;
+    margin-bottom: .75rem;
+}
+
+.gmap-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.tetrad-list {
+    padding: 0;
+    margin: 0 1rem 0 0;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+
+    > li {
+        flex: 1 1 30%;
+        position: relative;
+        margin: 0 2.5rem 0 0;
+        padding: .25rem 0;
+        span {
+            position: absolute;
+            right: 0;
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: $max_width) {
+    .tetrad-list {
+        > li {
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.tetrad-title {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.tet-sums-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+}

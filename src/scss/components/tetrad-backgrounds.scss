@@ -1,0 +1,223 @@
+
+.code-A,
+.code-B,
+.code-K, .code-N {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: $lg-map-2k-width;
+}
+
+.double {
+    .code-A,
+    .code-B,
+    .code-K, .code-N {
+        background-size: $sm-map-2k-width;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .code-A,
+    .code-B,
+    .code-K, .code-N {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: $tablet-map-2k-width;
+    }
+}
+
+/* Hide data layers */
+.data-off {
+    // .parent {
+        .code-A,
+        .code-B,
+        .code-K, .code-N {
+            background-image: none;
+        }
+        .pres {
+            background-color: transparent;
+        }
+
+        .map-row > div  > div {
+            background-color:transparent;
+            border: none;
+            box-shadow: none;
+        }
+    // }
+}
+
+
+
+.dbreed-off {
+    .code-A,
+    .code-B,
+    .code-K, .code-N {
+        background-image: none;
+    }
+}
+
+.code-A {
+    background-image: url('../img/circle-1.svg');
+}
+.code-B {
+    background-image: url('../img/circle-2.svg');
+}
+.code-K {
+    background-image: url('../img/circle-3.svg');
+}
+.code-N {
+    background-image: url('../img/circle-4.svg');
+}
+
+
+
+
+
+/* 10K species dbreed10 */
+
+[data-set="dbreed10"] {
+
+    .code-A {
+        background-image: url('../img/ov-confirmed.svg');
+    }
+    .code-B {
+        background-image: url('../img/ov-probable.svg');
+    }
+    .code-K {
+        background-image: url('../img/ov-possible.svg');
+    }
+    .code-N {
+        background-image: url('../img/ov-present.svg');
+    }
+
+
+
+
+    .code-A,
+    .code-B,
+    .code-K, .code-N {
+        background-size: $lg-map-10k-width;
+    }
+}
+
+ .double {
+    [data-set="dbreed10"] {
+        .code-A,
+        .code-B,
+        .code-K, .code-N {
+            background-size: $sm-map-10k-width;
+        }
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    [data-set="dbreed10"] {
+        .code-A,
+        .code-B,
+        .code-K, .code-N {
+            background-size: $tablet-map-10k-width;
+        }
+    }
+}
+
+
+[data-set="dwdensity"] {
+
+    // [class*='code-'] {
+    //     border-bottom: 1px solid rgba(0,11,140, .28);
+    //     border-right: 1px solid rgba(0,11,140, .28);
+    // }
+    .pres {
+        box-shadow:
+            1px 0 0 0 rgba(0,11,140, .28),
+            0 1px 0 0 rgba(0,11,140, .28),
+            1px 1px 0 0 rgba(0,11,140, .28),   /* Just to fix the corner */
+            1px 0 0 0 rgba(0,11,140, .28) inset,
+            0 1px 0 0 rgba(0,11,140, .28) inset;
+    }
+
+    .code-9 {
+        // background-color: rgba(0,11,140, 1); // 000b8c 0, 11, 140
+        // background-color: rgba(0, 11, 140, 0.75);
+        background-color: rgba(0, 7, 80, 0.9);
+    }
+    .code-8 {
+        // background-color: rgba(0,11,140, .84); // 28319e 40, 49, 158
+        // background-color: rgba(40, 49, 158, 0.75);
+        background-color: rgba(0, 11, 140, 0.75);
+    }
+    .code-7 {
+        // background-color: rgba(0,11,140,.70); // 4c53ae 76, 83, 174
+        background-color: rgba(76, 83, 174, 0.75);
+    }
+    .code-5 {
+        // background-color: rgba(0,11,140,.56); // 7076be 112, 118, 190
+        background-color: rgba(112, 118, 190, 0.75);
+    }
+    .code-4 {
+        // background-color: rgba(0,11,140, .42); // 9498cf 148, 152, 207
+        background-color: rgba(148, 152, 207, 0.75);
+    }
+    .code-2 {
+        // background-color: rgba(0,11,140, .28); //  b8bbdf 184, 187, 223
+        background-color: rgba(184, 187, 223, 0.75);
+    }
+    .code-1 {
+        // background-color: rgba(0,11,140, .14); // dcddef 220,221,239
+        background-color: rgba(220,221,239, 0.9);
+    }
+}
+
+
+[data-set="dbdensity"] {
+
+    //  .pres {
+    //     border-bottom: 1px solid rgba(196,0,1, .28);
+    //     border-right: 1px solid rgba(196,0,1, .28);
+    // }
+    .pres {
+        box-shadow:
+            1px 0 0 0 rgba(196,0,1, .28),
+            0 1px 0 0 rgba(196,0,1, .28),
+            1px 1px 0 0 rgba(196,0,1, .28),   /* Just to fix the corner */
+            1px 0 0 0 rgba(196,0,1, .28) inset,
+            0 1px 0 0 rgba(196,0,1, .28) inset;
+    }
+
+    .code-9 {
+//         background-color: rgba(196,0,1, 1); // c40001 196, 0, 1
+            background-color: rgba(115, 0, 1, 0.9);
+    }
+    .code-8 {
+        // background-color: rgba(196,0,1, .84); // cd2828 205, 40, 40
+        // background-color: rgba(205, 40, 40, 0.75);
+        background-color: rgba(196, 0, 1, 0.75);
+    }
+    .code-7 {
+        // background-color: rgba(196,0,1,.70); // d54c4c 213, 76, 76
+        background-color: rgba( 213, 76, 76, 0.75);
+
+    }
+    .code-5 {
+        // background-color: rgba(196,0,1,.56); // de7070 222, 112, 112
+        background-color: rgba(222, 112, 112, 0.75);
+    }
+    .code-4 {
+        // background-color: rgba(196,0,1, .42); // e69494 230, 148, 148
+        background-color: rgba(230, 148, 148, 0.75);
+    }
+    .code-2 {
+        // background-color: rgba(196,0,1, .28); // efb8b8  239, 184, 184
+        background-color: rgba(239, 184, 184, 0.75);
+    }
+    .code-1 {
+        // background-color: rgba(196,0,1, .14); //  f7dcdc 247, 220, 220
+        background-color: rgba( 247, 220, 220, 0.9);
+    }
+}
+
+.loading-data {
+    .pres {
+        opacity: 0;
+    }
+}
+

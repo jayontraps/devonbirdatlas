@@ -1,0 +1,461 @@
+/* breeding map */
+.ov {
+
+    [data-tetrad="2K"] {
+        &:hover {
+            cursor: default;
+        }
+    }
+
+    #m1_ {
+        .map-row > div {
+            margin: 0;
+            padding: 0;
+            width: $lg-map-10k-width;
+            height: $lg-map-10k-width;
+            float: left;
+            position: relative;
+            z-index: 99;
+
+            > div {
+                width: $lg-map-2k-width;
+                height: $lg-map-2k-width;
+                position: absolute;
+                &.selected {
+                    border: 3px solid black;
+                }
+
+                &:nth-child(2) {
+                    top: 0;
+                    left: $lg-map-2k-width;
+                }
+
+                &:nth-child(3) {
+                    top: 0;
+                    left: $lg-map-2k-width*2;
+                }
+
+                &:nth-child(4) {
+                    top: 0;
+                    left: $lg-map-2k-width*3;
+                }
+
+                &:nth-child(5) {
+                    top: 0;
+                    left: $lg-map-2k-width*4;
+                }
+
+                &:nth-child(6) {
+                    top: $lg-map-2k-width;
+                    left: 0;
+                }
+
+                &:nth-child(7) {
+                    top: $lg-map-2k-width;
+                    left: $lg-map-2k-width;
+                }
+
+                &:nth-child(8) {
+                    top: $lg-map-2k-width;
+                    left: $lg-map-2k-width*2;
+                }
+
+                &:nth-child(9) {
+                    top: $lg-map-2k-width;
+                    left: $lg-map-2k-width*3;
+                }
+
+                &:nth-child(10) {
+                    top: $lg-map-2k-width;
+                    left: $lg-map-2k-width*4;
+                }
+
+                &:nth-child(11) {
+                    top: $lg-map-2k-width*2;
+                    left: 0;
+                }
+
+                &:nth-child(12) {
+                    top: $lg-map-2k-width*2;
+                    left: $lg-map-2k-width;
+                }
+
+                &:nth-child(13) {
+                    top: $lg-map-2k-width*2;
+                    left: $lg-map-2k-width*2;
+                }
+
+                &:nth-child(14) {
+                    top: $lg-map-2k-width*2;
+                    left: $lg-map-2k-width*3;
+                }
+
+                &:nth-child(15) {
+                    top: $lg-map-2k-width*2;
+                    left: $lg-map-2k-width*4;
+                }
+
+                &:nth-child(16) {
+                    top: $lg-map-2k-width*3;
+                    left: 0%;
+
+                }
+
+                &:nth-child(17) {
+                    top: $lg-map-2k-width*3;
+                    left: $lg-map-2k-width;
+
+                }
+
+                &:nth-child(18) {
+                    top: $lg-map-2k-width*3;
+                    left: $lg-map-2k-width*2;
+
+                }
+
+                &:nth-child(19) {
+                    top: $lg-map-2k-width*3;
+                    left: $lg-map-2k-width*3;
+
+                }
+
+                &:nth-child(20) {
+                    top: $lg-map-2k-width*3;
+                    left: $lg-map-2k-width*4;
+
+                }
+
+                &:nth-child(21) {
+                    top: $lg-map-2k-width*4;
+                    left: 0%;
+
+                }
+
+                &:nth-child(22) {
+                    top: $lg-map-2k-width*4;
+                    left: $lg-map-2k-width;
+
+                }
+
+                &:nth-child(23) {
+                    top: $lg-map-2k-width*4;
+                    left: $lg-map-2k-width*2;
+
+                }
+                &:nth-child(24) {
+                    top: $lg-map-2k-width*4;
+                    left: $lg-map-2k-width*3;
+
+                }
+
+                &:nth-child(25) {
+                    top: $lg-map-2k-width*4;
+                    left: $lg-map-2k-width*4;
+
+                }
+
+            }
+        }
+    }
+}
+
+/* summer / winter */
+.ov-map-sm {
+    .map-row > div {
+        margin: 0;
+        padding: 0;
+        width: $sm-ov-map-10k-width;
+        height: $sm-ov-map-10k-width;
+        float: left;
+        position: relative;
+        z-index: 99;
+
+        > div {
+            width: $sm-ov-map-2k-width;
+            height: $sm-ov-map-2k-width;
+            position: absolute;
+            &.selected {
+                border: 3px solid black;
+            }
+
+            &:nth-child(2) {
+                top: 0;
+                left: $sm-ov-map-2k-width;
+            }
+
+            &:nth-child(3) {
+                top: 0;
+                left: $sm-ov-map-2k-width*2;
+            }
+
+            &:nth-child(4) {
+                top: 0;
+                left: $sm-ov-map-2k-width*3;
+            }
+
+            &:nth-child(5) {
+                top: 0;
+                left: $sm-ov-map-2k-width*4;
+            }
+
+            &:nth-child(6) {
+                top: $sm-ov-map-2k-width;
+                left: 0;
+            }
+
+            &:nth-child(7) {
+                top: $sm-ov-map-2k-width;
+                left: $sm-ov-map-2k-width;
+            }
+
+            &:nth-child(8) {
+                top: $sm-ov-map-2k-width;
+                left: $sm-ov-map-2k-width*2;
+            }
+
+            &:nth-child(9) {
+                top: $sm-ov-map-2k-width;
+                left: $sm-ov-map-2k-width*3;
+            }
+
+            &:nth-child(10) {
+                top: $sm-ov-map-2k-width;
+                left: $sm-ov-map-2k-width*4;
+            }
+
+            &:nth-child(11) {
+                top: $sm-ov-map-2k-width*2;
+                left: 0;
+            }
+
+            &:nth-child(12) {
+                top: $sm-ov-map-2k-width*2;
+                left: $sm-ov-map-2k-width;
+            }
+
+            &:nth-child(13) {
+                top: $sm-ov-map-2k-width*2;
+                left: $sm-ov-map-2k-width*2;
+            }
+
+            &:nth-child(14) {
+                top: $sm-ov-map-2k-width*2;
+                left: $sm-ov-map-2k-width*3;
+            }
+
+            &:nth-child(15) {
+                top: $sm-ov-map-2k-width*2;
+                left: $sm-ov-map-2k-width*4;
+            }
+
+            &:nth-child(16) {
+                top: $sm-ov-map-2k-width*3;
+                left: 0%;
+
+            }
+
+            &:nth-child(17) {
+                top: $sm-ov-map-2k-width*3;
+                left: $sm-ov-map-2k-width;
+
+            }
+
+            &:nth-child(18) {
+                top: $sm-ov-map-2k-width*3;
+                left: $sm-ov-map-2k-width*2;
+
+            }
+
+            &:nth-child(19) {
+                top: $sm-ov-map-2k-width*3;
+                left: $sm-ov-map-2k-width*3;
+
+            }
+
+            &:nth-child(20) {
+                top: $sm-ov-map-2k-width*3;
+                left: $sm-ov-map-2k-width*4;
+
+            }
+
+            &:nth-child(21) {
+                top: $sm-ov-map-2k-width*4;
+                left: 0%;
+
+            }
+
+            &:nth-child(22) {
+                top: $sm-ov-map-2k-width*4;
+                left: $sm-ov-map-2k-width;
+
+            }
+
+            &:nth-child(23) {
+                top: $sm-ov-map-2k-width*4;
+                left: $sm-ov-map-2k-width*2;
+
+            }
+            &:nth-child(24) {
+                top: $sm-ov-map-2k-width*4;
+                left: $sm-ov-map-2k-width*3;
+
+            }
+
+            &:nth-child(25) {
+                top: $sm-ov-map-2k-width*4;
+                left: $sm-ov-map-2k-width*4;
+
+            }
+
+        }
+    }
+}
+
+
+
+// @media screen and (max-width: 1025px) {
+//     .ov-map-sm {
+//         .map-row > div {
+//             width: $tablet-map-10k-width;
+//             height: $tablet-map-10k-width;
+
+//             > div {
+//                 width: $tablet-map-2k-width;
+//                 height: $tablet-map-2k-width;
+//                 &.selected {
+//                     border: 3px solid black;
+//                 }
+
+//                 &:nth-child(2) {
+//                     top: 0;
+//                     left: $tablet-map-2k-width;
+//                 }
+
+//                 &:nth-child(3) {
+//                     top: 0;
+//                     left: $tablet-map-2k-width*2;
+//                 }
+
+//                 &:nth-child(4) {
+//                     top: 0;
+//                     left: $tablet-map-2k-width*3;
+//                 }
+
+//                 &:nth-child(5) {
+//                     top: 0;
+//                     left: $tablet-map-2k-width*4;
+//                 }
+
+//                 &:nth-child(6) {
+//                     top: $tablet-map-2k-width;
+//                     left: 0;
+//                 }
+
+//                 &:nth-child(7) {
+//                     top: $tablet-map-2k-width;
+//                     left: $tablet-map-2k-width;
+//                 }
+
+//                 &:nth-child(8) {
+//                     top: $tablet-map-2k-width;
+//                     left: $tablet-map-2k-width*2;
+//                 }
+
+//                 &:nth-child(9) {
+//                     top: $tablet-map-2k-width;
+//                     left: $tablet-map-2k-width*3;
+//                 }
+
+//                 &:nth-child(10) {
+//                     top: $tablet-map-2k-width;
+//                     left: $tablet-map-2k-width*4;
+//                 }
+
+//                 &:nth-child(11) {
+//                     top: $tablet-map-2k-width*2;
+//                     left: 0;
+//                 }
+
+//                 &:nth-child(12) {
+//                     top: $tablet-map-2k-width*2;
+//                     left: $tablet-map-2k-width;
+//                 }
+
+//                 &:nth-child(13) {
+//                     top: $tablet-map-2k-width*2;
+//                     left: $tablet-map-2k-width*2;
+//                 }
+
+//                 &:nth-child(14) {
+//                     top: $tablet-map-2k-width*2;
+//                     left: $tablet-map-2k-width*3;
+//                 }
+
+//                 &:nth-child(15) {
+//                     top: $tablet-map-2k-width*2;
+//                     left: $tablet-map-2k-width*4;
+//                 }
+
+//                 &:nth-child(16) {
+//                     top: $tablet-map-2k-width*3;
+//                     left: 0%;
+
+//                 }
+
+//                 &:nth-child(17) {
+//                     top: $tablet-map-2k-width*3;
+//                     left: $tablet-map-2k-width;
+
+//                 }
+
+//                 &:nth-child(18) {
+//                     top: $tablet-map-2k-width*3;
+//                     left: $tablet-map-2k-width*2;
+
+//                 }
+
+//                 &:nth-child(19) {
+//                     top: $tablet-map-2k-width*3;
+//                     left: $tablet-map-2k-width*3;
+
+//                 }
+
+//                 &:nth-child(20) {
+//                     top: $tablet-map-2k-width*3;
+//                     left: $tablet-map-2k-width*4;
+
+//                 }
+
+//                 &:nth-child(21) {
+//                     top: $tablet-map-2k-width*4;
+//                     left: 0%;
+
+//                 }
+
+//                 &:nth-child(22) {
+//                     top: $tablet-map-2k-width*4;
+//                     left: $tablet-map-2k-width;
+
+//                 }
+
+//                 &:nth-child(23) {
+//                     top: $tablet-map-2k-width*4;
+//                     left: $tablet-map-2k-width*2;
+
+//                 }
+//                 &:nth-child(24) {
+//                     top: $tablet-map-2k-width*4;
+//                     left: $tablet-map-2k-width*3;
+
+//                 }
+
+//                 &:nth-child(25) {
+//                     top: $tablet-map-2k-width*4;
+//                     left: $tablet-map-2k-width*4;
+
+//                 }
+
+//             }
+//         }
+//     }
+// }

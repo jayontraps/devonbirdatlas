@@ -1,0 +1,82 @@
+$base_font_size: 14px;
+$base_line_height: 1.5rem;
+
+$base_font_family: Helvetica, Arial, sans-serif; 
+$base_font_custom: 'Source Sans Pro', sans-serif;
+
+/* Grid */
+$col_padding: 2rem;
+
+
+// layout
+$max_width: 1200px;
+$max_width_double: 1024px;
+
+// spacing
+$default_spacing: 1.5rem;
+
+// maps
+// desktop
+// $lg-map-width: 650px;
+$lg-map-width: 585px;
+// $lg-map-10k-width: 50px;
+$lg-map-10k-width: 45px;
+// $lg-map-2k-width: 10px;
+$lg-map-2k-width: 9px;
+// tablet
+$tablet-map-width: 520px;
+$tablet-map-10k-width: 40px;
+$tablet-map-2k-width: 8px;
+
+
+// double
+$sm-map-width: 455px;
+$sm-map-10k-width: 35px;
+$sm-map-2k-width: 7px;
+
+$keys-height: 120px;
+
+// $lg-map-width: 100%;
+// $lg-map-width: 450px;
+
+
+// overview maps
+$sm-ov-map-width: 260px;
+// $sm-ov-map-10k-width: 50px;
+$sm-ov-map-10k-width: 20px;
+// $sm-ov-map-2k-width: 10px;
+$sm-ov-map-2k-width: 4px;
+
+
+
+
+
+
+// colors
+
+$border-color: #999;
+$body_bgc: transparent;
+$body_color: black;
+$grey: rgba(0,0,0,.2);
+
+// datasets
+$dbdensity : red;
+$dwdensity : blue;
+$sitters: orange;
+
+// buttons
+$btn_bgc: black;
+$btn_bgc_hover: rgba(0,0,0,.5);
+$btn-active: $border-color;
+
+
+$sitters_pos: rgba(255,215,158,.75); // #FFD79E
+$sitters_prob: rgba(255,189,86,.75); // #FFBD56;
+$sitters_conf: rgba(235,141,0,.75); // #EB8D00;
+
+// borders
+$devon_border: 1px solid $border-color;
+
+// form els
+// select
+$select-height: 26px;

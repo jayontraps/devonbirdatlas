@@ -1,0 +1,32 @@
+.devon-btn {
+    display: inline-block;
+    padding: .5rem;
+    line-height: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    border: $devon_border;
+    &:hover {
+        cursor: pointer;
+        text-decoration: none;
+        background-color: darken(white, 10%);
+        transition: all 0.2s ease;
+    }
+
+    &.active {
+        background-color: $btn-active;
+        color: white;
+        border-color: black;
+        transition: all 0.2s ease;
+        &:hover {
+            background-color: $btn_bgc_hover;
+            border-color: $btn_bgc_hover;
+        }
+    }
+}
+
+#js-compare-toggle {
+    // position: absolute;
+    // bottom: 0;
+    // right: 0;
+    float: right;
+}

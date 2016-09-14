@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-size: $base_font_size;
+}
+
+.header, .footer {
+    height: 80px;
+    background-color: #fafafa;
+}
+
+.footer {
+    margin-top: $default_spacing;
+}
+
+.inner-wrap {
+    width: 100%;
+    max-width: $max_width;
+    margin: 0 auto;
+    position: relative;
+}
+
+@media screen and (max-width: $max_width ) {
+    .inner-wrap {
+        padding: .5em;
+    }
+}
