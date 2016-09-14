@@ -1,6 +1,6 @@
 function MapModule(domContext) {
     this.configs = {
-        folder: '',
+        folder: '/devon_atlas',
         themeUrl: '/wp-content/themes/devonatlas',
         mapAjaxUrl: '/wp-content/themes/devonatlas/ajax/'
     };
