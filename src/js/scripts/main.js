@@ -1,6 +1,5 @@
 /* requires:
 modernizr-custom.js
-jquery-3.1.0.min.js
 classList.min.js
 chosen.jquery.min.js
 speciesList.js

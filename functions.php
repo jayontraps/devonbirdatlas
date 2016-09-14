@@ -16,6 +16,17 @@ if ( ! function_exists( 'devonatlas_setup' ) ) :
  * as indicating support for post thumbnails.
  */
 function devonatlas_setup() {
+
+	function my_init() {
+		if (!is_admin()) {
+			// comment out the next two lines to load the local copy of jQuery
+			wp_deregister_script('jquery');
+			wp_register_script('jquery',  get_template_directory_uri() . '/js/jquery-3.1.0.min.js', false, '1.3.2');
+			wp_enqueue_script('jquery');
+		}
+	}
+	add_action('init', 'my_init');
+
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
