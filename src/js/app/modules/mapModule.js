@@ -1,6 +1,6 @@
 function MapModule(domContext) {
     this.configs = {
-        subdomain: '/devon_atlas',
+        folder: '',
         themeUrl: '/wp-content/themes/devonatlas',
         mapAjaxUrl: '/wp-content/themes/devonatlas/ajax/'
     };
@@ -75,7 +75,7 @@ MapModule.prototype.getTetradData = function() {
     };
 
     $.ajax({
-        url: this.configs.subdomain + this.configs.mapAjaxUrl + 'tetradData.php',
+        url: this.configs.folder + this.configs.mapAjaxUrl + 'tetradData.php',
         type: 'POST',
         dataType: 'json',
         data: postData,
