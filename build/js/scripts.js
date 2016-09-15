@@ -265,7 +265,7 @@ MapModule.prototype.getData = function() {
             }, 800);
         })
         .done(function(){
-            // obj.logModule();
+            obj.logModule();
         })
         .fail(function() {
             console.log("getData - error");
@@ -539,6 +539,25 @@ MapModule.prototype.updateKeys = function() {
 MapModule.prototype.toggleDataLayer = function($el) {
     $el.is(":checked") ? $('#' + this.context).removeClass('data-off') : $('#' + this.context).addClass('data-off');
 };
+
+MapModule.prototype.setOverviewMapState = function(state) {
+    var parentEl = document.getElementById(this.context);
+
+    if (state === 'idle') {
+        parentEl.querySelector('.map-state-wrap').classList.remove('off');
+        $('#' + this.context).addClass('data-off');
+    }
+    if (state === 'active') {
+        $('#' + this.context).removeClass('data-off');
+        this.startSpinner(['map']);
+        parentEl.querySelector('.map-state-wrap').classList.add('off');
+        this.getData();
+    }
+};
+
+
+
+
 
 /* requires:
 modernizr-custom.js

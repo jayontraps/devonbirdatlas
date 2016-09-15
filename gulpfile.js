@@ -10,7 +10,8 @@ var gulp = require('gulp'),
     deporder = require('gulp-deporder'),
     source = require('vinyl-source-stream'),
     sourcemaps = require('gulp-sourcemaps'),
-    browserSync = require('browser-sync');
+    browserSync = require('browser-sync'),
+    minifyCss = require('gulp-minify-css');
 
 
 var sass = require('gulp-sass'),
@@ -38,7 +39,8 @@ var dest = 'build/';
 
 gulp.task('sass', function() {
     return gulp.src(src + "scss/main.scss")
-        .pipe(sourcemaps.init())
+        // .pipe(sourcemaps.init())
+        .pipe(gulpif(devBuild, sourcemaps.init()))
         .pipe(sass({outputStyle: 'nested'}))
         .on('error', errorAlert)
         .pipe(postcss([
@@ -47,10 +49,27 @@ gulp.task('sass', function() {
                 browsers: ['last 2 versions']
             })
         ]))
-        .pipe(sourcemaps.write())
+        // .pipe(sourcemaps.write())
+        .pipe(gulpif(devBuild, sourcemaps.write()))
+        .pipe(gulpif(!devBuild, minifyCss()))
         .pipe(gulp.dest(dest + "css"))
         .pipe(browserSync.stream());
 });
+
+// gulp.task('sass', function() {
+//     return gulp.src(src + "sass/main.scss")
+//         .pipe(gulpif(devBuild, sourcemaps.init()))
+//         .pipe(sass({outputStyle: 'nested'}))
+//         .pipe(postcss([
+//               autoprefixer({
+//                 browsers: ['last 2 versions']
+//             })
+//         ]))
+//         .pipe(gulpif(devBuild, sourcemaps.write()))
+//         .pipe(gulpif(!devBuild, minifyCss()))
+//         .pipe(gulp.dest(build + "css"))
+//         .pipe(browserSync.stream());
+// });
 
 
 gulp.task('minify-css', function() {

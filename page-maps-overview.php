@@ -49,6 +49,7 @@ get_header('maps'); ?>
                         <div class="map-border">
                             <div class="map-container clearfix">
                                 <?php include('inc/maps/spinner.php'); ?>
+                                <?php include('inc/maps/map-error.php'); ?>
                                 <?php include('inc/maps/overlays-overview.php'); ?>
                                 <?php include('inc/maps/map-grid-1.php'); ?>
                             </div>
@@ -65,6 +66,8 @@ get_header('maps'); ?>
                             <div class="map-border">
                                 <div class="map-container clearfix">
                                     <?php include('inc/maps/spinner.php'); ?>
+                                    <?php include('inc/maps/map-error.php'); ?>
+                                    <?php include('inc/maps/overview-idle-map-state.php'); ?>
                                     <?php include('inc/maps/overlays-overview.php'); ?>
                                     <?php include('inc/maps/map-grid-2.php'); ?>
                                 </div>
@@ -80,6 +83,8 @@ get_header('maps'); ?>
                             <div class="map-border">
                                 <div class="map-container clearfix">
                                     <?php include('inc/maps/spinner.php'); ?>
+                                    <?php include('inc/maps/map-error.php'); ?>
+                                    <?php include('inc/maps/overview-idle-map-state.php'); ?>
                                     <?php include('inc/maps/overlays-overview.php'); ?>
                                     <?php include('inc/maps/map-grid-3.php'); ?>
                                 </div>

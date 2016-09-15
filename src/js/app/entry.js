@@ -144,14 +144,21 @@ $(document).ready(function() {
             maps.m2_.setSpecies(this.value);
             maps.m2_.request = 'overview';
             maps.m2_.setDataset('dbdensity');
-            maps.m2_.startSpinner(['map']);
-            maps.m2_.getData();
+            maps.m2_.setOverviewMapState('idle');
+            // maps.m2_.startSpinner(['map']);
+            // maps.m2_.getData();
 
             maps.m3_.setSpecies(this.value);
             maps.m3_.request = 'overview';
             maps.m3_.setDataset('dwdensity');
-            maps.m3_.startSpinner(['map']);
-            maps.m3_.getData();
+            maps.m3_.setOverviewMapState('idle');
+            // maps.m3_.startSpinner(['map']);
+            // maps.m3_.getData();
+        });
+
+        $('.container').on('click', '.idle-btn', function(event) {
+            var currentMap = event.delegateTarget.id;
+            maps[currentMap].setOverviewMapState('active');
         });
     }
 

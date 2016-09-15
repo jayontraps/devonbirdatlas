@@ -1,0 +1,22 @@
+.map-state-wrap {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.off {
+        display: none;
+    }
+}
+
+.idle-btn    {
+    width: 200px;
+    display: inline-block;
+    border: $devon_border;
+}

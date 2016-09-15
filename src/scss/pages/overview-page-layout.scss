@@ -96,12 +96,35 @@
 
 @media screen and (max-width: 1025px) {
 
-    // .map-container {
-    //     width: $tablet-map-width;
-    //     height: $tablet-map-width;
-    //     position: relative;
-    // }
 
+
+    .ov-map-lg {
+        width: $tablet-map-width;
+        margin: 0;
+    }
+
+
+    .ov-map-sm-wrap {
+        width: 500px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        .ov-map-sm {
+            margin-left: $default_spacing*2;
+        }
+    }
+
+    .ov {
+        #m1_ {
+            width: $tablet-map-width;
+            .map-container {
+                width: $tablet-map-width;
+                height: $tablet-map-width;
+                position: relative;
+            }
+        }
+
+    }
 }
 
 @media screen and (max-width: 768px) {
