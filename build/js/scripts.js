@@ -7,12 +7,546 @@ var latinNames = [{"Alpine Swift":"Apus melba"},{"American Wigeon":"Anas america
  * https://modernizr.com/download/?-touchevents-setclasses !*/
 !function(e,n,t){function o(e,n){return typeof e===n}function s(){var e,n,t,s,a,i,r;for(var l in c)if(c.hasOwnProperty(l)){if(e=[],n=c[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(s=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],r=i.split("."),1===r.length?Modernizr[r[0]]=s:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=s),f.push((s?"":"no-")+r.join("-"))}}function a(e){var n=u.className,t=Modernizr._config.classPrefix||"";if(p&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(o,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),p?u.className.baseVal=n:u.className=n)}function i(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):p?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function r(){var e=n.body;return e||(e=i(p?"svg":"body"),e.fake=!0),e}function l(e,t,o,s){var a,l,f,c,d="modernizr",p=i("div"),h=r();if(parseInt(o,10))for(;o--;)f=i("div"),f.id=s?s[o]:d+(o+1),p.appendChild(f);return a=i("style"),a.type="text/css",a.id="s"+d,(h.fake?h:p).appendChild(a),h.appendChild(p),a.styleSheet?a.styleSheet.cssText=e:a.appendChild(n.createTextNode(e)),p.id=d,h.fake&&(h.style.background="",h.style.overflow="hidden",c=u.style.overflow,u.style.overflow="hidden",u.appendChild(h)),l=t(p,e),h.fake?(h.parentNode.removeChild(h),u.style.overflow=c,u.offsetHeight):p.parentNode.removeChild(p),!!l}var f=[],c=[],d={_version:"3.3.1",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){c.push({name:e,fn:n,options:t})},addAsyncTest:function(e){c.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=d,Modernizr=new Modernizr;var u=n.documentElement,p="svg"===u.nodeName.toLowerCase(),h=d._config.usePrefixes?" -webkit- -moz- -o- -ms- ".split(" "):["",""];d._prefixes=h;var m=d.testStyles=l;Modernizr.addTest("touchevents",function(){var t;if("ontouchstart"in e||e.DocumentTouch&&n instanceof DocumentTouch)t=!0;else{var o=["@media (",h.join("touch-enabled),("),"heartz",")","{#modernizr{top:9px;position:absolute}}"].join("");m(o,function(e){t=9===e.offsetTop})}return t}),s(),a(f),delete d.addTest,delete d.addAsyncTest;for(var v=0;v<Modernizr._q.length;v++)Modernizr._q[v]();e.Modernizr=Modernizr}(window,document);
 var speciesList = ["Alpine Swift","American Golden Plover","American Herring Gull","American Robin","American Wigeon","Aquatic Warbler","Arctic Skua","Arctic Tern","Avocet","Balearic Shearwater","Bar-headed Goose","Bar-tailed Godwit","Barn Owl","Barnacle Goose","Barred Warbler","Bearded Tit","Bee-eater","Bewick's Swan","Bittern","Black Grouse","Black Guillemot","Black Kite","Black Redstart","Black Stork","Black Swan","Black Tern","Black-headed Gull","Black-necked Grebe","Black-tailed Godwit","Black-throated Diver","Black-throated Thrush","Black-winged Red Bishop","Black-winged Stilt","Blackbird","Blackcap","Blue Tit","Blue-cheeked Bee-eater","Bluethroat","Blythe's Reed Warbler","Bonaparte's Gull","Booted Warbler","Brambling","Brent Goose","Brent Goose (Black Brant)","Budgerigar","Buff-breasted Sandpiper","Bullfinch","Buzzard","Californian Quail","Canada Goose","Carrion Crow","Carrion-Hooded Crow (unspecified)","Caspian Gull","Cattle Egret","Cetti's Warbler","Chaffinch","Chiffchaff","Chiloe Wigeon","Chough","Cirl Bunting","Coal Tit","Cockatiel","Collared Dove","Common Crossbill","Common Gull","Common Redpoll","Common Rosefinch","Common Sandpiper","Common Scoter","Common Tern","Common/Arctic Tern","Common/Lesser Redpoll","Coot","Cormorant","Cormorant (Continental)","Corn Bunting","Corncrake","Cory's Shearwater","Crane","Crested Duck","Cuckoo","Curlew","Curlew Sandpiper","Dark-bellied Brent Goose","Dartford Warbler","Desert Wheatear","Dipper","Domestic Canary","Domestic Mallard","Dotterel","Dunlin","Dunnock","Dusky Warbler","Egyptian Goose","Eider","Eider (Northern - borealis)","Eurasian Eagle-owl","European White-fronted Goose","Falcated Duck","Fea's Petrel","Feral Pigeon","Fieldfare","Firecrest","Fulmar","Gadwall","Gannet","Garden Warbler","Garganey","Glaucous Gull","Glossy Ibis","Goldcrest","Golden Oriole","Golden Pheasant","Golden Plover","Goldeneye","Goldfinch","Goosander","Goshawk","Grasshopper Warbler","Great Black-backed Gull","Great Bustard","Great Crested Grebe","Great Grey Shrike","Great Northern Diver","Great Reed Warbler","Great Shearwater","Great Skua","Great Spotted Woodpecker","Great Tit","Great White Egret","Greater Blue-eared Starling","Green Sandpiper","Green Woodpecker","Green-winged Teal","Greenfinch","Greenland White-fronted Goose","Greenshank","Grey Heron","Grey Partridge","Grey Phalarope","Grey Plover","Grey Wagtail","Greylag Goose","Greylag Goose (Domestic)","Greylag Goose (naturalised)","Guillemot","Gull-billed Tern","Gyr Falcon","Harris's Hawk","Hawfinch","Helmeted Guineafowl","Hen Harrier","Herring Gull","Hobby","Honey-buzzard","Hooded Crow","Hoopoe","House Finch","House Martin","House Sparrow","Hybrid Duck","Hybrid Goose","Iceland Gull","Iceland Gull (Kumlien's)","Icterine Warbler","Indian Peafowl","Jack Snipe","Jackdaw","Jay","Kentish Plover","Kestrel","King Eider","Kingfisher","Kittiwake","Knot","Lady Amherst's Pheasant","Lanner Falcon","Lapland Bunting","Lapwing","Laughing Gull","Leach's Petrel","Lesser Black-backed Gull","Lesser Redpoll","Lesser Spotted Woodpecker","Lesser Whitethroat","Lesser Yellowlegs","Light-bellied Brent Goose","Linnet","Little Auk","Little Bunting","Little Crake","Little Egret","Little Grebe","Little Gull","Little Owl","Little Ringed Plover","Little Stint","Little Tern","Long-billed Dowitcher","Long-eared Owl","Long-tailed Duck","Long-tailed Skua","Long-tailed Tit","Macaronesian Shearwater","Magpie","Mallard","Mandarin","Manx Shearwater","Marsh Harrier","Marsh Sandpiper","Marsh Tit","Marsh Warbler","Meadow Pipit","Mediterranean Gull","Melodious Warbler","Merlin","Mistle Thrush","Montagu's Harrier","Moorhen","Muscovy Duck","Mute Swan","Night-heron","Nightingale","Nightjar","Nuthatch","Olive-backed Pipit","Ortolan Bunting","Osprey","Oystercatcher","Paddyfield Warbler","Pallas's Warbler","Peach-faced Lovebird","Pectoral Sandpiper","Penduline Tit","Peregrine","Pheasant","Pied Flycatcher","Pied Wagtail","Pied Wheatear","Pied/White Wagtail","Pink-footed Goose","Pintail","Pochard","Pomarine Skua","Puffin","Purple Heron","Purple Sandpiper","Quail","Radde's Warbler","Raven","Razorbill","Red Grouse","Red Kite","Red-backed Shrike","Red-breasted Flycatcher","Red-breasted Goose","Red-breasted Merganser","Red-crested Pochard","Red-eyed Vireo","Red-flanked Bluetail","Red-footed Falcon","Red-legged Partridge","Red-necked Grebe","Red-necked Phalarope","Red-rumped Swallow","Red-throated Diver","Red-throated Pipit","Redshank","Redstart","Redwing","Reed Bunting","Reed Warbler","Reeve's Pheasant","Richard's Pipit","Ring Ouzel","Ring-billed Gull","Ring-necked Duck","Ring-necked Parakeet","Ringed Plover","Ringed Teal","Robin","Rock Dove","Rock Pipit","Rock Pipit (Scandinavian - littoralis)","Rook","Rose-coloured Starling","Roseate Tern","Rough-legged Buzzard","Ruddy Duck","Ruddy Shelduck","Ruff","Sabine's Gull","Sacred Ibis","Saker Falcon","Sand Martin","Sanderling","Sandwich Tern","Sardinian Warbler","Savi's Warbler","Scaup","Sedge Warbler","Semipalmated Sandpiper","Serin","Shag","Shelduck","Short-eared Owl","Short-toed Eagle","Short-toed Lark","Shoveler","Siberian Stonechat","Siskin","Skylark","Slavonian Grebe","Smew","Snipe","Snow Bunting","Snow Goose","Solitary Sandpiper","Song Thrush","Sooty Shearwater","Sparrowhawk","Spoonbill","Spotted Crake","Spotted Flycatcher","Spotted Redshank","Spotted Sandpiper","Starling","Stock Dove","Stone Curlew","Stonechat","Storm Petrel","Subalpine Warbler","Surf Scoter","Swallow","Swan Goose (Chinese Goose)","Swift","Tawny Owl","Tawny Pipit","Teal","Temmink's Stint","Tree Pipit","Tree Sparrow","Treecreeper","Trumpeter Finch","Tufted Duck","Turnstone","Turtle Dove","Twite","Velvet Scoter","Water Pipit","Water Rail","Waxwing","Western Bonelli's Warbler","Wheatear","Wheatear (Greenland)","Whimbrel","Whinchat","Whiskered Tern","White Stork","White Wagtail","White-fronted Goose","White-rumped Sandpiper","White-winged Black Tern","Whitethroat","Whooper Swan","Wigeon","Willow Tit","Willow Warbler","Wilson's Phalarope","Wood Duck","Wood Sandpiper","Wood Warbler","Woodchat Shrike","Woodcock","Woodlark","Woodpigeon","Wren","Wryneck","Yellow Wagtail","Yellow Wagtail (Blue-headed)","Yellow Wagtail (flavissima)","Yellow-browed Warbler","Yellow-legged Gull","Yellow-rumped Warbler","Yellowhammer","Zebra Finch","hybrid Aythya","unidentified auk","unidentified diver","unidentified goose","unidentified grebe","unidentified shearwater","unidentified skua","unknown Stonechat sp"];
+var tenkSpecies = ['Red Kite', 'Marsh Harrier', 'Little Ringed Plover', 'Dunlin', 'Common Sandpiper', 'Hobby', 'Peregrine', 'Woodlark', 'Lesser Spotted Woodpecker'];
+
+
+
+
+
+
+
+
 /* requires:
 modernizr-custom.js
 classList.min.js
 chosen.jquery.min.js
 speciesList.js
 latinNames.js
+tenkSpecies.js
+*/
+
+
+
+function MapModule(domContext) {
+    this.context = domContext;
+    this.tetrad = {
+        active: false,
+        currentList: ''
+    };
+}
+
+MapModule.prototype.setDataset = function(dataset) {
+    this.dataset = dataset;
+    document.getElementById(this.context).setAttribute('data-set', dataset);
+};
+
+MapModule.prototype.setSpecies = function(species) {
+    this.species = species;
+};
+
+MapModule.prototype.setFetchingData = function(status) {
+    this.fetchingData = status;
+};
+
+MapModule.prototype.setTetradStatus = function(tetradId, id) {
+    this.tetrad = {
+        active : tetradId,
+        domId : id
+    };
+
+    document.getElementById(this.context).classList.add('tetrad-active');
+};
+
+MapModule.prototype.logModule = function() {
+    console.log(this);
+};
+
+MapModule.prototype.setGoogleMapLink = function() {
+
+    var gMapWrap = $('#' + this.context).find('.gmap-link');
+    gMapWrap.empty();
+
+    if (this.tetrad.active) {
+        var url = window.location.href;
+        var gMapLink = $('<a/>', {
+            'href': url + 'gmap/?tetrad=' + this.tetrad.active + '',
+            'target': '_blank',
+            'class': 'gmap',
+            'html': 'Generate Google Map'
+        });
+
+        gMapLink.appendTo(gMapWrap);
+    }
+};
+
+/* GETTING DATA */
+
+MapModule.prototype.getTetradData = function() {
+
+    if (!this.tetrad.active) { return false; }
+
+    this.startSpinner(['tetrad-meta']);
+
+    this.tetrad.currentList = "";
+
+    var obj = this;
+
+    this.startUpdatingEls();
+
+    var postData = {
+        "tetradId" : this.tetrad.active,
+        "data-set" : this.dataset
+    };
+
+    $.ajax({
+        url: config.folder + config.themeUrl + '/ajax/tetradData.php',
+        type: 'POST',
+        dataType: 'json',
+        data: postData,
+        timeout: 12000
+    })
+    .done(function(data){
+        obj.tetrad.counts = obj.getSums(data);
+
+        var tetradList = document.createElement('ol');
+        tetradList.classList.add('tetrad-list');
+
+        // lookup the index, retreive the Code value and template the list item
+        var theCode, el, spanEl;
+        for (var i = 0; i < data.length; i++) {
+            theCode = data[i].Code;
+            el = document.createElement('li');
+            el.innerHTML = data[i].Species.trim();
+            spanEl = document.createElement('span');
+            spanEl.classList.add('code-' + theCode);
+            el.appendChild(spanEl);
+            tetradList.appendChild(el);
+        }
+
+        obj.tetrad.currentList = tetradList;
+
+        //  A procedure for soting the list alphabetically
+        // // get the list of names
+        // var orginalList = [];
+
+        // for (var i = 0; i < data.length; i++) {
+        //     orginalList.push(data[i]['Species']);
+        // }
+        // // sort the list to new arr
+        // var sortList = [];
+        // for (var i = 0; i < data.length; i++) {
+        //     sortList.push(data[i]['Species']);
+        // }
+        // sortList.sort();
+
+        // var tetradList = document.createElement('ol');
+        // tetradList.classList.add('tetrad-list');
+
+        // // lookup the index, retreive the Code value and template the list item
+        // var theCode, el, spanEl;
+        // for (var i = 0; i < sortList.length; i++) {
+        //     theCode = data[orginalList.indexOf(sortList[i])]['Code'];
+        //     el = document.createElement('li');
+        //     el.innerHTML = sortList[i].trim();
+        //     spanEl = document.createElement('span');
+        //     spanEl.classList.add('code-' + theCode);
+        //     el.appendChild(spanEl);
+        //     tetradList.appendChild(el);
+        // }
+
+        // obj.tetrad.currentList = tetradList;
+        // // truncate arrays
+        // orginalList.length = 0;
+        // sortList.length = 0;
+
+    })
+    .done(function(data) {
+        window.setTimeout(function(){
+            obj.stopSpinner.call(obj, ['tetrad-meta']);
+            // obj.updateStateEls.stop.call(obj, obj.context);
+            obj.stopUpdatingEls();
+            obj.setFetchingData(false);
+        }, 800);
+    })
+    .fail(function() {
+        console.log("getTetradData - error");
+        window.setTimeout(function(){
+            obj.stopSpinner.call(obj, ['tetrad-meta']);
+            obj.setMapErrorMsg(true, 'tetrad-request');
+        }, 800);
+    })
+    .always(function() {
+        // console.log("getTetradData - complete");
+    });
+
+};
+
+MapModule.prototype.filterForTenkSpecies = function() {
+
+    if (tenkSpecies.length && tenkSpecies.indexOf(this.species) >= 0) {
+        if (this.dataset === 'dbreed') {
+            this.tenkSpecies = true;
+            this.setDataset('dbreed10');
+            console.log('filterForTenkSpecies: ', this.dataset);
+        }
+
+        return false;
+    }
+
+    
+    this.tenkSpecies = false;
+    if ( typeof mapPage !== 'undefined' && mapPage ) {
+        var currentDataSet = document.getElementById(this.context).querySelector('.select-data-set');
+        this.setDataset(currentDataSet.value);
+    }
+
+};
+
+
+MapModule.prototype.getData = function() {
+
+    this.filterForTenkSpecies();
+
+    var obj = this;
+
+    var formData = {
+        "species" : this.species,
+        "data-set" : this.dataset
+    };
+
+    this.startUpdatingEls();
+
+    $.ajax({
+            url: config.folder + config.themeUrl + '/ajax/speciesData.php',
+            type: 'POST',
+            dataType: 'json',
+            data:  formData,
+            timeout: 12000
+        })
+        .done(function(data) {
+            // remove previous results using currentTetradArr
+            var prevResults = JSON.parse(sessionStorage.getItem(obj.context + "currentTetradArr"));
+
+            if (Array.isArray(prevResults) && prevResults.length)  {
+                for (var i = 0; i < prevResults.length; i++) {
+                    document.getElementById(obj.context + prevResults[i]).className = '';
+                }
+            }
+            tetArr = [];
+            for (var i = 0; i < data.length; i++) {
+                tetArr.push(data[i]['Tetrad']);
+                sessionStorage.setItem(obj.context + "currentTetradArr", JSON.stringify(tetArr));
+            }
+
+            // store an indicator of results belonging to 10K or 2K species
+            // var speciesStatus = obj.tenkSpecies ? '10K' : '2K';
+            // sessionStorage.setItem('status', speciesStatus);
+
+            // add classes to matching tetrads
+            for (var i = 0; i < tetArr.length; i++) {
+                    document.getElementById(obj.context + tetArr[i]).classList.add('pres', 'code-' + data[i]['Code']);
+            }
+
+        })
+        .done(function(data) {
+            // refresh active tetrad
+            if (obj.tetrad.active) {
+                $('#' + obj.tetrad.domId).addClass('selected');
+            }
+
+            obj.counts = obj.getSums(data);
+        })
+        .done(function() {
+            window.setTimeout(function(){
+                obj.stopSpinner.call(obj, ['map','tetrad-meta']);
+                // obj.updateStateEls.stop.call(obj, obj.context);
+                obj.stopUpdatingEls();
+                obj.setFetchingData(false);
+            }, 800);
+        })
+        .done(function(){
+            // obj.logModule();
+        })
+        .fail(function() {
+            console.log("getData - error");
+            window.setTimeout(function(){
+                obj.stopSpinner.call(obj, ['map','tetrad-meta']);
+                obj.setMapErrorMsg(true, 'data-request');
+            }, 800);
+        })
+        .always(function() {
+        });
+
+};
+
+MapModule.prototype.getSums = function(data) {
+    var sumConfirmed = 0,
+        sumProbable = 0,
+        sumPossible = 0,
+        sumPresent = 0;
+    if (this.dataset === 'dbreed' || this.dataset === 'sitters') {
+        for (var i = 0; i < data.length; i++) {
+            if (data[i]['Code'] === 'A') {sumConfirmed++;}
+            if (data[i]['Code'] === 'B') {sumProbable++;}
+            if (data[i]['Code'] === 'K') {sumPossible++;}
+            if (data[i]['Code'] === 'N') {sumPresent++;}
+        }
+    }
+
+    return {
+        total: data.length + 1,
+        sumPresent: sumPresent,
+        sumPossible: sumPossible,
+        sumProbable: sumProbable,
+        sumConfirmed: sumConfirmed
+    };
+};
+
+MapModule.prototype.getLatinName = function() {
+
+    if (typeof latinNames !== 'undefined' && latinNames.length) {
+
+        for (var i = 0; i < latinNames.length; i++) {
+
+            for(var key in latinNames[i]) {
+
+                if( latinNames[i].hasOwnProperty(key)) {
+                    if (key == this.species) {
+                        return latinNames[i][key];
+                    }
+                }
+            }
+        }
+    }
+    return false;
+};
+
+
+
+/* DOM */
+
+MapModule.prototype.setMapErrorMsg = function(status, context) {
+
+    var $container;
+
+    context === "tetrad-request" ? $container = $('.tetrad-meta') : $container = $('.map-container');
+
+    var $errorMsg = $('#' + this.context).find($container).find('.error-wrap');
+    if (status) {
+        $errorMsg.css('display', 'flex');
+        return false;
+    }
+    $errorMsg.css('display', 'none');
+};
+
+MapModule.prototype.startSpinner = function(els) {
+    if (Array.isArray(els) && els.length) {
+        for (var i = 0; i < els.length; i++) {
+            if (els[i] === 'map') {
+                $('#' + this.context).find('.map-container').addClass('loading-data');
+            }
+            if (els[i] === 'tetrad-meta') {
+                $('#' + this.context).find('.tetrad-meta ').addClass('loading-data');
+            }
+        }
+    }
+};
+
+MapModule.prototype.stopSpinner = function(els) {
+    if (Array.isArray(els) && els.length) {
+        for (var i = 0; i < els.length; i++) {
+            if (els[i] === 'map') {
+                $('#' + this.context).find('.map-container').removeClass('loading-data');
+            }
+            if (els[i] === 'tetrad-meta') {
+                $('#' + this.context).find('.tetrad-meta ').removeClass('loading-data');
+            }
+        }
+    }
+};
+
+MapModule.prototype.startUpdatingEls = function() {
+    console.log('context: ', this.context);
+    var parentEl = document.getElementById(this.context);
+
+    if (this.request === 'species') {
+        var speciesTitle = parentEl.querySelector('.species-titles');
+        speciesTitle.classList.add('update');
+        var counts = parentEl.querySelector('.counts');
+        counts.classList.add('update');
+        return false;
+    }
+    if (this.request === 'dataset') {
+        // var dataSetTitles = parentEl.querySelector('.dataset-titles');
+        // dataSetTitles.classList.add('update');
+        // scrapped as no layering datasets currently
+
+        var keyGroup = parentEl.querySelector('.key-group');
+        keyGroup.classList.add('update');
+
+        if (this.tetrad.active) {
+            var tetradMeta = parentEl.querySelector('.tetrad-meta');
+            tetradMeta.classList.add('update');
+        }
+        return false;
+    }
+    if (this.request === 'tetrad') {
+        var tetradMeta = parentEl.querySelector('.tetrad-meta');
+        tetradMeta.classList.add('update');
+        return false;
+    }
+}
+
+MapModule.prototype.stopUpdatingEls = function() {
+
+    if (this.request === 'species') {
+        this.updateHeadings();
+        this.updateSums();
+        this.updateTetradsPresent(this.counts.total);
+        $('#' + this.context).find('.state').removeClass('update');
+        return false;
+    }
+    if (this.request === 'dataset') {
+        this.updateDatasetHeadings();
+        this.updateKeys();
+        this.updateSums();
+        this.updateTetradsPresent(this.counts.total);
+        if (this.tetrad.active) {
+            this.updateTeradBox();
+            this.setGoogleMapLink();
+        }
+        $('#' + this.context).find('.state').removeClass('update');
+        return false;
+    }
+    if (this.request === 'tetrad') {
+        this.updateTeradBox();
+        this.setGoogleMapLink();
+        $('#' + this.context).find('.state').removeClass('update');
+        return false;
+    }
+    if (this.request === 'overview') {
+        if (this.dataset === 'dbreed') {
+            this.updateSums();
+        }
+        if (this.dataset === 'dbdensity' || this.dataset === 'dwdensity') {
+            this.updateTetradsPresent(this.counts.total);
+        }
+        document.getElementById('species-name').innerHTML = this.species;
+        $('#' + this.context).find('.state').removeClass('update');
+        return false;
+    }
+}
+
+
+MapModule.prototype.updateTeradBox = function () {
+
+    var theList = $('#' + this.context).find('.tetrad-list-wrapper'),
+        $parentEl = $('#' + this.context);
+
+    $parentEl.find('.tetrad-title').html(this.tetrad.active);
+
+    if (this.dataset === 'dbreed' || this.dataset === 'sitters') {
+        $parentEl.find('.tet-pres').html(this.tetrad.counts.sumPresent);
+        $parentEl.find('.tet-poss').html(this.tetrad.counts.sumPossible);
+        $parentEl.find('.tet-prob').html(this.tetrad.counts.sumProbable);
+        $parentEl.find('.tet-conf').html(this.tetrad.counts.sumConfirmed);
+        $parentEl.find('.tet-sums').show();
+    } else {
+        $parentEl.find('.tet-sums').hide();
+    }
+    $(theList).empty();
+
+    $(this.tetrad.currentList).appendTo(theList);
+};
+
+MapModule.prototype.updateSums = function() {
+    var sums = this.counts;
+    var parentEl = document.getElementById(this.context);
+    parentEl.querySelector('.pres-target').innerHTML = sums.sumPresent;
+    parentEl.querySelector('.conf-target').innerHTML = sums.sumConfirmed;
+    parentEl.querySelector('.prob-target').innerHTML = sums.sumProbable;
+    parentEl.querySelector('.poss-target').innerHTML = sums.sumPossible;
+};
+
+MapModule.prototype.updateSpeciesSelect = function() {
+    var chosenList = $('#' + this.context).find('.select-species');
+    chosenList.val(this.species);
+    chosenList.trigger("chosen:updated");
+};
+
+MapModule.prototype.updateTetradsPresent = function(length) {
+    $('#' + this.context).find('.tet_pres').html(length);
+};
+
+MapModule.prototype.updateSelectedTetrad = function(tetradId) {
+    // reveal the info box if hidden
+    $('#' + this.context).find('.tetrad-meta-wrapper').removeClass('hide');
+    var $tetrad = $('#' + tetradId);
+    if (this.tetrad.active) {
+        var $prevTetrad = $('#' + this.tetrad.domId);
+        $prevTetrad.removeClass('selected');
+        $tetrad.addClass('selected');
+    } else {
+        $('#' + tetradId).addClass('selected');
+    }
+};
+
+MapModule.prototype.hideCurrentlySelectedTetradInfo = function(tetradId) {
+    var $tetrad = $('#' + tetradId);
+    $('#' + this.context).find('.tetrad-meta-wrapper').addClass('hide');
+    $tetrad.removeClass('selected');
+    $('#' + this.context).removeClass('tetrad-active');
+    this.tetrad.active = false;
+    this.setFetchingData(false);
+};
+
+
+
+MapModule.prototype.updateHeadings = function () {
+    $('#' + this.context).find('.species-title').html(this.species);
+    var latinName = this.getLatinName();
+    if (latinName) {
+        $('#' + this.context).find('.latin-name').html(latinName);
+    }
+};
+
+MapModule.prototype.updateDatasetHeadings = function() {
+    var obj = this;
+    var $els = $('#' + this.context).find('.d-set');
+    $els.removeClass('current');
+    $els.each(function(index, el) {
+        if (obj.dataset === $(el).attr('data-dset-title')) {
+            $(el).addClass('current');
+            return false;
+        }
+        if($(el).hasClass('d-set-breeding')) {
+            $(this).addClass('current');
+        }
+
+    });
+};
+
+MapModule.prototype.updateKeys = function() {
+    var keyEls = $('#' + this.context).find('.key-container');
+    $(keyEls).removeClass('active dwdensity dbdensity');
+    if (this.dataset === 'dwdensity' || this.dataset === 'dbdensity') {
+        $(keyEls[1]).addClass('active ' + this.dataset);
+        return false;
+    }
+    $(keyEls[0]).addClass('active');
+};
+
+MapModule.prototype.toggleDataLayer = function($el) {
+    $el.is(":checked") ? $('#' + this.context).removeClass('data-off') : $('#' + this.context).addClass('data-off');
+};
+
+/* requires:
+modernizr-custom.js
+classList.min.js
+chosen.jquery.min.js
+speciesList.js
+latinNames.js
+mapModule.js
 */
 
 /* https://github.com/mkleehammer/gulp-deporder */
@@ -66,11 +600,3 @@ latinNames.js
 	});
 
 })(jQuery);
-var tenkSpecies = ['Red Kite', 'Marsh Harrier', 'Little Ringed Plover', 'Dunlin', 'Common Sandpiper', 'Hobby', 'Peregrine', 'Woodlark', 'Lesser Spotted Woodpecker'];
-
-
-
-
-
-
-

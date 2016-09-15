@@ -1,3 +1,14 @@
+/* requires:
+modernizr-custom.js
+classList.min.js
+chosen.jquery.min.js
+speciesList.js
+latinNames.js
+tenkSpecies.js
+*/
+
+
+
 function MapModule(domContext) {
     this.context = domContext;
     this.tetrad = {
@@ -236,7 +247,7 @@ MapModule.prototype.getData = function() {
             }, 800);
         })
         .done(function(){
-            obj.logModule();
+            // obj.logModule();
         })
         .fail(function() {
             console.log("getData - error");
@@ -510,5 +521,3 @@ MapModule.prototype.updateKeys = function() {
 MapModule.prototype.toggleDataLayer = function($el) {
     $el.is(":checked") ? $('#' + this.context).removeClass('data-off') : $('#' + this.context).addClass('data-off');
 };
-
-module.exports = MapModule;

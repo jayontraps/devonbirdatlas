@@ -4,6 +4,7 @@ classList.min.js
 chosen.jquery.min.js
 speciesList.js
 latinNames.js
+mapModule.js
 */
 
 /* https://github.com/mkleehammer/gulp-deporder */
