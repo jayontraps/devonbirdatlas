@@ -1,0 +1,19 @@
+
+.nav-wrapper {
+    position: relative;
+    height: 80px;
+}
+
+.main-nav {
+    position: absolute;
+    bottom: 30px;
+    li {
+        margin-right: .5em;
+        a {
+            color: $body_color;
+            text-transform: uppercase;
+            font-size: .9em;
+        }
+
+    }
+}

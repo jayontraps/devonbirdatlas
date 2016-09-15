@@ -12,7 +12,7 @@
 <div id="page" class="site">
 
 	<header id="masthead" class="header" role="banner">
-		<div class="inner-wrap">
+		<div class="inner-wrap nav-wrapper">
             <ul class="main-nav nav">
                 <li><a href="<?php bloginfo('url'); ?>/species-overview">Species overview</a></li>
                 <li><a href="<?php bloginfo('url'); ?>/tetrad-maps">Tetrad maps</a></li>

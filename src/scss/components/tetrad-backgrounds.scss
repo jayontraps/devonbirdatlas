@@ -26,23 +26,29 @@
 }
 
 /* Hide data layers */
+
 .data-off {
-    // .parent {
+    .code-A,
+    .code-B,
+    .code-K, .code-N {
+        background-image: none;
+    }
+    .pres {
+        background-color: transparent;
+    }
+
+    .map-row > div  > div {
+        background-color:transparent;
+        border: none;
+        box-shadow: none;
+    }
+    &[data-set="dbreed10"] {
         .code-A,
         .code-B,
         .code-K, .code-N {
             background-image: none;
         }
-        .pres {
-            background-color: transparent;
-        }
-
-        .map-row > div  > div {
-            background-color:transparent;
-            border: none;
-            box-shadow: none;
-        }
-    // }
+    }
 }
 
 

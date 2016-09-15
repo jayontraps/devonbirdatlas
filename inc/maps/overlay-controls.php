@@ -30,7 +30,7 @@
     </li>
     <li class="checkbox">
         <input type="checkbox" name="morland" class="ov-toggle">
-        <label>Morland</label>
+        <label>Moorland</label>
     </li>
     <li class="checkbox">
         <input type="checkbox" name="urban" class="ov-toggle">
@@ -38,7 +38,7 @@
     </li>
     <li class="checkbox">
         <input type="checkbox" name="woodland" class="ov-toggle">
-        <label>Woodland</label>
+        <label>Broadleaf Wood</label>
     </li>
     <li class="checkbox">
         <input type="checkbox" name="arable" class="ov-toggle">
@@ -46,7 +46,7 @@
     </li>
     <li class="checkbox">
         <input type="checkbox" name="coniferous-woodland" class="ov-toggle">
-        <label>Coniferous</label>
+        <label>Coniferous Wood</label>
     </li>
 <!--     <li class="checkbox">
         <input type="checkbox" name="old" class="ov-toggle">
