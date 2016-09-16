@@ -17,15 +17,33 @@ if ( ! function_exists( 'devonatlas_setup' ) ) :
  */
 function devonatlas_setup() {
 
-	function my_init() {
-		if (!is_admin()) {
-			// comment out the next two lines to load the local copy of jQuery
-			wp_deregister_script('jquery');
-			wp_register_script('jquery',  get_template_directory_uri() . '/js/jquery-3.1.0.min.js', false, '1.3.2');
-			wp_enqueue_script('jquery');
+	// function my_init() {
+	// 	if (!is_admin()) {
+	// 		// comment out the next two lines to load the local copy of jQuery
+	// 		wp_deregister_script('jquery');
+	// 		wp_register_script('jquery',  get_template_directory_uri() . '/js/jquery-3.1.0.min.js', false, '1.3.2');
+	// 		wp_enqueue_script('jquery');
+	// 	}
+	// }
+	// add_action('init', 'my_init');
+
+
+	/**
+	* Add REST API support to an already registered post type.
+	*/
+	add_action( 'init', 'my_custom_post_type_rest_support', 25 );
+	function my_custom_post_type_rest_support() {
+		global $wp_post_types;
+
+		//be sure to set this to the name of your post type!
+		$post_type_name = 'species';
+		if( isset( $wp_post_types[ $post_type_name ] ) ) {
+			$wp_post_types[$post_type_name]->show_in_rest = true;
+			$wp_post_types[$post_type_name]->rest_base = $post_type_name;
+			$wp_post_types[$post_type_name]->rest_controller_class = 'WP_REST_Posts_Controller';
 		}
-	}
-	add_action('init', 'my_init');
+
+	}	
 
 	/*
 	 * Make theme available for translation.
@@ -113,6 +131,11 @@ add_action( 'widgets_init', 'devonatlas_widgets_init' );
  * Enqueue scripts and styles.
  */
 function devonatlas_scripts() {
+
+	wp_deregister_script('jquery');
+	wp_register_script('jquery',  get_template_directory_uri() . '/js/jquery-3.1.0.min.js', false, '1.3.2');
+	wp_enqueue_script('jquery');
+
 	 wp_enqueue_script( 'devonatlas-config', get_template_directory_uri() . '/js/config.js', array(), true );
 	// wp_enqueue_style( 'devonatlas-style', get_stylesheet_uri() );
 

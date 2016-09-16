@@ -175,7 +175,7 @@ MapModule.prototype.filterForTenkSpecies = function() {
         return false;
     }
 
-    
+
     this.tenkSpecies = false;
     if ( typeof mapPage !== 'undefined' && mapPage ) {
         var currentDataSet = document.getElementById(this.context).querySelector('.select-data-set');
@@ -348,7 +348,7 @@ MapModule.prototype.stopSpinner = function(els) {
 };
 
 MapModule.prototype.startUpdatingEls = function() {
-    console.log('context: ', this.context);
+
     var parentEl = document.getElementById(this.context);
 
     if (this.request === 'species') {
@@ -413,7 +413,7 @@ MapModule.prototype.stopUpdatingEls = function() {
         if (this.dataset === 'dbdensity' || this.dataset === 'dwdensity') {
             this.updateTetradsPresent(this.counts.total);
         }
-        document.getElementById('species-name').innerHTML = this.species;
+
         $('#' + this.context).find('.state').removeClass('update');
         return false;
     }
@@ -536,6 +536,56 @@ MapModule.prototype.setOverviewMapState = function(state) {
         this.getData();
     }
 };
+
+
+MapModule.prototype.getSpeciesAccount = function() {
+    var obj = this;
+
+    $.ajax({
+        url: config.folder + '/wp-json/wp/v2/species?filter[name]=' + this.species,
+        type: 'GET',
+        dataType: 'json'
+    })
+    .done(function(data) {
+        window.setTimeout(function(){
+            var latinName = obj.getLatinName();
+            obj.templateSpeciesAccount.call(obj, data, latinName);
+        }, 800);
+    })
+    .fail(function() {
+        console.log("error");
+    })
+    .always(function() {
+        console.log("complete");
+    });
+
+};
+
+
+MapModule.prototype.templateSpeciesAccount = function(data, latinName) {
+
+    if (latinName) {
+        $('.latin-name').html(latinName);
+    } else {
+        $('.latin-name').html('');
+    }
+    document.querySelector('.account-text').innerHTML = data[0].content.rendered;
+    document.getElementById('species-name').innerHTML = this.species;
+    $('.state').removeClass('update');
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

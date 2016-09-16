@@ -154,6 +154,8 @@ $(document).ready(function() {
             maps.m3_.setOverviewMapState('idle');
             // maps.m3_.startSpinner(['map']);
             // maps.m3_.getData();
+            $('.state').addClass('update');
+            maps.m1_.getSpeciesAccount();
         });
 
         $('.container').on('click', '.idle-btn', function(event) {

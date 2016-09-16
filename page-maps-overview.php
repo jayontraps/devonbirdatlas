@@ -27,8 +27,9 @@ get_header('maps'); ?>
         <div class="group inner-wrap">
 
             <div class="col-1-3">
-                <div class="species-account">
+                <div class="species-account state">
                     <h1 class="species-title" id="species-name">Species account</h1>
+                    <h3 class="latin-name"></h3>
                     <div class="account-text">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

@@ -23,6 +23,17 @@
 
 .species-account {
     padding: $default_spacing 0;
+    min-height: 100px;
+    .latin-name {
+        display: inline-block;
+        line-height: 1em;
+        margin: 0 0 0 .5em;
+    }
+    .species-title {
+        display: inline-block;
+        line-height: 1em;
+        margin-bottom: 10px;
+    }
 }
 
 .account-text {
