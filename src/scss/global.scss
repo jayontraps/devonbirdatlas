@@ -13,13 +13,9 @@ body {
     font-size: $base_font_size;
 }
 
-.header, .footer {
-    height: 80px;
-    background-color: #fafafa;
-    position: relative;
-}
 
 .footer {
+    min-height: 80px;
     margin-top: $default_spacing;
 }
 

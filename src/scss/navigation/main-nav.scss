@@ -1,12 +1,8 @@
 
-.nav-wrapper {
-    position: relative;
-    height: 80px;
-}
-
 .main-nav {
     position: absolute;
-    bottom: 30px;
+    bottom: 0;
+    right: 0;
     li {
         margin-right: .5em;
         a {

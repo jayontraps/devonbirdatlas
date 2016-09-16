@@ -12,7 +12,10 @@
 <div id="page" class="site">
 
 	<header id="masthead" class="header" role="banner">
-		<div class="inner-wrap nav-wrapper">
+		<div class="inner-wrap">
+            <div class="logo">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/build/img/DB_Logo_Blue-min.png">
+            </div>
             <ul class="main-nav nav">
                 <li><a href="<?php bloginfo('url'); ?>/species-overview">Species overview</a></li>
                 <li><a href="<?php bloginfo('url'); ?>/tetrad-maps">Tetrad maps</a></li>
