@@ -25,7 +25,7 @@
 .tetrad-maps {
     width: $max_width;
     margin: 0 auto;
-    padding-top: .5rem;
+    padding-top: $default_spacing;
     position: relative;
 
     &.double {
