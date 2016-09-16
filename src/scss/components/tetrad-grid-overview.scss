@@ -22,7 +22,7 @@
                 height: $lg-map-2k-width;
                 position: absolute;
                 &.selected {
-                    border: 3px solid black;
+                    border: 3px solid $body_color;
                 }
 
                 &:nth-child(2) {
@@ -175,7 +175,7 @@
             height: $sm-ov-map-2k-width;
             position: absolute;
             &.selected {
-                border: 3px solid black;
+                border: 3px solid $body_color;
             }
 
             &:nth-child(2) {
@@ -330,7 +330,7 @@
                     height: $tablet-map-2k-width;
                     position: absolute;
                     &.selected {
-                        border: 3px solid black;
+                        border: 3px solid $body_color;
                     }
 
                     &:nth-child(2) {

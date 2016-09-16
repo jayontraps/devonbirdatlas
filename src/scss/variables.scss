@@ -56,8 +56,9 @@ $sm-ov-map-2k-width: 4px;
 
 $border-color: #999;
 $body_bgc: transparent;
-$body_color: black;
+$body_color: #333333;
 $grey: rgba(0,0,0,.2);
+$blue: #05AFF0;
 
 // datasets
 $dbdensity : red;
@@ -65,7 +66,7 @@ $dwdensity : blue;
 $sitters: orange;
 
 // buttons
-$btn_bgc: black;
+$btn_bgc: $body_color;
 $btn_bgc_hover: rgba(0,0,0,.5);
 $btn-active: $border-color;
 

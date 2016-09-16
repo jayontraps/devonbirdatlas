@@ -11,6 +11,12 @@ img {
 
 body {
     font-size: $base_font_size;
+    color: $body_color;
+    font-family: sans-serif;
+}
+
+p {
+    line-height: 1.3em;
 }
 
 

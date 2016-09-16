@@ -20,6 +20,7 @@
 @import "components/tetrad-grid-overview";
 @import "components/overview-map-state";
 
+
 @import "components/tetrad-backgrounds";
 @import "components/map-controls";
 @import "components/map-keys";
@@ -32,9 +33,9 @@
 
 // plugins
 @import "vendor/chosen";
+@import "components/chosen-custom";
 
 // map page layout
-// @import "components/map-layout";
 @import "pages/map-page-layout";
 @import "pages/overview-page-layout";
 

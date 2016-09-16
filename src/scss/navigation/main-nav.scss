@@ -13,3 +13,11 @@
 
     }
 }
+
+.no-touchevents {
+    .main-nav {
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
