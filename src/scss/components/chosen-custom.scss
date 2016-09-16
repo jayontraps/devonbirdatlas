@@ -1,5 +1,15 @@
+.chosen-container {
+    .chosen-single {
+        border: $devon_border;
+    }
+}
+
 .chosen-container-active {
     .chosen-single {
         border: 1px solid $blue;
     }
+}
+
+.chosen-container-single .chosen-default { 
+    color: $body_color; 
 }
