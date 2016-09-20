@@ -10,7 +10,7 @@ get_header('maps'); ?>
 	</script>
 
 	<div id="tetrad-maps" class="tetrad-maps species-richness group">
-	    <div id="m1_" class="container" data-set="">
+	    <div id="m1_" class="container data-off" data-set="">
 	        <div class="map-full">
 	            <div class="column-map">
 	                <div class="map-border">
