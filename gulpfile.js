@@ -82,7 +82,11 @@ gulp.task('minify-css', function() {
 
 
 gulp.task('scripts', function() {
-    return gulp.src(src + 'js/scripts/*.js')
+    return gulp.src([
+        '!' + src + 'js/scripts/rigsConservationList.js',
+        '!' + src + 'js/scripts/metaList.js',
+        src + 'js/scripts/*.js',
+        ])
         .pipe(deporder())
         .pipe(concat('scripts.js'))
         .pipe(gulp.dest(dest + 'js/'));
