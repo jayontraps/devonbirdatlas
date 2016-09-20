@@ -30,6 +30,11 @@
 @import "components/map-tetrad-box";
 @import "components/error-msg";
 
+@import "components/richness-controls";
+@import "components/richness-tetrad-backgrounds";
+@import "components/richness-map-keys";
+@import "components/richness-tetrad-results";
+
 
 // plugins
 @import "vendor/chosen";
@@ -38,6 +43,7 @@
 // map page layout
 @import "pages/map-page-layout";
 @import "pages/overview-page-layout";
+@import "pages/richness-page";
 
 
 // navigation

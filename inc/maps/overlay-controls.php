@@ -1,4 +1,4 @@
-<ul class="overlay-controls">
+<ul class="controls">
     <li class="checkbox">
         <input type="checkbox" checked class="data-later-toggle">
         <label>Data Layer</label>
@@ -8,7 +8,7 @@
         <label>Sea</label>
     </li>
      <li class="checkbox">
-        <input type="checkbox" checked name="earth" class="ov-toggle">
+        <input type="checkbox" name="earth" class="ov-toggle">
         <label>County shade</label>
     </li>
 
@@ -48,8 +48,5 @@
         <input type="checkbox" name="coniferous-woodland" class="ov-toggle">
         <label>Coniferous Wood</label>
     </li>
-<!--     <li class="checkbox">
-        <input type="checkbox" name="old" class="ov-toggle">
-        <label>Old</label>
-    </li> -->
+
 </ul>

@@ -5,6 +5,42 @@ var overlay = require('./modules/overlay');
 $(document).ready(function() {
 
 
+// console.log('rigsConservationList :', rigsConservationList.length);
+// console.log('speciesList: ', speciesList.length);
+
+// var count = 0;
+// var presentInSpeciesList = [];
+// var justNames = [];
+// for (var i = 0; i < rigsConservationList.length; i++) {
+//     if (speciesList.indexOf(rigsConservationList[i].speciesName) >= 0) {
+//         presentInSpeciesList.push(rigsConservationList[i]);
+//         justNames.push(rigsConservationList[i].speciesName);
+//         count++;
+//     }
+// }
+
+
+// var NOTpresentInSpeciesList = [];
+
+// for (var i = 0; i < speciesList.length; i++) {
+
+//     if (justNames.indexOf(speciesList[i]) < 0 ) {
+//        NOTpresentInSpeciesList.push({
+//         "speciesName" : speciesList[i],
+//         "latinName": "",
+//         "conservationStatus": ""}
+//         );
+//     }
+
+// }
+
+
+
+
+
+
+
+
     // overlay controls
     $('.ov-toggle').on('click', function() {
         var $this = $(this),
@@ -32,7 +68,6 @@ $(document).ready(function() {
             var $btn = $(this);
             $(this).hasClass('active') ? doubleOff($btn) : doubleOn($btn);
         });
-
 
         // setup the mapModules
         var maps = {};
@@ -76,7 +111,6 @@ $(document).ready(function() {
             maps[currentMap].logModule();
         });
 
-        // $('.container').on('click', '.tenk > div', function(event) {
         $('.container').on('click', '[data-tetrad="2K"]', function(event) {
             var currentMap = event.delegateTarget.id;
             if (maps[currentMap].fetchingData) {
@@ -122,6 +156,10 @@ $(document).ready(function() {
     }
 
 
+
+
+
+
     if ( typeof ovPage !== 'undefined' && ovPage) {
         // setup the mapModules
         var maps = {};
@@ -145,15 +183,12 @@ $(document).ready(function() {
             maps.m2_.request = 'overview';
             maps.m2_.setDataset('dbdensity');
             maps.m2_.setOverviewMapState('idle');
-            // maps.m2_.startSpinner(['map']);
-            // maps.m2_.getData();
 
             maps.m3_.setSpecies(this.value);
             maps.m3_.request = 'overview';
             maps.m3_.setDataset('dwdensity');
             maps.m3_.setOverviewMapState('idle');
-            // maps.m3_.startSpinner(['map']);
-            // maps.m3_.getData();
+
             $('.state').addClass('update');
             maps.m1_.getSpeciesAccount();
         });
@@ -163,6 +198,117 @@ $(document).ready(function() {
             maps[currentMap].setOverviewMapState('active');
         });
     }
+
+
+
+
+
+
+
+
+    if ( typeof richnessPage !== 'undefined' && richnessPage) {
+
+        var richnessMap = new MapModule('m1_');
+
+        $('[rel=js-richness-toggle]').on('click', function() {
+
+            var $this = $(this);
+
+            richnessMap.toggleDataLayer($this);
+
+            if ($this.prop('checked')) {
+                $('.richness-toggle').not($this).prop('checked', false);
+                richnessMap.setFetchingData(true);
+                richnessMap.startSpinner(['map']);
+                richnessMap.setDataset($this.data('set'));
+                richnessMap.setBreedingRange($this.data('range'));
+                richnessMap.setConservationStatus($this.data('status'));
+                richnessMap.getRichnessData();
+                richnessMap.logModule();
+            }
+        });
+
+        $('[rel=js-richness-toggle-status]').on('click', function() {
+
+            var $this = $(this);
+
+            richnessMap.toggleDataLayer($this);
+
+            if ($this.prop('checked')) {
+                $('.richness-toggle').not($this).prop('checked', false);
+                richnessMap.setFetchingData(true);
+                richnessMap.startSpinner(['map']);
+                richnessMap.setDataset($this.data('set'));
+                richnessMap.setBreedingRange($this.data('range'));
+                richnessMap.setConservationStatus($this.data('status'));
+                richnessMap.getRichnessData();
+                richnessMap.logModule();
+            }
+        });
+
+
+        // winter all
+        $('#js_winter_data').on('click', function() {
+
+            var $this = $(this);
+
+            richnessMap.toggleDataLayer($this);
+
+            if ($this.prop('checked')) {
+                $('.richness-toggle').not($this).prop('checked', false);
+                richnessMap.setFetchingData(true);
+                richnessMap.startSpinner(['map']);
+                richnessMap.setDataset('dwdensity');
+                richnessMap.setBreedingRange($this.data('range'));
+                richnessMap.setConservationStatus($this.data('status'));
+                richnessMap.getRichnessData();
+                richnessMap.logModule();
+            }
+
+        });
+
+        $('.container').on('click', '[data-tetrad="2K"]', function(event) {
+            var $this = $(this);
+
+            if (richnessMap.fetchingData) {
+                return false;
+            }
+            richnessMap.setFetchingData(true);
+
+            var isSelected = $this.hasClass('selected');
+                tetradId = event.target.id,
+                tetradName = event.target.id.slice(3, 8);
+
+            if (isSelected) {
+                // richnessMap.hideCurrentlySelectedTetradInfo(tetradId);
+                $this.removeClass('selected');
+                return false;
+            }
+            richnessMap.startSpinner(['tetrad-results']);
+
+            $('[data-tetrad="2K"]').removeClass('selected');
+            $this.addClass('selected');
+            richnessMap.request = 'tetrad';
+            // richnessMap.updateSelectedTetrad(tetradId);
+            richnessMap.setTetradStatus(tetradName, tetradId);
+
+            richnessMap.getRichnessTetradData();
+
+            richnessMap.logModule();
+        });
+
+        $('.toggle-total-list').on('click', function(){
+            $(this).next().slideToggle('fast');
+        });
+
+         $('.container').on('click', '.data-later-toggle', function(event) {
+            richnessMap.toggleDataLayer($(this));
+        });
+
+    }
+
+
+
 
 });
 })(jQuery);

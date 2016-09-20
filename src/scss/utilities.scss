@@ -34,3 +34,24 @@
         }
     }
 }
+
+
+.default-space {
+    margin-bottom: $default_spacing;
+}
+
+.b {
+    font-weight: bold;
+}
+
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    border-top: 4px solid #4B4B45;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    content: "";
+}

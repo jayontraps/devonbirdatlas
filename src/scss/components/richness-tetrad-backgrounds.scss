@@ -1,0 +1,180 @@
+.species-richness {
+
+    [data-set="dwdensity"] {
+
+        .code-9 {
+            // background-color: rgba(0,11,140, 1); // 000b8c 0, 11, 140
+            // background-color: rgba(0, 11, 140, 0.8);
+            // background-color: rgba(0, 7, 80, 0.9);
+            
+            // background-color: rgba(30, 40, 79, 0.9); // 1E284F
+            
+            background-color: rgba(18,48,118, 1);
+            // background-color: rgba(25,31,97,1); // 191F61
+        }
+        .code-8 {
+            // background-color: rgba(0,11,140, .84); // 28319e 40, 49, 158
+            // background-color: rgba(40, 49, 158, 0.75);
+            // background-color: rgba(0, 11, 140, 0.75);
+            
+            // background-color: rgba(18, 48, 118, 0.8); // 123076
+            
+            background-color: rgba(18,48,118,.84);
+            // background-color: rgba(64,72,169,1); // 4048A9
+        }
+        .code-7 {
+            // background-color: rgba(0,11,140,.70); // 4c53ae 76, 83, 174
+            // background-color: rgba(76, 83, 174, 0.75);
+            
+            // background-color: rgba(12, 74, 153, 0.8); // 0C4A99
+            
+            background-color: rgba(18,48,118,.70);
+            // background-color: rgba(121,126,194,1); // 797EC2
+        }
+        .code-5 {
+            // background-color: rgba(0,11,140,.56); // 7076be 112, 118, 190
+            // background-color: rgba(112, 118, 190, 0.75);
+            
+            // background-color: rgba(80, 69, 195, 0.75);   // 5075C3
+            
+            background-color: rgba(18,48,118,.56);
+            // background-color: rgba(148,152,206,1); // 9498CE
+        }
+        .code-4 {
+            // background-color: rgba(0,11,140, .42); // 9498cf 148, 152, 207
+            // background-color: rgba(148, 152, 207, 0.75);
+            
+            // background-color: rgba(5, 187, 223, 0.8); // #0599df
+            
+            background-color: rgba(18,48,118,.42);
+            // background-color: rgba(175,178,219,1); // AFB2DB
+        }
+        .code-2 {
+            // background-color: rgba(0,11,140, .28); //  b8bbdf 184, 187, 223
+            // background-color: rgba(184, 187, 223, 0.75);
+            
+            // background-color: rgba(144, 210, 250, 0.8); // 90CBFA
+            
+            background-color: rgba(18,48,118,.28);
+            // background-color: rgba(202,204,231,1); // CACCE7
+        }
+        .code-1 {
+            // background-color: rgba(0,11,140, .14); // dcddef 220,221,239
+            // background-color: rgba(220,221,239, 0.9);
+            
+            // background-color: rgba(209,229,255, 0.9); // D1E5FF
+            
+            background-color: rgba(18,48,118,.14);
+            // background-color: rgba(233,224,240,1); // DFE0F0
+        }
+    }
+
+
+    [data-set="dbreed"], [data-set="sitters"] {
+
+        .code-9 {
+    //         background-color: rgba(196,0,1, 1); // c40001 196, 0, 1
+                // background-color: rgba(115, 0, 1, 0.9); // C40001
+                // background-color: rgba(64, 0, 1, 0.9); // 400001
+                // background-color: rgba(103,31,22,0.8); // F5C5BE
+                background-color: rgba(190,0,0,1);
+        }
+        .code-8 {
+            // background-color: rgba(190,0,0,.84); // cd2828 205, 40, 40
+            // background-color: rgba(205, 40, 40, 0.75);
+            // background-color: rgba(196, 0, 1, 0.8); // C40001
+            // background-color: rgba(130, 0, 1, 0.8); // 820001
+            // background-color: rgba(186,33,34,0.8); // BA2122
+            background-color: rgba(190,0,0,.84);
+        }
+        .code-7 {
+            // background-color: rgba(190,0,0,70); // d54c4c 213, 76, 76
+            // background-color: rgba( 213, 76, 76, 0.8); // D54C4C
+             // background-color: rgba( 191, 0, 1, 0.8); // BF0001
+             // background-color: rgba(221,39,41,0.8); // DD2729
+             background-color: rgba(190,0,0,.7);
+
+        }
+        .code-5 {
+            // background-color: rgba(190,0,0,56); // de7070 222, 112, 112
+            // background-color: rgba(222, 112, 112, 0.8); // DE7070
+            // background-color: rgba(247, 32, 20, 0.8); // F72014
+            // background-color: rgba(242,78,48,0.8); // F24E30
+            background-color: rgba(190,0,0,.56);
+        }
+        .code-4 {
+            // background-color: rgba(190,0,0,.42); // e69494 230, 148, 148
+            // background-color: rgba(230, 148, 148, 0.8); // E69494
+            // background-color: rgba(255, 60, 24, 0.8); // FF3C18
+            // background-color: rgba(229,116,77,0.8); // E5744D
+            background-color: rgba(190,0,0,.42);
+        }
+        .code-2 {
+            // background-color: rgba(196,0,1, .28); // efb8b8  239, 184, 184
+            // background-color: rgba(239, 184, 184, 0.8);
+            // background-color: rgba(250,180,150,0.8);// 
+            background-color: rgba(190,0,1, .28);
+        }
+        .code-1 {
+            // background-color: rgba(196,0,1, .14); //  f7dcdc 247, 220, 220
+            // background-color: rgba( 247, 220, 220, 0.9);
+            background-color: rgba(190,0,1, .14);
+        }
+    }
+
+    .loading-data {
+        .pres {
+            opacity: 0;
+        }
+    }
+
+
+    /* 2k borders */
+    // &.tetrad-maps {
+    //     [data-set="dwdensity"] {
+    //         .pres {
+    //             box-shadow:
+    //                 1px 0 0 0 rgba(0,11,140, .28),
+    //                 0 1px 0 0 rgba(0,11,140, .28),
+    //                 1px 1px 0 0 rgba(0,11,140, .28),   /* Just to fix the corner */
+    //                 1px 0 0 0 rgba(0,11,140, .28) inset,
+    //                 0 1px 0 0 rgba(0,11,140, .28) inset;
+    //             }
+    //     }
+
+    //     [data-set="dbreed"], [data-set="sitters"] {
+    //         .pres {
+    //             box-shadow:
+    //                 1px 0 0 0 rgba(196,0,1, .28),
+    //                 0 1px 0 0 rgba(196,0,1, .28),
+    //                 1px 1px 0 0 rgba(196,0,1, .28),   /* Just to fix the corner */
+    //                 1px 0 0 0 rgba(196,0,1, .28) inset,
+    //                 0 1px 0 0 rgba(196,0,1, .28) inset;
+    //             }
+    //     }
+    //     .data-off {
+    //         &[data-set="dwdensity"],&[data-set="dbreed"],&[data-set="sitters"]  {
+    //             .pres {
+    //                 box-shadow: none;
+    //             }
+    //         }
+    //     }
+    // }
+
+
+    .data-off {
+        .pres {
+            background-color: transparent;
+        }
+
+        .map-row > div  > div {
+            background-color:transparent;
+            border: none;
+            box-shadow: none;
+        }
+    }
+
+
+
+
+}

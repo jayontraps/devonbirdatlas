@@ -1,0 +1,9 @@
+.richness-keys {
+    display: block;
+    padding-top: $default_spacing;
+}
+.data-off {
+    .richness-keys {
+        display: none;
+    }
+}

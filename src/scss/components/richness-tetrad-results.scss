@@ -1,0 +1,35 @@
+.tetrad-results {
+    position: relative;
+    border: $devon_border;
+    padding: $default_spacing;
+    margin-top: $default_spacing;
+    &.no-results {
+        visibility: hidden;
+    }
+}
+
+.tetrad-results-inner-wrap {
+    position: relative;
+}
+
+.tet-res-name {
+    margin: 0;
+    line-height: 1em;
+    min-height: 1em;
+    padding-bottom: $default_spacing/2;
+}
+
+.toggle-total-list {
+    padding-bottom: $default_spacing/2;
+}
+
+.no-touchevents {
+
+    .toggle-total-list {
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+    }
+}

@@ -55,8 +55,9 @@
             position: absolute;
             right: 0;
             display: inline-block;
-            width: 10px;
-            height: 10px;
+            width:$lg-map-2k-width * 1.5;
+            height:$lg-map-2k-width * 1.5;
+            background-size: 100%;
         }
     }
 }

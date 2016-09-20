@@ -61,6 +61,25 @@ MapModule.prototype.setGoogleMapLink = function() {
     }
 };
 
+MapModule.prototype.templateTetradList = function(data) {
+    var tetradList = document.createElement('ol');
+    tetradList.classList.add('tetrad-list');
+
+    // lookup the index, retreive the Code value and template the list item
+    var theCode, el, spanEl;
+    for (var i = 0; i < data.length; i++) {
+        theCode = data[i].Code;
+        el = document.createElement('li');
+        el.innerHTML = data[i].Species.trim();
+        spanEl = document.createElement('span');
+        spanEl.classList.add('code-' + theCode);
+        el.appendChild(spanEl);
+        tetradList.appendChild(el);
+    }
+
+    return tetradList;
+}
+
 /* GETTING DATA */
 
 MapModule.prototype.getTetradData = function() {
@@ -89,23 +108,8 @@ MapModule.prototype.getTetradData = function() {
     })
     .done(function(data){
         obj.tetrad.counts = obj.getSums(data);
-
-        var tetradList = document.createElement('ol');
-        tetradList.classList.add('tetrad-list');
-
-        // lookup the index, retreive the Code value and template the list item
-        var theCode, el, spanEl;
-        for (var i = 0; i < data.length; i++) {
-            theCode = data[i].Code;
-            el = document.createElement('li');
-            el.innerHTML = data[i].Species.trim();
-            spanEl = document.createElement('span');
-            spanEl.classList.add('code-' + theCode);
-            el.appendChild(spanEl);
-            tetradList.appendChild(el);
-        }
-
-        obj.tetrad.currentList = tetradList;
+        // store on the MapModule object for DOM update later
+        obj.tetrad.currentList = obj.templateTetradList(data);
 
         //  A procedure for soting the list alphabetically
         // // get the list of names
@@ -211,22 +215,25 @@ MapModule.prototype.getData = function() {
 
             if (Array.isArray(prevResults) && prevResults.length)  {
                 for (var i = 0; i < prevResults.length; i++) {
-                    document.getElementById(obj.context + prevResults[i]).className = '';
+                    var prevTetrad = document.getElementById(obj.context + prevResults[i]);
+                    if (prevTetrad) {
+                        prevTetrad.className = '';
+                    }
                 }
             }
-            tetArr = [];
+
+            var tetArr = [];
             for (var i = 0; i < data.length; i++) {
                 tetArr.push(data[i]['Tetrad']);
                 sessionStorage.setItem(obj.context + "currentTetradArr", JSON.stringify(tetArr));
             }
 
-            // store an indicator of results belonging to 10K or 2K species
-            // var speciesStatus = obj.tenkSpecies ? '10K' : '2K';
-            // sessionStorage.setItem('status', speciesStatus);
-
             // add classes to matching tetrads
             for (var i = 0; i < tetArr.length; i++) {
-                    document.getElementById(obj.context + tetArr[i]).classList.add('pres', 'code-' + data[i]['Code']);
+                var tetrad = document.getElementById(obj.context + tetArr[i]);
+                if (tetrad) {
+                    tetrad.classList.add('pres', 'code-' + data[i]['Code']);
+                }
             }
 
         })
@@ -328,7 +335,10 @@ MapModule.prototype.startSpinner = function(els) {
                 $('#' + this.context).find('.map-container').addClass('loading-data');
             }
             if (els[i] === 'tetrad-meta') {
-                $('#' + this.context).find('.tetrad-meta ').addClass('loading-data');
+                $('#' + this.context).find('.tetrad-meta').addClass('loading-data');
+            }
+            if (els[i] === 'tetrad-results') {
+                $('#' + this.context).find('.tetrad-results').addClass('loading-data');
             }
         }
     }
@@ -341,7 +351,10 @@ MapModule.prototype.stopSpinner = function(els) {
                 $('#' + this.context).find('.map-container').removeClass('loading-data');
             }
             if (els[i] === 'tetrad-meta') {
-                $('#' + this.context).find('.tetrad-meta ').removeClass('loading-data');
+                $('#' + this.context).find('.tetrad-meta').removeClass('loading-data');
+            }
+            if (els[i] === 'tetrad-results') {
+                $('#' + this.context).find('.tetrad-results').removeClass('loading-data');
             }
         }
     }

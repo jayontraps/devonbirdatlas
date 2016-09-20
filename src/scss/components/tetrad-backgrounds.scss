@@ -136,32 +136,39 @@
     .code-9 {
         // background-color: rgba(0,11,140, 1); // 000b8c 0, 11, 140
         // background-color: rgba(0, 11, 140, 0.75);
-        background-color: rgba(0, 7, 80, 0.9);
+        // background-color: rgba(0, 7, 80, 0.9);
+        background-color: rgba(25,31,97,1); // 191F61
     }
     .code-8 {
         // background-color: rgba(0,11,140, .84); // 28319e 40, 49, 158
         // background-color: rgba(40, 49, 158, 0.75);
-        background-color: rgba(0, 11, 140, 0.75);
+        // background-color: rgba(0, 11, 140, 0.75);
+        background-color: rgba(64,72,169,1); // 4048A9
     }
     .code-7 {
         // background-color: rgba(0,11,140,.70); // 4c53ae 76, 83, 174
-        background-color: rgba(76, 83, 174, 0.75);
+        // background-color: rgba(76, 83, 174, 0.75);
+        background-color: rgba(121,126,194,1); // 797EC2
     }
     .code-5 {
         // background-color: rgba(0,11,140,.56); // 7076be 112, 118, 190
-        background-color: rgba(112, 118, 190, 0.75);
+        // background-color: rgba(112, 118, 190, 0.75);
+        background-color: rgba(148,152,206,1); // 9498CE
     }
     .code-4 {
         // background-color: rgba(0,11,140, .42); // 9498cf 148, 152, 207
-        background-color: rgba(148, 152, 207, 0.75);
+        // background-color: rgba(148, 152, 207, 0.75);
+        background-color: rgba(175,178,219,1); // AFB2DB
     }
     .code-2 {
         // background-color: rgba(0,11,140, .28); //  b8bbdf 184, 187, 223
-        background-color: rgba(184, 187, 223, 0.75);
+        // background-color: rgba(184, 187, 223, 0.75);
+        background-color: rgba(202,204,231,1); // CACCE7
     }
     .code-1 {
         // background-color: rgba(0,11,140, .14); // dcddef 220,221,239
-        background-color: rgba(220,221,239, 0.9);
+        // background-color: rgba(220,221,239, 0.9);
+        background-color: rgba(233,224,240,1); // DFE0F0
     }
 }
 
@@ -213,26 +220,26 @@
 
 
 /* 2k borders */
-.tetrad-maps {
-    [data-set="dwdensity"] {
-        .pres {
-            box-shadow:
-                1px 0 0 0 rgba(0,11,140, .28),
-                0 1px 0 0 rgba(0,11,140, .28),
-                1px 1px 0 0 rgba(0,11,140, .28),   /* Just to fix the corner */
-                1px 0 0 0 rgba(0,11,140, .28) inset,
-                0 1px 0 0 rgba(0,11,140, .28) inset;
-            }
-    }
+// .tetrad-maps {
+//     [data-set="dwdensity"] {
+//         .pres {
+//             box-shadow:
+//                 1px 0 0 0 rgba(0,11,140, .28),
+//                 0 1px 0 0 rgba(0,11,140, .28),
+//                 1px 1px 0 0 rgba(0,11,140, .28),   /* Just to fix the corner */
+//                 1px 0 0 0 rgba(0,11,140, .28) inset,
+//                 0 1px 0 0 rgba(0,11,140, .28) inset;
+//             }
+//     }
 
-    [data-set="dbdensity"] {
-        .pres {
-            box-shadow:
-                1px 0 0 0 rgba(196,0,1, .28),
-                0 1px 0 0 rgba(196,0,1, .28),
-                1px 1px 0 0 rgba(196,0,1, .28),   /* Just to fix the corner */
-                1px 0 0 0 rgba(196,0,1, .28) inset,
-                0 1px 0 0 rgba(196,0,1, .28) inset;
-            }
-    }
-}
+//     [data-set="dbdensity"] {
+//         .pres {
+//             box-shadow:
+//                 1px 0 0 0 rgba(196,0,1, .28),
+//                 0 1px 0 0 rgba(196,0,1, .28),
+//                 1px 1px 0 0 rgba(196,0,1, .28),   /* Just to fix the corner */
+//                 1px 0 0 0 rgba(196,0,1, .28) inset,
+//                 0 1px 0 0 rgba(196,0,1, .28) inset;
+//             }
+//     }
+// }

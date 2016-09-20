@@ -1,0 +1,19 @@
+.richness-controls {
+    margin-top: $default_spacing;
+    ul {
+        list-style: none;
+        margin: 0;
+        margin-bottom: $default_spacing;
+        padding-left: 0;
+    }
+    .controls, .checkbox {
+        display: block;
+    }
+    .checkbox {
+        margin-top: .5em;
+    }
+}
+
+.richness-title {
+    margin-bottom: $default_spacing;
+}

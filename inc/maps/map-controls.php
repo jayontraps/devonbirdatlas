@@ -1,4 +1,4 @@
-<div class="controls group">
+<div class="group default-space">
     <form class="map-options">
         <div class="select-controls">
             <select class="select map-select select-species">
