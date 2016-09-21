@@ -9,7 +9,7 @@ get_header('maps'); ?>
 	    var richnessPage = true;
 	</script>
 
-	<div id="tetrad-maps" class="tetrad-maps species-richness group">
+	<div id="tetrad-maps" class="species-richness group">
 	    <div id="m1_" class="container data-off" data-set="">
 	        <div class="map-full">
 	            <div class="column-map">
@@ -46,7 +46,7 @@ get_header('maps'); ?>
 						<?php include('inc/maps/spinner.php'); ?>
 						<div class="tetrad-results-inner-wrap">
 							<div class="gmap-link"></div>
-							<h4 class="tet-res-name" id="js-richness-tetrad"></h4>
+							<h4 class="tet-res-name" id="js-richness-tetrad">Click on the map for tetrad information</h4>
 							<div class="toggle-total-list">
 								Total number of species: <span id="js-richness-sum-total"></span>
 								<span class="caret"></span>

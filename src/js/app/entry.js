@@ -61,6 +61,11 @@ $(document).ready(function() {
     }
 
 
+
+
+
+
+
     // map page
     if ( typeof mapPage !== 'undefined' && mapPage) {
 
@@ -96,6 +101,8 @@ $(document).ready(function() {
             maps[currentMap].logModule();
         });
 
+
+
         $('.container').on('change', '.select-data-set', function(event) {
             var currentMap = event.delegateTarget.id;
             if (maps[currentMap].fetchingData) {
@@ -107,9 +114,10 @@ $(document).ready(function() {
             maps[currentMap].setDataset(this.value);
             maps[currentMap].getData();
             maps[currentMap].getTetradData();
-
             maps[currentMap].logModule();
         });
+
+
 
         $('.container').on('click', '[data-tetrad="2K"]', function(event) {
             var currentMap = event.delegateTarget.id;
@@ -129,9 +137,10 @@ $(document).ready(function() {
             maps[currentMap].updateSelectedTetrad(tetradId);
             maps[currentMap].setTetradStatus(tetradName, tetradId);
             maps[currentMap].getTetradData();
-
             maps[currentMap].logModule();
         });
+
+
 
         $('.container').on('click', '.tetrad-list li', function(event) {
             var currentMap = event.delegateTarget.id;
@@ -147,6 +156,8 @@ $(document).ready(function() {
             maps[currentMap].logModule();
         });
 
+
+
         $('.container').on('click', '.data-later-toggle', function(event) {
             var currentMap = event.delegateTarget.id;
             var $this = $(this);
@@ -154,6 +165,13 @@ $(document).ready(function() {
         });
 
     }
+
+
+
+
+
+
+
 
 
 
@@ -206,9 +224,19 @@ $(document).ready(function() {
 
 
 
+
+
+
+
+
+
+
+
+
     if ( typeof richnessPage !== 'undefined' && richnessPage) {
 
         var richnessMap = new MapModule('m1_');
+        richnessMap.logModule();
 
         $('[rel=js-richness-toggle]').on('click', function() {
 
@@ -224,6 +252,8 @@ $(document).ready(function() {
                 richnessMap.setBreedingRange($this.data('range'));
                 richnessMap.setConservationStatus($this.data('status'));
                 richnessMap.getRichnessData();
+                richnessMap.getRichnessTetradData();
+                richnessMap.updateSelectedTetrad();
                 richnessMap.logModule();
             }
         });
@@ -242,6 +272,8 @@ $(document).ready(function() {
                 richnessMap.setBreedingRange($this.data('range'));
                 richnessMap.setConservationStatus($this.data('status'));
                 richnessMap.getRichnessData();
+                richnessMap.getRichnessTetradData();
+                richnessMap.updateSelectedTetrad();
                 richnessMap.logModule();
             }
         });
@@ -262,44 +294,45 @@ $(document).ready(function() {
                 richnessMap.setBreedingRange($this.data('range'));
                 richnessMap.setConservationStatus($this.data('status'));
                 richnessMap.getRichnessData();
+                richnessMap.getRichnessTetradData();
                 richnessMap.logModule();
             }
 
         });
 
+
+
         $('.container').on('click', '[data-tetrad="2K"]', function(event) {
             var $this = $(this);
-
             if (richnessMap.fetchingData) {
                 return false;
             }
             richnessMap.setFetchingData(true);
-
+            if (!richnessMap.dataset) {
+                return false;
+            }
             var isSelected = $this.hasClass('selected');
                 tetradId = event.target.id,
                 tetradName = event.target.id.slice(3, 8);
 
             if (isSelected) {
-                // richnessMap.hideCurrentlySelectedTetradInfo(tetradId);
-                $this.removeClass('selected');
+                richnessMap.hideCurrentlySelectedTetradInfo(tetradId);
                 return false;
             }
             richnessMap.startSpinner(['tetrad-results']);
-
-            $('[data-tetrad="2K"]').removeClass('selected');
-            $this.addClass('selected');
             richnessMap.request = 'tetrad';
-            // richnessMap.updateSelectedTetrad(tetradId);
+            richnessMap.updateSelectedTetrad(tetradId);
             richnessMap.setTetradStatus(tetradName, tetradId);
-
             richnessMap.getRichnessTetradData();
-
             richnessMap.logModule();
+
         });
+
 
         $('.toggle-total-list').on('click', function(){
             $(this).next().slideToggle('fast');
         });
+
 
          $('.container').on('click', '.data-later-toggle', function(event) {
             richnessMap.toggleDataLayer($(this));

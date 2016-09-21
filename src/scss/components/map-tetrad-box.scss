@@ -48,6 +48,7 @@
 
     > li {
         flex: 1 1 30%;
+        max-width: 230px;
         position: relative;
         margin: 0 2.5rem 0 0;
         padding: .25rem 0;
@@ -63,11 +64,13 @@
 }
 
 @media screen and (min-width: $max_width) {
-    .tetrad-list {
-        > li {
-            &:hover {
-                cursor: pointer;
-                text-decoration: underline;
+    .tetrad-maps {
+        .tetrad-list {
+            > li {
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
             }
         }
     }

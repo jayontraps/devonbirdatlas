@@ -1050,7 +1050,8 @@ MapModule.prototype.getRichnessData = function() {
         timeout: 12000
     })
     .done(function(data) {
-        console.log(JSON.stringify(data));
+        // get the data for richnessDataPrepared:
+        // console.log(JSON.stringify(data));
         obj.templateRichnessData(data);
     })
     .done(function() {
@@ -1058,6 +1059,12 @@ MapModule.prototype.getRichnessData = function() {
             obj.stopSpinner.call(obj, ['map']);
             obj.setFetchingData(false);
         }, 800);
+    })
+    .done(function(data) {
+        // refresh active tetrad
+        if (obj.tetrad.active) {
+            $('#' + obj.tetrad.domId).addClass('selected');
+        }
     })
     .fail(function() {
         console.log("error");
@@ -1072,6 +1079,8 @@ MapModule.prototype.getRichnessData = function() {
 MapModule.prototype.getRichnessTetradData = function() {
 
     if (!this.tetrad.active) { return false; }
+
+    this.startSpinner(['tetrad-results']);
 
     var titleEl = document.getElementById('js-richness-tetrad');
     titleEl.innerHTML = this.tetrad.active;
