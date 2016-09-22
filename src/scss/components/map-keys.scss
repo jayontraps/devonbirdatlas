@@ -54,10 +54,13 @@
 
 	td {
 		font-style:italic;
+		font-size: .9em;
+		padding-bottom: .5em;
 	}
 
 	.tet-data {
-		display: block;
+		display: inline;
+		margin-left: .5em;
 		width:100%;
 	}
 
@@ -236,6 +239,24 @@
 		background:url('../img/circle-1.svg') center no-repeat;
 		background-size:100%;
 	}
+}
+
+.sitter-underlay-key {
+	.keysq	{
+
+		&.pres {
+			background-color: $sitters_underlay_pres;
+		}
+		&.poss {
+			background-color: $sitters_underlay_poss;
+		}
+		&.prob {
+			background-color: $sitters_underlay_prob;
+		}
+		&.conf {
+			background-color: $sitters_underlay_conf;
+		}
+}
 }
 
 

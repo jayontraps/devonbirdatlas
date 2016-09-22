@@ -25,41 +25,6 @@
     }
 }
 
-/* Hide data layers */
-
-.data-off {
-    .code-A,
-    .code-B,
-    .code-K, .code-N {
-        background-image: none;
-    }
-    .pres {
-        background-color: transparent;
-    }
-
-    .map-row > div  > div {
-        background-color:transparent;
-        border: none;
-        box-shadow: none;
-    }
-    &[data-set="dbreed10"] {
-        .code-A,
-        .code-B,
-        .code-K, .code-N {
-            background-image: none;
-        }
-    }
-}
-
-
-
-.dbreed-off {
-    .code-A,
-    .code-B,
-    .code-K, .code-N {
-        background-image: none;
-    }
-}
 
 .code-A {
     background-image: url('../img/circle-1.svg');
@@ -73,6 +38,65 @@
 .code-N {
     background-image: url('../img/circle-4.svg');
 }
+
+
+/* Hide data layers */
+
+.data-off {
+    .data-wrap {
+        .code-A,
+        .code-B,
+        .code-K, .code-N {
+            background-image: none;
+        }
+        .pres {
+            background-color: transparent;
+        }
+
+        .map-row > div  > div {
+            background-color:transparent;
+            border: none;
+            box-shadow: none;
+        }
+        &[data-set="dbreed10"] {
+            .code-A,
+            .code-B,
+            .code-K, .code-N {
+                background-image: none;
+            }
+        }
+    }
+}
+
+
+.sitters-underlay {
+    .code-A,
+    .code-B,
+    .code-K, .code-N {
+        background-image: none;
+    }
+    .code-A {
+        background-color: $sitters_underlay_conf;
+    }
+    .code-B {
+        background-color: $sitters_underlay_prob;
+    }
+    .code-K {
+        background-color: $sitters_underlay_poss;
+    }
+    .code-N {
+        background-color: $sitters_underlay_pres;
+    }
+}
+
+// .dbreed-off {
+//     .code-A,
+//     .code-B,
+//     .code-K, .code-N {
+//         background-image: none;
+//     }
+// }
+
 
 
 

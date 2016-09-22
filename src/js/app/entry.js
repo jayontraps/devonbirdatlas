@@ -1,9 +1,23 @@
 // var MapModule = require('./modules/mapModule');
-var overlay = require('./modules/overlay');
+// var overlay = require('./modules/overlay');
 
-(function($) {
 $(document).ready(function() {
 
+    var overlay = (function ($) {
+        function show(layer, $context) {
+                var $layer = $('.' + layer);
+            $context.find($layer).addClass('on');
+        }
+
+        function hide(layer, $context) {
+                var $layer = $('.' + layer);
+            $context.find($layer).removeClass('on');
+        }
+        return {
+            show: show,
+            hide: hide
+        };
+    }(jQuery));
 
 // console.log('rigsConservationList :', rigsConservationList.length);
 // console.log('speciesList: ', speciesList.length);
@@ -80,10 +94,7 @@ $(document).ready(function() {
         maps.m2_ = new MapModule('m2_');
 
         // set defaults
-        maps.m1_.setSpecies('Alpine Swift');
         maps.m1_.setDataset('dbreed');
-
-        maps.m2_.setSpecies('Alpine Swift');
         maps.m2_.setDataset('dbreed');
 
 
@@ -97,7 +108,6 @@ $(document).ready(function() {
             maps[currentMap].startSpinner(['map']);
             maps[currentMap].setSpecies(this.value.trim());
             maps[currentMap].getData();
-
             maps[currentMap].logModule();
         });
 
@@ -158,7 +168,7 @@ $(document).ready(function() {
 
 
 
-        $('.container').on('click', '.data-later-toggle', function(event) {
+        $('.container').on('click', '.data-layer-toggle', function(event) {
             var currentMap = event.delegateTarget.id;
             var $this = $(this);
             maps[currentMap].toggleDataLayer($this);
@@ -334,14 +344,10 @@ $(document).ready(function() {
         });
 
 
-         $('.container').on('click', '.data-later-toggle', function(event) {
+         $('.container').on('click', '.data-latey-toggle', function(event) {
             richnessMap.toggleDataLayer($(this));
         });
 
     }
 
-
-
-
 });
-})(jQuery);

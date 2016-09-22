@@ -15,19 +15,20 @@ get_header('maps'); ?>
 
 	<div id="tetrad-maps" class="tetrad-maps group">
 	    <div id="m1_" class="container" data-set="">
-	        <!-- <div class="map-full">
-	            <div class="column-map">
-	                <?php // include('inc/maps/map-controls.php'); ?>
-	                <?php // include('inc/maps/map-breeding-toggle.php'); ?>
-	            </div>
-	        </div> -->
 	        <div class="map-full">
 	            <div class="column-map">
+
 	                <?php include('inc/maps/map-controls.php'); ?>
+	                <?php include('inc/maps/data-set-heading.php'); ?>
 	                <div class="map-border">
 	                    <div class="map-container clearfix">
 	                        <?php include('inc/maps/spinner.php'); ?>
 	                        <?php include('inc/maps/map-error.php'); ?>
+
+							<div class="sitters-underlay" style="display:none">
+							     <?php include('inc/maps/map-grid-1-underlay.php'); ?>
+							</div>
+
 	                        <?php include('inc/maps/overlays.php'); ?>
 	                        <?php include('inc/maps/map-grid-1.php'); ?>
 	                    </div>
@@ -44,19 +45,20 @@ get_header('maps'); ?>
 
 
 	    <div id="m2_" class="container" data-set="">
-	        <!-- <div class="map-full">
-	            <div class="column-map">
-	                <?php // include('inc/maps/map-controls.php'); ?>
-	                <?php // include('inc/maps/map-breeding-toggle.php'); ?>
-	            </div>
-	        </div> -->
+
 	        <div class="map-full">
 	            <div class="column-map">
 	                <?php include('inc/maps/map-controls.php'); ?>
+	                <?php include('inc/maps/data-set-heading.php'); ?>
 	                <div class="map-border">
 	                    <div class="map-container clearfix">
 	                        <?php include('inc/maps/spinner.php'); ?>
 	                        <?php include('inc/maps/map-error.php'); ?>
+
+							<div class="sitters-underlay" style="display:none">
+							     <?php include('inc/maps/map-grid-2-underlay.php'); ?>
+							</div>
+
 	                        <?php include('inc/maps/overlays.php'); ?>
 	                        <?php include('inc/maps/map-grid-2.php'); ?>
 	                    </div>

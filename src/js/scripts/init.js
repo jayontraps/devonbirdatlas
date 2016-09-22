@@ -3,13 +3,7 @@ modernizr-custom.js
 classList.min.js
 chosen.jquery.min.js
 speciesList.js
-latinNames.js
-mapModule.js
-mapModule-richness.js
 */
-
-/* https://github.com/mkleehammer/gulp-deporder */
-
 
 (function($) {
 

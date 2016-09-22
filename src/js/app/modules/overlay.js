@@ -14,5 +14,4 @@ var overlay = (function ($) {
     };
 }(jQuery));
 
-
 module.exports = overlay;

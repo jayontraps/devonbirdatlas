@@ -1,6 +1,6 @@
 <ul class="controls">
     <li class="checkbox">
-        <input type="checkbox" checked class="data-later-toggle">
+        <input type="checkbox" checked class="data-layer-toggle">
         <label>Data Layer</label>
     </li>
     <li class="checkbox">

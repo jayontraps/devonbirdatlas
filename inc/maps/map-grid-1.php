@@ -1,3 +1,4 @@
+<div class="data-wrap">
 <div class="map-row">
 <div id="m1_SS15" ></div>
 <div id="m1_SS25" ></div>
@@ -200,4 +201,5 @@
 <div id="m1_SY13" ></div>
 <div id="m1_SY23" ></div>
 <div id="m1_SY33" ></div>
+</div>
 </div>

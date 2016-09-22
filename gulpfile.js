@@ -39,7 +39,6 @@ var dest = 'build/';
 
 gulp.task('sass', function() {
     return gulp.src(src + "scss/main.scss")
-        // .pipe(sourcemaps.init())
         .pipe(gulpif(devBuild, sourcemaps.init()))
         .pipe(sass({outputStyle: 'nested'}))
         .on('error', errorAlert)
@@ -49,27 +48,11 @@ gulp.task('sass', function() {
                 browsers: ['last 2 versions']
             })
         ]))
-        // .pipe(sourcemaps.write())
         .pipe(gulpif(devBuild, sourcemaps.write()))
         .pipe(gulpif(!devBuild, minifyCss()))
         .pipe(gulp.dest(dest + "css"))
         .pipe(browserSync.stream());
 });
-
-// gulp.task('sass', function() {
-//     return gulp.src(src + "sass/main.scss")
-//         .pipe(gulpif(devBuild, sourcemaps.init()))
-//         .pipe(sass({outputStyle: 'nested'}))
-//         .pipe(postcss([
-//               autoprefixer({
-//                 browsers: ['last 2 versions']
-//             })
-//         ]))
-//         .pipe(gulpif(devBuild, sourcemaps.write()))
-//         .pipe(gulpif(!devBuild, minifyCss()))
-//         .pipe(gulp.dest(build + "css"))
-//         .pipe(browserSync.stream());
-// });
 
 
 gulp.task('minify-css', function() {
@@ -88,30 +71,32 @@ gulp.task('scripts', function() {
         '!' + src + 'js/scripts/eventemitter2.js',
         src + 'js/scripts/*.js'
         ])
+        .pipe(gulpif(devBuild, sourcemaps.init()))
         .pipe(deporder())
         .pipe(concat('scripts.js'))
+        .pipe(gulpif(devBuild, sourcemaps.write()))
         .pipe(gulp.dest(dest + 'js/'));
 });
 
 
-gulp.task('browserify', function () {
-    return browserify(src + 'js/app/entry', { debug: true})
-        .bundle()
-        .on('error', errorAlert)
-        .pipe(source('bundle.js'))
-        .pipe(gulp.dest(dest + 'js/'));
-});
+// gulp.task('browserify', function () {
+//     return browserify(src + 'js/app/entry', { debug: true})
+//         .bundle()
+//         .on('error', errorAlert)
+//         .pipe(source('bundle.js'))
+//         .pipe(gulp.dest(dest + 'js/'));
+// });
 
 
-gulp.task('combine', ['scripts', 'browserify'], function() {
-    return gulp.src([
-        dest + 'js/scripts.js',
-        dest + 'js/bundle.js'
-    ])
-    .pipe(concat('all.min.js'))
-    .pipe(gulpif(!devBuild, uglify()))
-    .pipe(gulp.dest(dest + 'js/'));
-});
+// gulp.task('combine', ['scripts', 'browserify'], function() {
+//     return gulp.src([
+//         dest + 'js/scripts.js',
+//         dest + 'js/bundle.js'
+//     ])
+//     .pipe(concat('all.min.js'))
+//     .pipe(gulpif(!devBuild, uglify()))
+//     .pipe(gulp.dest(dest + 'js/'));
+// });
 
 
 
@@ -133,7 +118,7 @@ gulp.task('browser-sync', function() {
     });
 });
 
-gulp.task('reload-js', ['lintjs', 'combine' ], function() {
+gulp.task('reload-js', ['lintjs', 'scripts' ], function() {
     browserSync.reload();
 });
 
@@ -142,7 +127,7 @@ gulp.task('reload-css', ['sass'], function() {
 });
 
 
-gulp.task('watch', ['sass', 'lintjs', 'combine', 'browser-sync'], function() {
+gulp.task('watch', ['sass', 'lintjs', 'scripts', 'browser-sync'], function() {
     gulp.watch(src + 'js/**/*.js', ['reload-js']);
     gulp.watch(src + 'scss/**/*.scss', ['reload-css']);
 });

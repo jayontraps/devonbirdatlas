@@ -15,7 +15,8 @@ function MapModule(domContext) {
         active: false,
         currentList: ''
     };
-}
+    this.sittersUnderlay = false;
+};
 
 MapModule.prototype.setDataset = function(dataset) {
     this.dataset = dataset;
@@ -78,7 +79,7 @@ MapModule.prototype.templateTetradList = function(data) {
     }
 
     return tetradList;
-}
+};
 
 /* GETTING DATA */
 
@@ -164,7 +165,6 @@ MapModule.prototype.getTetradData = function() {
     .always(function() {
         // console.log("getTetradData - complete");
     });
-
 };
 
 MapModule.prototype.filterForTenkSpecies = function() {
@@ -185,9 +185,7 @@ MapModule.prototype.filterForTenkSpecies = function() {
         var currentDataSet = document.getElementById(this.context).querySelector('.select-data-set');
         this.setDataset(currentDataSet.value);
     }
-
 };
-
 
 MapModule.prototype.getData = function() {
 
@@ -208,64 +206,63 @@ MapModule.prototype.getData = function() {
             dataType: 'json',
             data:  formData,
             timeout: 12000
-        })
-        .done(function(data) {
-            // remove previous results using currentTetradArr
-            var prevResults = JSON.parse(sessionStorage.getItem(obj.context + "currentTetradArr"));
+    })
+    .done(function(data) {
+        // remove previous results using currentTetradArr
+        var prevResults = JSON.parse(sessionStorage.getItem(obj.context + "currentTetradArr"));
 
-            if (Array.isArray(prevResults) && prevResults.length)  {
-                for (var i = 0; i < prevResults.length; i++) {
-                    var prevTetrad = document.getElementById(obj.context + prevResults[i]);
-                    if (prevTetrad) {
-                        prevTetrad.className = '';
-                    }
+        if (Array.isArray(prevResults) && prevResults.length)  {
+            for (var i = 0; i < prevResults.length; i++) {
+                var prevTetrad = document.getElementById(obj.context + prevResults[i]);
+                if (prevTetrad) {
+                    prevTetrad.className = '';
                 }
             }
+        }
 
-            var tetArr = [];
-            for (var i = 0; i < data.length; i++) {
-                tetArr.push(data[i]['Tetrad']);
-                sessionStorage.setItem(obj.context + "currentTetradArr", JSON.stringify(tetArr));
+        var tetArr = [];
+        for (var i = 0; i < data.length; i++) {
+            tetArr.push(data[i]['Tetrad']);
+            sessionStorage.setItem(obj.context + "currentTetradArr", JSON.stringify(tetArr));
+        }
+
+        // add classes to matching tetrads
+        for (var i = 0; i < tetArr.length; i++) {
+            var tetrad = document.getElementById(obj.context + tetArr[i]);
+            if (tetrad) {
+                tetrad.classList.add('pres', 'code-' + data[i]['Code']);
             }
+        }
 
-            // add classes to matching tetrads
-            for (var i = 0; i < tetArr.length; i++) {
-                var tetrad = document.getElementById(obj.context + tetArr[i]);
-                if (tetrad) {
-                    tetrad.classList.add('pres', 'code-' + data[i]['Code']);
-                }
-            }
+    })
+    .done(function(data) {
+        // refresh active tetrad
+        if (obj.tetrad.active) {
+            $('#' + obj.tetrad.domId).addClass('selected');
+        }
 
-        })
-        .done(function(data) {
-            // refresh active tetrad
-            if (obj.tetrad.active) {
-                $('#' + obj.tetrad.domId).addClass('selected');
-            }
-
-            obj.counts = obj.getSums(data);
-        })
-        .done(function() {
-            window.setTimeout(function(){
-                obj.stopSpinner.call(obj, ['map','tetrad-meta']);
-                // obj.updateStateEls.stop.call(obj, obj.context);
-                obj.stopUpdatingEls();
-                obj.setFetchingData(false);
-            }, 800);
-        })
-        .done(function(){
-            obj.logModule();
-        })
-        .fail(function() {
-            console.log("getData - error");
-            window.setTimeout(function(){
-                obj.stopSpinner.call(obj, ['map','tetrad-meta']);
-                obj.setMapErrorMsg(true, 'data-request');
-            }, 800);
-        })
-        .always(function() {
-        });
-
+        obj.counts = obj.getSums(data);
+    })
+    .done(function() {
+        window.setTimeout(function(){
+            obj.stopSpinner.call(obj, ['map','tetrad-meta']);
+            // obj.updateStateEls.stop.call(obj, obj.context);
+            obj.stopUpdatingEls();
+            obj.setFetchingData(false);
+        }, 800);
+    })
+    .done(function(){
+        obj.logModule();
+    })
+    .fail(function() {
+        console.log("getData - error");
+        window.setTimeout(function(){
+            obj.stopSpinner.call(obj, ['map','tetrad-meta']);
+            obj.setMapErrorMsg(true, 'data-request');
+        }, 800);
+    })
+    .always(function() {
+    });
 };
 
 MapModule.prototype.getSums = function(data) {
@@ -396,7 +393,7 @@ MapModule.prototype.stopUpdatingEls = function() {
 
     if (this.request === 'species') {
         this.updateHeadings();
-        this.updateSums();
+        this.updateSums('dbreed');
         this.updateTetradsPresent(this.counts.total);
         $('#' + this.context).find('.state').removeClass('update');
         return false;
@@ -404,7 +401,7 @@ MapModule.prototype.stopUpdatingEls = function() {
     if (this.request === 'dataset') {
         this.updateDatasetHeadings();
         this.updateKeys();
-        this.updateSums();
+        this.updateSums('dbreed');
         this.updateTetradsPresent(this.counts.total);
         if (this.tetrad.active) {
             this.updateTeradBox();
@@ -421,7 +418,7 @@ MapModule.prototype.stopUpdatingEls = function() {
     }
     if (this.request === 'overview') {
         if (this.dataset === 'dbreed') {
-            this.updateSums();
+            this.updateSums('dbreed');
         }
         if (this.dataset === 'dbdensity' || this.dataset === 'dwdensity') {
             this.updateTetradsPresent(this.counts.total);
@@ -431,7 +428,6 @@ MapModule.prototype.stopUpdatingEls = function() {
         return false;
     }
 }
-
 
 MapModule.prototype.updateTeradBox = function () {
 
@@ -454,13 +450,22 @@ MapModule.prototype.updateTeradBox = function () {
     $(this.tetrad.currentList).appendTo(theList);
 };
 
-MapModule.prototype.updateSums = function() {
-    var sums = this.counts;
-    var parentEl = document.getElementById(this.context);
-    parentEl.querySelector('.pres-target').innerHTML = sums.sumPresent;
-    parentEl.querySelector('.conf-target').innerHTML = sums.sumConfirmed;
-    parentEl.querySelector('.prob-target').innerHTML = sums.sumProbable;
-    parentEl.querySelector('.poss-target').innerHTML = sums.sumPossible;
+MapModule.prototype.updateSums = function(datasetkey) {
+    var sums,
+        parentEl = document.getElementById(this.context),
+        keyEl;
+
+    if (datasetkey === 'sitters') {
+        sums = this.countSitters;
+        keyEl = parentEl.querySelector('[data-set-key=sitters]');
+    } else {
+        sums = this.counts;
+        keyEl = parentEl.querySelector('[data-set-key=dbreed]');
+    }
+    keyEl.querySelector('.pres-target').innerHTML = sums.sumPresent;
+    keyEl.querySelector('.conf-target').innerHTML = sums.sumConfirmed;
+    keyEl.querySelector('.prob-target').innerHTML = sums.sumProbable;
+    keyEl.querySelector('.poss-target').innerHTML = sums.sumPossible;
 };
 
 MapModule.prototype.updateSpeciesSelect = function() {
@@ -495,8 +500,6 @@ MapModule.prototype.hideCurrentlySelectedTetradInfo = function(tetradId) {
     this.setFetchingData(false);
 };
 
-
-
 MapModule.prototype.updateHeadings = function () {
     $('#' + this.context).find('.species-title').html(this.species);
     var latinName = this.getLatinName();
@@ -512,12 +515,7 @@ MapModule.prototype.updateDatasetHeadings = function() {
     $els.each(function(index, el) {
         if (obj.dataset === $(el).attr('data-dset-title')) {
             $(el).addClass('current');
-            return false;
         }
-        if($(el).hasClass('d-set-breeding')) {
-            $(this).addClass('current');
-        }
-
     });
 };
 
@@ -535,6 +533,13 @@ MapModule.prototype.toggleDataLayer = function($el) {
     $el.is(":checked") ? $('#' + this.context).removeClass('data-off') : $('#' + this.context).addClass('data-off');
 };
 
+MapModule.prototype.resetDataLayer = function() {
+    /* todo */
+    // everytime species or dataset changes - move to event emitter
+    $('#' + this.context).removeClass('data-off');
+    $('#' + this.context).find('.data-layer-toggle').prop('checked', true);
+};
+
 MapModule.prototype.setOverviewMapState = function(state) {
     var parentEl = document.getElementById(this.context);
 
@@ -549,7 +554,6 @@ MapModule.prototype.setOverviewMapState = function(state) {
         this.getData();
     }
 };
-
 
 MapModule.prototype.getSpeciesAccount = function() {
     var obj = this;
@@ -571,9 +575,7 @@ MapModule.prototype.getSpeciesAccount = function() {
     .always(function() {
         console.log("complete");
     });
-
 };
-
 
 MapModule.prototype.templateSpeciesAccount = function(data, latinName) {
 
@@ -588,10 +590,117 @@ MapModule.prototype.templateSpeciesAccount = function(data, latinName) {
 };
 
 
+/* sitters-underlay */
+MapModule.prototype.setSittersUnderlay = function(status) {
+    this.sittersUnderlay = status;
+}
+
+MapModule.prototype.unsetSittersUnderlay = function() {
+    /* todo */
+    // listen for and fire on any change in this.species or this.dataset - move to event emitter
+    this.setSittersUnderlay(false);
+    var $sittersLayer = $('#' + this.context).find('.sitters-underlay'),
+        $sittersToggle = $('#' + this.context).find('.sitters-toggle'),
+        $sittersKey =  $('#' + this.context).find('[data-set-key=sitters] .tet-data');
+    $sittersKey.hide();
+    $sittersLayer.hide(); // remove innerHTML
+    $sittersToggle.prop('checked', false);
+}
+
+MapModule.prototype.toggleSittersUnderlay = function(target) {
+    if (!this.species) {
+        return false;
+    }
+    if(this.sittersUnderlay) {
+
+        var $sittersLayer = $('#' + this.context).find('.sitters-underlay');
+
+        if($(target).prop('checked')) {
+            $sittersLayer.show();
+        } else {
+            $sittersLayer.hide();
+        }
+    } else {
+        this.getSittersUnderlayData();
+    }
+}
 
 
+MapModule.prototype.getSittersUnderlayData = function(status) {
+
+    this.startSpinner(['map']);
+    var obj = this;
+
+    var formData = {
+        "species" : this.species,
+        "data-set" : 'sitters'
+    };
+
+    $.ajax({
+            url: config.folder + config.themeUrl + '/ajax/speciesData.php',
+            type: 'POST',
+            dataType: 'json',
+            data:  formData,
+            timeout: 12000
+    })
+    .done(function(data) {
+        // remove previous results using currentTetradArrUnderlay
+        var prevResults = JSON.parse(sessionStorage.getItem(obj.context + "currentTetradArrUnderlay"));
+
+        if (Array.isArray(prevResults) && prevResults.length)  {
+            for (var i = 0; i < prevResults.length; i++) {
+                var prevTetrad = document.getElementById(obj.context + 'su_' + prevResults[i]);
+                if (prevTetrad) {
+                    prevTetrad.className = '';
+                }
+            }
+        }
+
+        var tetArr = [];
+        for (var i = 0; i < data.length; i++) {
+            tetArr.push(data[i]['Tetrad']);
+            sessionStorage.setItem(obj.context + "currentTetradArrUnderlay", JSON.stringify(tetArr));
+        }
+
+        // add classes to matching tetrads
+        for (var i = 0; i < tetArr.length; i++) {
+            var tetrad = document.getElementById(obj.context + 'su_' + tetArr[i]);
+            if (tetrad) {
+                tetrad.classList.add('pres', 'code-' + data[i]['Code']);
+            }
+        }
+
+        obj.countSitters = obj.getSums(data);
+
+    })
+     .done(function() {
+        window.setTimeout(function(){
+            obj.stopSpinner.call(obj, ['map']);
+            obj.setSittersUnderlay(true);
+            obj.setFetchingData(false);
+            obj.updateSums('sitters');
+            $('#' + obj.context).find('[data-set-key=sitters] .tet-data').show();
+            $('#' + obj.context).find('.sitters-underlay').show();
+        }, 800);
+    })
+    .done(function(){
+        obj.logModule();
+    })
+    .fail(function() {
+        console.log("getData - error");
+        window.setTimeout(function(){
+            obj.stopSpinner.call(obj, ['map','tetrad-meta']);
+            obj.setMapErrorMsg(true, 'data-request');
+        }, 800);
+    })
+    .always(function() {
+    });
+};
 
 
+MapModule.prototype.templateSittersUnderlay = function() {
+
+};
 
 
 
