@@ -176,6 +176,35 @@
         </ul>
     </div>
 
-    <?php include 'map-key-dbreed.php'; ?>
+
+<table class="key-table state counts ">
+<tbody>
+    <tr>
+        <td>present</td>
+        <td>possible</td>
+        <td>probable</td>
+        <td>confirmed</td>
+    </tr>
+    <tr data-set-key="dbreed" >
+        <td>
+            <span class="keysq brst present"></span>
+        </td>
+        <td>
+            <span class="keysq brst poss"></span>
+        </td>
+        <td>
+            <span class="keysq brst prob"></span>
+        </td>
+        <td>
+            <span class="keysq brst confirmed"></span>
+        </td>
+    </tr>
+
+</tbody>
+</table>
+
+
+
+
 
 </div><!-- .richness-list -->
