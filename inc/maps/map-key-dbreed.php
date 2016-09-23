@@ -33,7 +33,7 @@
         <td><span class="tet-data prob-target"></span></td>
         <td><span class="tet-data conf-target"></span></td>
     </tr> -->
-    <tr  data-set-key="sitters" class="sitter-underlay-key">
+    <tr data-set-key="sitters" class="sitter-underlay-key" style="display:none">
         <td class="headTd">1977 - 1985:</td>
         <td>
             <span class="keysq pres"></span>

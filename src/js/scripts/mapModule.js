@@ -231,6 +231,8 @@ MapModule.prototype.getData = function() {
             var tetrad = document.getElementById(obj.context + tetArr[i]);
             if (tetrad) {
                 tetrad.classList.add('pres', 'code-' + data[i]['Code']);
+            } else {
+                console.log('wtf');
             }
         }
 
@@ -250,9 +252,6 @@ MapModule.prototype.getData = function() {
             obj.stopUpdatingEls();
             obj.setFetchingData(false);
         }, 800);
-    })
-    .done(function(){
-        obj.logModule();
     })
     .fail(function() {
         console.log("getData - error");
@@ -540,54 +539,7 @@ MapModule.prototype.resetDataLayer = function() {
     $('#' + this.context).find('.data-layer-toggle').prop('checked', true);
 };
 
-MapModule.prototype.setOverviewMapState = function(state) {
-    var parentEl = document.getElementById(this.context);
 
-    if (state === 'idle') {
-        parentEl.querySelector('.map-state-wrap').classList.remove('off');
-        $('#' + this.context).addClass('data-off');
-    }
-    if (state === 'active') {
-        $('#' + this.context).removeClass('data-off');
-        this.startSpinner(['map']);
-        parentEl.querySelector('.map-state-wrap').classList.add('off');
-        this.getData();
-    }
-};
-
-MapModule.prototype.getSpeciesAccount = function() {
-    var obj = this;
-
-    $.ajax({
-        url: config.folder + '/wp-json/wp/v2/species?filter[name]=' + this.species,
-        type: 'GET',
-        dataType: 'json'
-    })
-    .done(function(data) {
-        window.setTimeout(function(){
-            var latinName = obj.getLatinName();
-            obj.templateSpeciesAccount.call(obj, data, latinName);
-        }, 800);
-    })
-    .fail(function() {
-        console.log("error");
-    })
-    .always(function() {
-        console.log("complete");
-    });
-};
-
-MapModule.prototype.templateSpeciesAccount = function(data, latinName) {
-
-    if (latinName) {
-        $('.latin-name').html(latinName);
-    } else {
-        $('.latin-name').html('');
-    }
-    document.querySelector('.account-text').innerHTML = data[0].content.rendered;
-    document.getElementById('species-name').innerHTML = this.species;
-    $('.state').removeClass('update');
-};
 
 
 /* sitters-underlay */
@@ -601,7 +553,7 @@ MapModule.prototype.unsetSittersUnderlay = function() {
     this.setSittersUnderlay(false);
     var $sittersLayer = $('#' + this.context).find('.sitters-underlay'),
         $sittersToggle = $('#' + this.context).find('.sitters-toggle'),
-        $sittersKey =  $('#' + this.context).find('[data-set-key=sitters] .tet-data');
+        $sittersKey =  $('#' + this.context).find('[data-set-key=sitters]');
     $sittersKey.hide();
     $sittersLayer.hide(); // remove innerHTML
     $sittersToggle.prop('checked', false);
@@ -614,11 +566,15 @@ MapModule.prototype.toggleSittersUnderlay = function(target) {
     if(this.sittersUnderlay) {
 
         var $sittersLayer = $('#' + this.context).find('.sitters-underlay');
+        var $sittersKey =  $('#' + this.context).find('[data-set-key=sitters]');
 
         if($(target).prop('checked')) {
             $sittersLayer.show();
+            $sittersKey.show();
+            console.log($sittersKey);
         } else {
             $sittersLayer.hide();
+            $sittersKey.hide();
         }
     } else {
         this.getSittersUnderlayData();
@@ -679,13 +635,13 @@ MapModule.prototype.getSittersUnderlayData = function(status) {
             obj.setSittersUnderlay(true);
             obj.setFetchingData(false);
             obj.updateSums('sitters');
-            $('#' + obj.context).find('[data-set-key=sitters] .tet-data').show();
+            $('#' + obj.context).find('[data-set-key=sitters]').show();
             $('#' + obj.context).find('.sitters-underlay').show();
         }, 800);
     })
-    .done(function(){
+     .done(function(){
         obj.logModule();
-    })
+     })
     .fail(function() {
         console.log("getData - error");
         window.setTimeout(function(){
@@ -696,19 +652,6 @@ MapModule.prototype.getSittersUnderlayData = function(status) {
     .always(function() {
     });
 };
-
-
-MapModule.prototype.templateSittersUnderlay = function() {
-
-};
-
-
-
-
-
-
-
-
 
 
 

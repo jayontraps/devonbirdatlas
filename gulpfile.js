@@ -75,6 +75,7 @@ gulp.task('scripts', function() {
         .pipe(deporder())
         .pipe(concat('scripts.js'))
         .pipe(gulpif(devBuild, sourcemaps.write()))
+        .pipe(gulpif(!devBuild, uglify()))
         .pipe(gulp.dest(dest + 'js/'));
 });
 

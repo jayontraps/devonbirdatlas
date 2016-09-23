@@ -5,6 +5,12 @@ chosen.jquery.min.js
 speciesList.js
 */
 
+// load from query string
+function getUrlVar(key){
+    var result = new RegExp(key + "=([^&]*)", "i").exec(window.location.search);
+    return result && unescape(result[1]) || "";
+}
+
 (function($) {
 
 	$(document).ready(function() {
@@ -45,8 +51,16 @@ speciesList.js
                     placeholder_text_single: "Select a species",
                     no_results_text: "Oops, nothing found!",
                     width: "95%"
-            });
-          }
+                }).ready(function(argument) {
+                    if ( typeof mapPage !== 'undefined' && mapPage) {
+                        if (getUrlVar("speciesname") !== "") {
+                            var chosenList = $('#m1_').find('.select-species');
+                            chosenList.val(getUrlVar("speciesname"));
+                            chosenList.trigger("chosen:updated");
+                        }
+                    }
+                });
+            }
         }
 
 

@@ -36,18 +36,7 @@
 }
 
 
-/* overview */
-.ov {
-	.tetCounts {
-		font-size: .8em;
-	}
-	.key-table {
 
-		td {
-			font-style: normal;
-		}
-	}
-}
 
 .key-table {
 	width: 100%;
@@ -65,9 +54,32 @@
 	}
 
 	td.headTd {
-		// width:130px;
 		font-style:normal;
 		text-align:left;
+	}
+}
+
+.tetrad-maps {
+	.key-table {
+
+		td {
+			min-width: 50px;
+		}
+		td.headTd {
+			min-width:70px;
+		}
+	}
+}
+
+
+@media screen and (min-width: $max_width) {
+	.tetrad-maps {
+		.key-table {
+
+			td {
+				min-width: 65px;
+			}
+		}
 	}
 }
 
@@ -142,9 +154,15 @@
 /* Overview */
 
 .ov {
+	.tetCounts {
+		font-size: .8em;
+	}
 	.key-table {
-		font-size: .75em;
+		font-size: .8em;
 		margin-top: $default_spacing/2;
+		td {
+			font-style: normal;
+		}
 	}
 	.keysq	{
 		display:inline-block;
@@ -158,16 +176,6 @@
 		height: 10px;
 	}
 }
-
-
-
-
-
-
-
-
-
-
 
 
 

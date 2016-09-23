@@ -6,6 +6,7 @@ speciesList.js
 latinNames.js
 mapModule.js
 mapModule-richness.js
+mapModule-overview.js
 init.js
 */
 /* https://github.com/mkleehammer/gulp-deporder */
@@ -67,6 +68,22 @@ if ( typeof mapPage !== 'undefined' && mapPage) {
     // set defaults
     maps.m1_.setDataset('dbreed');
     maps.m2_.setDataset('dbreed');
+
+
+    jQuery(document).ready(function($) {
+        if (getUrlVar("speciesname") !== "") {
+            $('#m1_ .species-titles').addClass('update');
+            var nameFromQueryString = getUrlVar("speciesname");
+            maps.m1_.request = 'species';
+            maps.m1_.startSpinner(['map']);
+            maps.m1_.setSpecies(nameFromQueryString);
+
+            window.setTimeout(function(){
+                maps.m1_.getData();
+                maps.m1_.logModule();
+            }, 400);
+        }
+    });
 
 
     $('.container').on('change', '.select-species', function(event) {
@@ -170,6 +187,16 @@ if ( typeof mapPage !== 'undefined' && mapPage) {
 
 
 if ( typeof ovPage !== 'undefined' && ovPage) {
+
+    var $launchLink = $("#launch-maps-link"),
+        $launchLinkHref = $launchLink.attr('href');
+
+    function appendSpeciesToLink(species) {
+        var queryStr = '?speciesname='+ species;
+        $launchLink.attr("href", $launchLinkHref + queryStr);
+    }
+
+
     // setup the mapModules
     var maps = {};
     maps.m1_ = new MapModule('m1_');
@@ -187,6 +214,8 @@ if ( typeof ovPage !== 'undefined' && ovPage) {
         maps.m1_.setDataset('dbreed');
         maps.m1_.startSpinner(['map']);
         maps.m1_.getData();
+
+        appendSpeciesToLink(this.value);
 
         maps.m2_.setSpecies(this.value);
         maps.m2_.request = 'overview';

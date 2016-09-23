@@ -18,7 +18,7 @@
             </div>
             <ul class="main-nav nav">
                 <li><a href="<?php bloginfo('url'); ?>/species-overview">Species overview</a></li>
-                <li><a href="<?php bloginfo('url'); ?>/tetrad-maps">Tetrad maps</a></li>
+                <li><a id="launch-maps-link" href="<?php bloginfo('url'); ?>/tetrad-maps">Tetrad maps</a></li>
                 <li><a href="<?php bloginfo('url'); ?>/species-richness">Species Richness</a></li>
             </ul>
         </div>
