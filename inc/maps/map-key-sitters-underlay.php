@@ -1,32 +1,24 @@
-<table data-set-key="sitters" class="key-table state counts ">
+<table data-set-key="sitters-underlay" class="key-table state counts sitter-underlay-key" style="visibility:hidden">
     <tbody>
-        <tr>
-            <td class="headTd"></td>
-            <td></td>
-            <td>Possible</td>
-            <td>Probable</td>
-            <td>Confirmed</td>
-            <td>Total</td>
-        </tr>
         <tr>
             <td class="headTd">1977 - 1985:</td>
             <td>
-                <span class="keysq brst no-data"></span>
+                <span class="keysq pres no-data"></span>
             </td>
             <td>
-                <span class="keysq brst poss"></span>
+                <span class="keysq poss"></span>
             </td>
             <td>
-                <span class="keysq brst prob"></span>
+                <span class="keysq prob"></span>
             </td>
             <td>
-                <span class="keysq brst confirmed"></span>
+                <span class="keysq conf"></span>
             </td>
             <td>
-                <span class="keysq brst sum-total"></span>
+                <span class="keysq"></span>
             </td>
         </tr>
-        <tr>
+         <tr>
             <td class="headTd">No. (%)</td>
             <td>
                 <span class="tet-data pres-target no-data"></span>

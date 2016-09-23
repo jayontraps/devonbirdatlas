@@ -298,7 +298,7 @@ MapModule.prototype.getSums = function(data) {
 };
 
 MapModule.prototype.getPercentageOfSums = function(argument) {
-    
+
 }
 
 MapModule.prototype.getLatinName = function() {
@@ -414,7 +414,12 @@ MapModule.prototype.stopUpdatingEls = function() {
     if (this.request === 'dataset') {
         this.updateDatasetHeadings();
         this.updateKeys();
-        this.updateSums('dbreed');
+        if (this.dataset === 'dbreed') {
+            this.updateSums('dbreed');
+        }
+        if (this.dataset === 'sitters') {
+            this.updateSums('sitters');
+        }
         this.updateTetradsPresent(this.counts.total);
         if (this.tetrad.active) {
             this.updateTeradBox();
@@ -469,9 +474,14 @@ MapModule.prototype.updateSums = function(datasetkey) {
         keyEl;
 
     if (datasetkey === 'sitters') {
-        sums = this.countSitters;
+        sums = this.counts;
         keyEl = parentEl.querySelector('[data-set-key=sitters]');
-    } else {
+    }
+    else if(datasetkey === 'sitters-underlay') {
+        sums = this.countSitters;
+        keyEl = parentEl.querySelector('[data-set-key=sitters-underlay]');
+    }
+    else {
         sums = this.counts;
         keyEl = parentEl.querySelector('[data-set-key=dbreed]');
     }
@@ -540,13 +550,21 @@ MapModule.prototype.updateDatasetHeadings = function() {
 };
 
 MapModule.prototype.updateKeys = function() {
+
     var keyEls = $('#' + this.context).find('.key-container');
+
     $(keyEls).removeClass('active dwdensity dbdensity');
+
     if (this.dataset === 'dwdensity' || this.dataset === 'dbdensity') {
-        $(keyEls[1]).addClass('active ' + this.dataset);
+        $(keyEls[2]).addClass('active ' + this.dataset);
+        return false;
+    }
+    if (this.dataset === 'sitters') {
+        $(keyEls[1]).addClass('active');
         return false;
     }
     $(keyEls[0]).addClass('active');
+
 };
 
 MapModule.prototype.toggleDataLayer = function($el) {
@@ -574,7 +592,7 @@ MapModule.prototype.unsetSittersUnderlay = function() {
     this.setSittersUnderlay(false);
     var $sittersLayer = $('#' + this.context).find('.sitters-underlay'),
         $sittersToggle = $('#' + this.context).find('.sitters-toggle'),
-        $sittersKey =  $('#' + this.context).find('[data-set-key=sitters]');
+        $sittersKey =  $('#' + this.context).find('[data-set-key=sitters-underlay]');
     $sittersKey.css('visibility','hidden');
     $sittersLayer.hide(); // remove innerHTML
     $sittersToggle.prop('checked', false);
@@ -587,7 +605,7 @@ MapModule.prototype.toggleSittersUnderlay = function(target) {
     if(this.sittersUnderlay) {
 
         var $sittersLayer = $('#' + this.context).find('.sitters-underlay');
-        var $sittersKey =  $('#' + this.context).find('[data-set-key=sitters]');
+        var $sittersKey =  $('#' + this.context).find('[data-set-key=sitters-underlay]');
 
         if($(target).prop('checked')) {
             $sittersLayer.show();
@@ -654,8 +672,8 @@ MapModule.prototype.getSittersUnderlayData = function(status) {
             obj.stopSpinner.call(obj, ['map']);
             obj.setSittersUnderlay(true);
             obj.setFetchingData(false);
-            obj.updateSums('sitters');
-            $('#' + obj.context).find('[data-set-key=sitters]').css('visibility', 'visible');
+            obj.updateSums('sitters-underlay');
+            $('#' + obj.context).find('[data-set-key=sitters-underlay]').css('visibility', 'visible');
             $('#' + obj.context).find('.sitters-underlay').show();
         }, 800);
     })

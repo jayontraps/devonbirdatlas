@@ -3,6 +3,8 @@
 
 .key-group {
 	width:100%;
+	position: relative;
+	height: 170px;
 	// height: $keys-height;
 	font-size: .8rem;
 	padding: $default_spacing 0;
@@ -10,10 +12,13 @@
 }
 
 .key-container {
+	position: absolute;
+	top: $default_spacing;
+	width: 100%;
 	padding:0;
-	display:none;
+	visibility: hidden;
 	&.active {
-		display:block;
+		visibility: visible;
 	}
 }
 
@@ -57,6 +62,9 @@
 	td.headTd {
 		font-style:normal;
 		text-align:left;
+	}
+	.no-data {
+		visibility: hidden;
 	}
 }
 
@@ -271,12 +279,9 @@
 			background-color: $sitters_underlay_conf;
 		}
 	}
-	tr {
-		td:nth-child(2) {
-			visibility: hidden;
-		}
-	}
 }
+
+
 
 
 [data-set="dbreed10"] {

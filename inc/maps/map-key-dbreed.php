@@ -1,4 +1,4 @@
-<table class="key-table state counts ">
+<table data-set-key="dbreed"  class="key-table state counts ">
     <tbody>
         <tr>
             <td class="headTd"></td>
@@ -26,7 +26,7 @@
                 <span class="keysq brst sum-total"></span>
             </td>
         </tr>
-        <tr data-set-key="dbreed" >
+        <tr>
             <td class="headTd">No. (%)</td>
             <td>
                 <span class="tet-data pres-target"></span>
