@@ -173,7 +173,6 @@ MapModule.prototype.filterForTenkSpecies = function() {
         if (this.dataset === 'dbreed') {
             this.tenkSpecies = true;
             this.setDataset('dbreed10');
-            console.log('filterForTenkSpecies: ', this.dataset);
         }
 
         return false;
@@ -269,7 +268,7 @@ MapModule.prototype.getSums = function(data) {
         sumProbable = 0,
         sumPossible = 0,
         sumPresent = 0;
-    if (this.dataset === 'dbreed' || this.dataset === 'sitters') {
+    if (this.dataset !== 'dwdensity' || this.dataset !== 'dbdensity') {
         for (var i = 0; i < data.length; i++) {
             if (data[i]['Code'] === 'A') {sumConfirmed++;}
             if (data[i]['Code'] === 'B') {sumProbable++;}

@@ -10,20 +10,17 @@
   $status = $_POST['status'];
   $status = stripslashes($status);
 
- if (condition) {
-     # code...
- }
+  $table = $dataset . '-' . $status . '-' . $range;
+  $table = stripslashes($table);
 
+  /*
+  table names:
+  dbreed-amber-prob-conf
+  dbreed-red-prob-conf
+  sitters-amber-prob-conf
+  sitters-red-prob-conf
+  */
 
-$table = $dataset . '-' . $status . '-' . $range;
-$table = stripslashes($table);
-/*
-table names:
-dbreed-amber-prob-conf
-dbreed-red-prob-conf
-sitters-amber-prob-conf
-sitters-red-prob-conf
-*/
   try {
     $conn = new PDO('mysql:host=localhost;dbname=devon_data', $config['DB_USERNAME'], $config['DB_PASSWORD']);
 
