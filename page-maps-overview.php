@@ -35,36 +35,7 @@ get_header('maps'); ?>
                         </div>
                     </div>
 
-                    <table class="key-table state counts ">
-                        <tbody>
-                            <tr>
-                                <td class="headTd"></td>
-                                <td>present</td>
-                                <td>possible</td>
-                                <td>probable</td>
-                                <td>confirmed</td>
-                            </tr>
-                            <tr data-set-key="dbreed" >
-                                <td class="headTd">2007 - 13:</td>
-                                <td>
-                                    <span class="keysq brst present"></span>
-                                    <span class="tet-data pres-target"></span>
-                                </td>
-                                <td>
-                                    <span class="keysq brst poss"></span>
-                                    <span class="tet-data poss-target"></span>
-                                </td>
-                                <td>
-                                    <span class="keysq brst prob"></span>
-                                    <span class="tet-data prob-target"></span>
-                                </td>
-                                <td>
-                                    <span class="keysq brst confirmed"></span>
-                                    <span class="tet-data conf-target"></span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <?php include 'inc/maps/map-key-dbreed.php'; ?>
 
                 </div>
             </div>

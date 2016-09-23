@@ -4,12 +4,44 @@
 		"selected_items":
 		[
 			[
-				"data",
-				"dataset"
+				"type",
+				"typeof (?)"
+			],
+			[
+				"at",
+				"attr\t.attr() - single"
+			],
+			[
+				"att",
+				"attr\t.attr() - multiple"
+			],
+			[
+				"Map",
+				"MapModule (fn)"
+			],
+			[
+				"m",
+				"ml\tmargin-left"
+			],
+			[
+				"key",
+				"keyEl (?)"
 			],
 			[
 				"con",
-				"conservationStatus (?)"
+				"context (str)"
+			],
+			[
+				"ev",
+				"event (?)"
+			],
+			[
+				"sta",
+				"status"
+			],
+			[
+				"data",
+				"dataset"
 			],
 			[
 				"$st",
@@ -49,7 +81,7 @@
 			],
 			[
 				"slide",
-				"slideToggle	.slideToggle()"
+				"slideToggle\t.slideToggle()"
 			],
 			[
 				"don",
@@ -57,11 +89,7 @@
 			],
 			[
 				"app",
-				"append	.append()"
-			],
-			[
-				"Map",
-				"MapModule"
+				"append\t.append()"
 			],
 			[
 				"lo",
@@ -73,19 +101,19 @@
 			],
 			[
 				"b",
-				"b-a	bottom: auto;"
+				"b-a\tbottom: auto;"
 			],
 			[
 				"h",
-				"h-a	height: auto;"
+				"h-a\theight: auto;"
 			],
 			[
 				"pr",
-				"pos-r	position: relative;"
+				"pos-r\tposition: relative;"
 			],
 			[
 				"toggle",
-				"toggleClass	.toggleClass()"
+				"toggleClass\t.toggleClass()"
 			],
 			[
 				"$ra",
@@ -97,7 +125,7 @@
 			],
 			[
 				"prop",
-				"prop	.prop() - single"
+				"prop\t.prop() - single"
 			],
 			[
 				"prob",
@@ -121,11 +149,11 @@
 			],
 			[
 				"td",
-				"td-u	text-decoration: underline;"
+				"td-u\ttext-decoration: underline;"
 			],
 			[
 				"lorem",
-				"lorem	Lorem ipsum"
+				"lorem\tLorem ipsum"
 			],
 			[
 				"inner",
@@ -133,7 +161,7 @@
 			],
 			[
 				"po",
-				"pos-r	position: relative;"
+				"pos-r\tposition: relative;"
 			],
 			[
 				"class",
@@ -141,11 +169,11 @@
 			],
 			[
 				"jc",
-				"jc-c	justify-content: center;"
+				"jc-c\tjustify-content: center;"
 			],
 			[
 				"pos",
-				"pos-a	position: absolute;"
+				"pos-a\tposition: absolute;"
 			],
 			[
 				"db",
@@ -153,11 +181,11 @@
 			],
 			[
 				"bc",
-				"bdcl-c	border-collapse: collapse;"
+				"bdcl-c\tborder-collapse: collapse;"
 			],
 			[
 				"o",
-				"ov	overflow: ${1:hidden};"
+				"ov\toverflow: ${1:hidden};"
 			],
 			[
 				"parent",
@@ -165,7 +193,7 @@
 			],
 			[
 				"stop",
-				"scrollTop	.scrollTop()"
+				"scrollTop\t.scrollTop()"
 			],
 			[
 				"st",
@@ -181,7 +209,7 @@
 			],
 			[
 				"ai",
-				"ai-c	align-items: center;"
+				"ai-c\talign-items: center;"
 			],
 			[
 				"map",
@@ -225,7 +253,7 @@
 			],
 			[
 				"for",
-				"for	for (…) {…}"
+				"for\tfor (…) {…}"
 			],
 			[
 				"va",
@@ -237,7 +265,7 @@
 			],
 			[
 				"css",
-				"css	.css() - single"
+				"css\t.css() - single"
 			],
 			[
 				"over",
@@ -253,7 +281,7 @@
 			],
 			[
 				"bgi",
-				"bgi-n	background-image: none;"
+				"bgi-n\tbackground-image: none;"
 			],
 			[
 				"inde",
@@ -292,10 +320,6 @@
 				"currentArra"
 			],
 			[
-				"key",
-				"keyEls (?)"
-			],
-			[
 				"ke",
 				"keyEls (?)"
 			],
@@ -305,7 +329,7 @@
 			],
 			[
 				"e",
-				"each	.each()"
+				"each\t.each()"
 			],
 			[
 				"update",
@@ -313,11 +337,11 @@
 			],
 			[
 				"attr",
-				"attr	.attr() - single"
+				"attr\t.attr() - single"
 			],
 			[
 				"remove",
-				"removeClass	.removeClass()"
+				"removeClass\t.removeClass()"
 			],
 			[
 				"up",
@@ -325,23 +349,23 @@
 			],
 			[
 				"d",
-				"d-tbc	display: table-cell;"
+				"d-tbc\tdisplay: table-cell;"
 			],
 			[
 				"rem",
-				"removeClass	.removeClass()"
+				"removeClass\t.removeClass()"
 			],
 			[
 				"p",
-				"pos-a	position: absolute;"
+				"pos-a\tposition: absolute;"
 			],
 			[
 				"j",
-				"jc-sb	justify-content: space-between;"
+				"jc-sb\tjustify-content: space-between;"
 			],
 			[
 				"ta",
-				"ta-r	text-align: right;"
+				"ta-r\ttext-align: right;"
 			],
 			[
 				"latin",
@@ -349,7 +373,7 @@
 			],
 			[
 				"ap",
-				"appendTo	.appendTo()"
+				"appendTo\t.appendTo()"
 			],
 			[
 				"ma",
@@ -357,23 +381,15 @@
 			],
 			[
 				"bgr",
-				"bgr-n	background-repeat: no-repeat;"
+				"bgr-n\tbackground-repeat: no-repeat;"
 			],
 			[
 				"cont",
 				"container"
 			],
 			[
-				"att",
-				"attr	.attr() - single"
-			],
-			[
 				"add",
-				"addClass	.addClass()"
-			],
-			[
-				"sta",
-				"startSpinner"
+				"addClass\t.addClass()"
 			],
 			[
 				"set",
@@ -401,7 +417,7 @@
 			],
 			[
 				"ad",
-				"addClass	.addClass()"
+				"addClass\t.addClass()"
 			],
 			[
 				"conte",
@@ -409,7 +425,7 @@
 			],
 			[
 				"da",
-				"delay	.delay()"
+				"delay\t.delay()"
 			],
 			[
 				"js",
@@ -437,7 +453,7 @@
 			],
 			[
 				"di",
-				"d-ib	display: inline-block;"
+				"d-ib\tdisplay: inline-block;"
 			],
 			[
 				"mov",
@@ -493,53 +509,66 @@
 			],
 			[
 				"list",
-				"list-n	list-style-type: none;"
+				"list-n\tlist-style-type: none;"
 			],
 			[
 				"page_1",
 				"page_1_transitions"
-			],
-			[
-				"pa",
-				"page_transitions"
-			],
-			[
-				"ef",
-				"effeckt-page-animating"
-			],
-			[
-				"liste",
-				"listen"
-			],
-			[
-				"sc",
-				"scale-down"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "src/js/app/entry.js",
+			"file": "src/js/scripts/init.js",
 			"settings":
 			{
-				"buffer_size": 9938,
+				"buffer_size": 2188,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/scss/components/map-tetrad-box.scss",
+			"contents": "MapModule.prototype.updateTotals = function() {\n    // listen for event?\n    if (dbrees) {\n\n    }\n    if (sittera) {\n\n    }\n    if (10K) {\n\n    }\n}\n\n",
 			"settings":
 			{
-				"buffer_size": 1522,
+				"buffer_size": 149,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "page-maps-richness.php",
+			"file": "gulpfile.js",
 			"settings":
 			{
-				"buffer_size": 2203,
+				"buffer_size": 3594,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "page-maps-overview.php",
+			"settings":
+			{
+				"buffer_size": 5799,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/scss/pages/overview-page-layout.scss",
+			"settings":
+			{
+				"buffer_size": 2436,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ajax/richness/richnessDataPrepared.php",
+			"settings":
+			{
+				"buffer_size": 897,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -548,40 +577,56 @@
 			"settings":
 			{
 				"buffer_size": 1774,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "Searching 37 files for \".tetrad-maps \"\n\n/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/map-tetrad-box.scss:\n   65  \n   66  @media screen and (min-width: $max_width) {\n   67:     .tetrad-maps {\n   68          .tetrad-list {\n   69              > li {\n\n/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/richness-tetrad-backgrounds.scss:\n  131  \n  132      /* 2k borders */\n  133:     // &.tetrad-maps {\n  134      //     [data-set=\"dwdensity\"] {\n  135      //         .pres {\n\n/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/tetrad-backgrounds.scss:\n  247  \n  248  /* 2k borders */\n  249: // .tetrad-maps {\n  250  //     [data-set=\"dwdensity\"] {\n  251  //         .pres {\n\n/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/pages/map-page-layout.scss:\n    1: .tetrad-maps {\n    2      width: $max_width;\n    3      margin: 0 auto;\n    .\n  135  \n  136  @media screen and (max-width: 1025px) {\n  137:     .tetrad-maps {\n  138          width: 100%;\n  139          margin: 0 auto;\n  ...\n  158  \n  159  @media screen and (max-width: 768px) {\n  160:     .tetrad-maps {\n  161          width: 100%;\n  162          max-width: $tablet-map-width;\n\n6 matches across 4 files\n\n\nSearching 15 files for \"tet-res-name\"\n\n0 matches",
+			"contents": "example:\n3 calls to get total counts of individual species\n\nSELECT COUNT(`Species`) \nAS TotalA \nFROM dbreed \nWHERE Species='Moorhen' AND Code='A'\nUNION\nSELECT COUNT(`Species`) \nFROM dbreed \nWHERE Species='Moorhen' AND Code='B'\nUNION\nSELECT COUNT(`Species`) \nFROM dbreed \nWHERE Species='Moorhen' AND Code='K'\n\n\n\n",
+			"file": "/Users/jasonrighelato/Dropbox (Personal)/projects/Devon-atlas/example-sql.txt",
+			"file_size": 307,
+			"file_write_time": 131191094400000000,
 			"settings":
 			{
-				"buffer_size": 1350,
+				"buffer_size": 311,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "example:"
+			}
+		},
+		{
+			"contents": "Searching 10 files for \"distinct\"\n\n/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/ajax/richness/richnessData.php:\n   28  \n   29    if ($dataset == 'dwdensity') {\n   30:     $sqlQuery = \"SELECT distinct Tetrad, count(`Species`) as CountOf from \" . $dataset . \" group by `Tetrad`\";\n   31    } else {\n   32:     $sqlQuery =  \"SELECT distinct Tetrad, count(`Species`) as CountOf from \" . $dataset . $rangeCondition . $statusCondition . \" group by `Tetrad`\";\n   33    }\n   34  \n   35    /*\n   36    example:\n   37:   SELECT distinct Tetrad,\n   38    count(`Species`) as CountOf from dbreed\n   39    WHERE `Code`='A' OR `Code`='B'\n\n/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/ajax/richnessData.php:\n    7    //   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);\n    8  \n    9:   //   // $stmt = $conn->prepare(\"select distinct Tetrad, count(`Species`) as CountOf from `dwdensity` group by `Tetrad`\");\n   10    //   $stmt = $conn->prepare(echo $request);\n   11  \n\n/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/ajax/speciesList-example.php:\n   10      $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);\n   11  \n   12:     $stmt = $conn->prepare('SELECT DISTINCT Species FROM ' . $dataset . ' ORDER BY Species');\n   13  \n   14      $stmt->execute(array(\n\n5 matches across 3 files\n",
+			"settings":
+			{
+				"buffer_size": 1363,
 				"line_ending": "Unix",
 				"name": "Find Results",
 				"scratch": true
 			}
 		},
 		{
-			"file": "src/scss/pages/map-page-layout.scss",
+			"file": "ajax/richness/richnessData.php",
 			"settings":
 			{
-				"buffer_size": 2509,
+				"buffer_size": 1842,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "gulpfile.js",
+			"file": "src/scss/components/map-keys.scss",
 			"settings":
 			{
-				"buffer_size": 3992,
+				"buffer_size": 3949,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/js/scripts/main.js",
+			"file": "src/js/scripts/events.js",
 			"settings":
 			{
-				"buffer_size": 1658,
+				"buffer_size": 9870,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -589,22 +634,33 @@
 			"file": "src/js/scripts/mapModule.js",
 			"settings":
 			{
-				"buffer_size": 17659,
+				"buffer_size": 20741,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
+			"file": "src/scss/variables.scss",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 1432,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/js/scripts/mapModule-richness.js",
+			"file": "build/img/ov-confirmed.svg",
 			"settings":
 			{
-				"buffer_size": 7955,
+				"buffer_size": 662,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/js/scripts/tenkSpecies.js",
+			"settings":
+			{
+				"buffer_size": 173,
 				"line_ending": "Unix"
 			}
 		}
@@ -691,54 +747,86 @@
 	"expanded_folders":
 	[
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/ajax",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/ajax/richness",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/build",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/build/css",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/build/img",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/build/js",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/js",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/languages",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js/app",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js/scripts",
-		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/pages"
 	],
 	"file_history":
 	[
-		"/Users/jasonrighelato/Downloads/jsorg-solutions/task3/js/eventemitter2.js",
-		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js/scripts/main.js",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/build/css/main.css",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/build/js/scripts.js",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/map-keys.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js/scripts/mapModule-overview.js",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js/scripts/mapModule.js",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/map-keys.scss",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/map-key-dbreed.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/overview-idle-map-state.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/map-tetrad-box.scss",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/header-maps.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/map-sitters-underlay.scss",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/overlays.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/tetrad-backgrounds.scss",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/variables.scss",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/richness-controls.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/page-maps-overview.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/custom_functions.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/data-set-heading.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/map-grid-1-underlay.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/map-grid-2-underlay.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js/scripts/events.js",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/overlay.scss",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/page-maps.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js/scripts/init.js",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/map-sitters-underlay.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/map-grid-underlay.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/map-grid-1.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/map-grid-2.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/map-grid-3.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js/app/entry.js",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/overlay-controls.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/map-breeding-toggles.scss",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/gulpfile.js",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/main.scss",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/richness-tetrad-backgrounds.scss",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/page-maps-richness.php",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js/app/modules/overlay.js",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/pages/map-page-layout.scss",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js/scripts/main.js",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/build/js/all.min.js",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js/scripts/mapModule-richness.js",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js/app/modules/foo.js",
+		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js/app/modules/bar.js",
+		"/Users/jasonrighelato/Downloads/jsorg-solutions/task3/js/eventemitter2.js",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/ajax/richness/richnessDataPrepared.php",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/ajax/richness/richnessData.php",
-		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/tetrad-backgrounds.scss",
-		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/richness-tetrad-backgrounds.scss",
-		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/custom_functions.php",
-		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/richness-controls.php",
-		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js/app/entry.js",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/ajax/richness/richnessTetradData.php",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js/scripts/metaList.js",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js/scripts/rigsConservationList.js",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js/scripts/speciesList.js",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js/scripts/foo.js",
-		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js/scripts/mapModule.js",
 		"/Users/jasonrighelato/Desktop/Conservation Status BoCC4.csv",
-		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/overlay.scss",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/tetrad-grid-overview.scss",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/tetrad-grid.scss",
-		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/map-keys.php",
 		"/Users/jasonrighelato/Desktop/example-sql.text",
-		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/map-keys.scss",
-		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/map-tetrad-box.scss",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/richness-tetrad-results.scss",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/richness-map-keys.scss",
-		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/main.scss",
-		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/overlay-controls.php",
-		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/overlays.php",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/utilities.scss",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/pages/richness-page.scss",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/spinner.scss",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/tetrad-box.php",
-		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/variables.scss",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/map-key-density.php",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/ajax/richness/breedingAllData.php",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/ajax/richness/winterData.php",
@@ -748,8 +836,6 @@
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/_map-controls.scss",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/richness-controls.scss",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/map-meta.scss",
-		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/page-maps-overview.php",
-		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/pages/map-page-layout.scss",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/overview.php",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/overview-page.php",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/_button.scss",
@@ -757,7 +843,6 @@
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/chosen-custom.scss",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/global.scss",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/navigation/main-nav.scss",
-		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/header-maps.php",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/map-title.php",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/header.php",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/header.scss",
@@ -766,11 +851,8 @@
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/pages/overview-page-layout.scss",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/state.scss",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/functions.php",
-		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/build/css/main.css",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/package.json",
-		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/overview-idle-map-state.php",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/map-page.php",
-		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/build/js/scripts.js",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js/app/modules/mapModule.js",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/build/js/mapModule.js",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/js/config.js",
@@ -780,7 +862,6 @@
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js/scripts/classList.min.js",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js/scripts/chosen.jquery.min.js",
 		"/Users/jasonrighelato/Desktop/junk/devon/.bashrc",
-		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/build/js/all.min.js",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/_map-keys.scss",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/_map-tetrad-box.scss",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/js/navigation.js",
@@ -791,7 +872,6 @@
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/footer.php",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/page-maps-tetradmaps.php",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/map-key-density-sums.php",
-		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/map-key-dbreed.php",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/helpers.scss",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps/map-dbreed-key.php",
 		"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss/components/_map-layout.scss",
@@ -813,24 +893,7 @@
 		"/Applications/MAMP/htdocs/devon-atlas/src/scss/components/_map-layout.scss",
 		"/Applications/MAMP/htdocs/devon-atlas/src/scss/components/tetrad-grid.scss",
 		"/Applications/MAMP/htdocs/devon-atlas/build/inc/map-keys.php",
-		"/Applications/MAMP/htdocs/devon-atlas/src/js/app/entry.js",
-		"/Applications/MAMP/htdocs/devon-atlas/src/js/scripts/tenkSpecies.js",
-		"/Applications/MAMP/htdocs/devon-atlas/build/index.php",
-		"/Applications/MAMP/htdocs/devon-atlas/build/inc/tetrad-box.php",
-		"/Applications/MAMP/htdocs/devon-atlas/ajax/tenk-species-list.php",
-		"/Users/jasonrighelato/Downloads/dbreed10.xlsx",
-		"/Applications/MAMP/htdocs/devon-atlas/build/test.php",
-		"/Applications/MAMP/htdocs/devon-atlas/src/js/app/modules/mapModule.js",
-		"/Applications/MAMP/htdocs/devon-atlas/build/inc/overlays.php",
-		"/Applications/MAMP/htdocs/devon-atlas/gulpfile.js",
-		"/Applications/MAMP/htdocs/devon-atlas/src/scss/components/checkbox.scss",
-		"/Applications/MAMP/htdocs/devon-atlas/ajax/tetradData.php",
-		"/Applications/MAMP/htdocs/devon-atlas/ajax/speciesData.php",
-		"/Applications/MAMP/htdocs/devon-atlas/build/inc/map-error.php",
-		"/Applications/MAMP/htdocs/devon-atlas/build/inc/map-page.php",
-		"/Applications/MAMP/htdocs/devon-atlas/src/scss/components/spinner.scss",
-		"/Applications/MAMP/htdocs/devon-atlas/src/scss/variables.scss",
-		"/Applications/MAMP/htdocs/devon-atlas/src/scss/components/_button.scss"
+		"/Applications/MAMP/htdocs/devon-atlas/src/js/app/entry.js"
 	],
 	"find":
 	{
@@ -841,6 +904,14 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/ajax",
+			"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas",
+			"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc/maps",
+			"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss",
+			"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/inc",
+			"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas",
+			"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss",
+			"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas",
 			"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js",
 			"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/scss",
 			"/Applications/MAMP/htdocs/devon_atlas/wp-content/themes/devonatlas/src/js",
@@ -960,15 +1031,7 @@
 			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/scss",
 			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/js/app",
 			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/scss",
-			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src",
-			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/scss",
-			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/js/app",
-			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio",
-			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/js/app",
-			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/scss",
-			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/js/app",
-			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio",
-			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src/js/app"
+			"/Applications/MAMP/htdocs/jasonrighelato/wp-content/themes/jr_portfolio/src"
 		]
 	},
 	"find_state":
@@ -976,6 +1039,112 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"var ",
+			"e:",
+			"confirmedSum",
+			"sumConfirmed",
+			"sumProbable",
+			"sumPossible",
+			"sumPresent",
+			"getSums",
+			"getSum",
+			"distinct",
+			"136",
+			"#;",
+			"getSums",
+			"filterForTenkSpecies",
+			"135",
+			"overview",
+			"templateSittersUnderlay",
+			"idle-btn devon-btn",
+			"data-set-key=\"sitters\"",
+			"toggle",
+			"getSums",
+			".counts",
+			"updateTetradsPresent",
+			"updateSums",
+			"overview",
+			"max-width",
+			"state",
+			"startUpdatingEls",
+			"start",
+			"addClass(",
+			"maps.m1_",
+			"logModul",
+			"speciesname",
+			"appendSpeciesToLink",
+			" var ",
+			"#launchBtn",
+			"$(\"#launchBtn\")",
+			"overview",
+			"chosenList",
+			"chosen",
+			"[currentMap]",
+			"134",
+			"include",
+			"key",
+			"key-table",
+			"[data-set-key=sitters]",
+			"'[data-set-key=sitters]'",
+			".find('[data-set-key=sitters]')",
+			"todo",
+			"stopUpdatingEls",
+			"this.updateSums('');",
+			"updateSums",
+			"parentEl",
+			"data-set-key=\"",
+			"data-set-key=",
+			"td><span class=\"keysq",
+			"<td><span class=\"keysq",
+			"updateSums",
+			"stopUpdatingEls",
+			"obj.counts",
+			"obj.tetrad.counts",
+			"getSums",
+			".counts",
+			"counts",
+			"</span><span",
+			"<td><span c",
+			"unsetSittersUnderlay",
+			"todo",
+			"*/\n",
+			"sitters_",
+			"$sitters_pos",
+			"key-table state counts",
+			"mu1_",
+			"mu_",
+			"background-image: url('../img/circle-",
+			"dbreed-off",
+			"mu_currentTetradArrUnderlay",
+			"obj.context + ",
+			"currentTetradArr",
+			"data-wrap",
+			"data-tetrad=\"2K\"",
+			"m3_",
+			"map-grid-3.php",
+			"m3_",
+			"data-latey-toggle",
+			"data-layer-toggle",
+			"data-later-toggle",
+			"this.sittersUnderlay = ",
+			"setSittersUnderlay",
+			"combine",
+			"breeding-toggles",
+			".dataset-titles",
+			"span",
+			" class=\"b-toggle\"",
+			"class=\"d-set\"",
+			"class=\"d-set",
+			"d-set",
+			"d-set-breeding",
+			"class=\"d-set\"><span",
+			"maps.m1_.setSpecies('Alpine Swift');",
+			" <?php // ",
+			".8);",
+			"source",
+			"sourcemaps",
+			"foo",
+			"overlay",
 			"setSpecies",
 			"133",
 			"js-richness-tetrad",
@@ -997,113 +1166,7 @@
 			"tetradId",
 			"if (this.tetrad.active) {",
 			"tetradId",
-			"setTetradStatus",
-			"tetradId",
-			"updateSelectedTetrad",
-			"tetradId",
-			"updateSelectedTetrad",
-			"Selected",
-			"selected",
-			"Selected",
-			"selected",
-			"console.log",
-			",'tetrad-results'",
-			"tetrad.active",
-			"132",
-			"metaList",
-			"131",
-			"$status",
-			"select",
-			" AND `Species` IN (SELECT `species_name` FROM `metaList` WHERE `status` LIKE ",
-			"AND `Species` IN (SELECT `species_name` FROM `metaList` WHERE `status` LIKE 'Red%')",
-			"AND Species IN (SELECT `species_name` FROM `metaList` WHERE `status` LIKE 'Red%')",
-			"$range",
-			"$status",
-			"$range",
-			"meta",
-			"speciesMeta",
-			"},{",
-			".length);",
-			"bar",
-			"speciesList",
-			" obj.speciesName = ",
-			"Honey Buzzard",
-			"White-tailed Eagle",
-			"},",
-			"JSON.",
-			"arr",
-			"speciesList[i]",
-			"foo",
-			"Macaronesian Shearwater",
-			"Long-tailed Tit",
-			"Penduline Tit",
-			"obj.speciesName = speciesList[i]",
-			"unknown Stonechat sp",
-			"latinName",
-			"Chukar",
-			"Scaup",
-			"Ferruginou",
-			",",
-			"Duck",
-			"Ferruginous",
-			"Teal",
-			"Duck",
-			"bean",
-			"Bean",
-			"’",
-			"key",
-			"latinNames",
-			"American Robin",
-			"latinNames",
-			"speciesList",
-			"// z-index: 99;",
-			"      // z-index: 99;",
-			"// z-index: 99;",
-			"z-index: 99",
-			"1);",
-			"191f61",
-			",.8);",
-			"tetArr",
-			"class=\"key-group state\"",
-			"nav bsKey",
-			"$lg-map-2k-width * 1.5;",
-			"$sm-map-2k-width * 1.5;",
-			"sm-map-2k-width * 1.5",
-			"13.5",
-			"data-later-toggle",
-			"132",
-			"rgba(132,0,0,",
-			"rgba(132,0,0,1);",
-			" background-color: rgba(132,0,0,1);\n        }",
-			"132",
-			"132,0,0",
-			"0,1",
-			"toggle-total-list",
-			"loading-data",
-			"startSpinner",
-			"setGoogleMapLink",
-			"gmap-link",
-			"20px",
-			"div",
-			".data-off",
-			"richnessMap.toggleDataLayer($this);",
-			"toggleDataLayer",
-			"WHERE Tetrad =:tetrad",
-			"$dataset",
-			" distinct Tetrad",
-			"$tetrad",
-			"breedingAllData.php",
-			"this.tetrad.active",
-			"id=\"",
-			"tetrad-",
-			"tetrad-name",
-			"tetradName",
-			"tetradId",
-			"selected",
-			"Selected",
-			"selected",
-			"maps[currentMap]",
-			".tetrad-meta-wrapper {\n.tetrad-meta-wrapper {\n.tetrad-meta"
+			"setTetradStatus"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1111,6 +1174,11 @@
 		"regex": false,
 		"replace_history":
 		[
+			"confirmedSum",
+			"probableSum",
+			"possibleSum",
+			"presentSum",
+			"data-latey-toggle",
 			".controls",
 			"$body_color",
 			"config.folder",
@@ -1231,24 +1299,24 @@
 	"groups":
 	[
 		{
-			"selected": 9,
+			"selected": 12,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/js/app/entry.js",
+					"file": "src/js/scripts/init.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9938,
+						"buffer_size": 2188,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3068,
-								3078
+								929,
+								929
 							]
 						],
 						"settings":
@@ -1258,27 +1326,114 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1692.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "src/scss/components/map-tetrad-box.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1522,
+						"buffer_size": 149,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1309,
-								1309
+								149,
+								149
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3594,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2276,
+								2276
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 982.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "page-maps-overview.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5799,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4865,
+								4865
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/scss/pages/overview-page-layout.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2436,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								439,
+								439
 							]
 						],
 						"settings":
@@ -1291,40 +1446,41 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "page-maps-richness.php",
+					"buffer": 5,
+					"file": "ajax/richness/richnessDataPrepared.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2203,
+						"buffer_size": 897,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1601,
-								1601
+								441,
+								441
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 295.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 6,
 					"file": "inc/custom_functions.php",
 					"semi_transient": false,
 					"settings":
@@ -1336,8 +1492,12 @@
 						"selection":
 						[
 							[
-								422,
-								422
+								289,
+								289
+							],
+							[
+								412,
+								412
 							]
 						],
 						"settings":
@@ -1347,18 +1507,47 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 107.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 7,
+					"file": "/Users/jasonrighelato/Dropbox (Personal)/projects/Devon-atlas/example-sql.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1350,
+						"buffer_size": 311,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								311,
+								311
+							]
+						],
+						"settings":
+						{
+							"auto_name": "example:",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1363,
 						"regions":
 						{
 							"match":
@@ -1367,28 +1556,24 @@
 								"regions":
 								[
 									[
-										218,
-										231
+										213,
+										221
 									],
 									[
-										462,
-										475
+										350,
+										358
 									],
 									[
-										705,
-										718
+										539,
+										547
 									],
 									[
-										897,
-										910
+										870,
+										878
 									],
 									[
-										1041,
-										1054
-									],
-									[
-										1186,
-										1199
+										1237,
+										1245
 									]
 								],
 								"scope": ""
@@ -1397,159 +1582,211 @@
 						"selection":
 						[
 							[
-								1302,
-								1302
+								356,
+								356
 							]
 						],
 						"settings":
 						{
 							"detect_indentation": false,
 							"line_numbers": false,
-							"output_tag": 2,
+							"output_tag": 1,
 							"result_base_dir": "",
-							"result_file_regex": "^([^ 	].*):$",
+							"result_file_regex": "^([^ \t].*):$",
 							"result_line_regex": "^ +([0-9]+):",
 							"scroll_past_end": true,
 							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 731.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "src/scss/pages/map-page-layout.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2509,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1782,
-								1782
-							],
-							[
-								2213,
-								2213
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2250.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "gulpfile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3992,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2649,
-								2649
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1082.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "src/js/scripts/main.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1658,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								49,
-								49
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "src/js/scripts/mapModule.js",
+					"buffer": 9,
+					"file": "ajax/richness/richnessData.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 17659,
+						"buffer_size": 1842,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								17252,
-								17252
+								846,
+								879
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"tab_size": 4,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 139.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 10,
+					"file": "src/scss/components/map-keys.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 3949,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1541,
+								1541
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "src/js/scripts/events.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9870,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								156,
+								156
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1090.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "src/js/scripts/mapModule.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20741,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8354,
+								8354
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4503.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "src/scss/variables.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1432,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1325,
+								1325
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 798.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "build/img/ov-confirmed.svg",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 662,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								482,
+								489
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "src/js/scripts/tenkSpecies.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 173,
 						"regions":
 						{
 						},
@@ -1562,43 +1799,13 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "src/js/scripts/mapModule-richness.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7955,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1758,
-								1776
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 768.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
+					"stack_index": 7,
 					"type": "text"
 				}
 			]
@@ -1653,16 +1860,104 @@
 		"selected_items":
 		[
 			[
+				"cust",
+				"inc/custom_functions.php"
+			],
+			[
+				"var",
+				"src/scss/variables.scss"
+			],
+			[
+				"event",
+				"src/js/scripts/events.js"
+			],
+			[
+				"cus",
+				"inc/custom_functions.php"
+			],
+			[
+				"keys",
+				"src/scss/components/map-keys.scss"
+			],
+			[
+				"key",
+				"inc/maps/map-keys.php"
+			],
+			[
+				"map-keys",
+				"src/scss/components/map-keys.scss"
+			],
+			[
+				"gulpfil",
+				"gulpfile.js"
+			],
+			[
+				"map-tetr",
+				"src/scss/components/map-tetrad-box.scss"
+			],
+			[
+				"map",
+				"src/js/scripts/mapModule.js"
+			],
+			[
+				"map-key-dbreed.php",
+				"inc/maps/map-key-dbreed.php"
+			],
+			[
+				"over",
+				"inc/maps/overlays.php"
+			],
+			[
+				"overl",
+				"src/scss/components/overlay.scss"
+			],
+			[
+				"sitter-un",
+				"src/scss/components/map-sitters-underlay.scss"
+			],
+			[
+				"richness-controls.php",
+				"inc/maps/richness-controls.php"
+			],
+			[
+				"eve",
+				"src/js/scripts/events.js"
+			],
+			[
+				"init",
+				"src/js/scripts/init.js"
+			],
+			[
+				"events",
+				"src/js/scripts/events.js"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"entry",
+				"src/js/app/entry.js"
+			],
+			[
+				"main",
+				"src/scss/main.scss"
+			],
+			[
+				"map-breeding-toggle",
+				"inc/maps/map-breeding-toggle.php"
+			],
+			[
+				"en",
+				"src/js/app/entry.js"
+			],
+			[
 				"mapmo",
 				"src/js/scripts/mapModule.js"
 			],
 			[
 				"ent",
 				"src/js/app/entry.js"
-			],
-			[
-				"gulp",
-				"gulpfile.js"
 			],
 			[
 				"custom",
@@ -1677,52 +1972,24 @@
 				"src/scss/components/map-tetrad-box.scss"
 			],
 			[
-				"entry",
-				"src/js/app/entry.js"
-			],
-			[
 				"gulpf",
 				"gulpfile.js"
-			],
-			[
-				"cust",
-				"inc/custom_functions.php"
-			],
-			[
-				"richness-controls.php",
-				"inc/maps/richness-controls.php"
 			],
 			[
 				"meta.js",
 				"src/js/scripts/metaList.js"
 			],
 			[
-				"map-keys",
-				"src/scss/components/map-keys.scss"
-			],
-			[
 				"map-tet",
 				"src/scss/components/map-tetrad-box.scss"
-			],
-			[
-				"over",
-				"inc/maps/overlay-controls.php"
 			],
 			[
 				"overlays",
 				"inc/maps/overlays.php"
 			],
 			[
-				"map",
-				"src/js/scripts/mapModule.js"
-			],
-			[
 				"tetrad-box.php",
 				"inc/maps/tetrad-box.php"
-			],
-			[
-				"main",
-				"src/scss/main.scss"
 			],
 			[
 				"mapm",
@@ -1733,16 +2000,8 @@
 				"inc/maps/tetrad-box.php"
 			],
 			[
-				"var",
-				"src/scss/variables.scss"
-			],
-			[
 				"map-key-density",
 				"inc/maps/map-key-density.php"
-			],
-			[
-				"keys",
-				"inc/maps/map-keys.php"
 			],
 			[
 				"ut",
@@ -1905,10 +2164,6 @@
 				"src/scss/components/_map-layout.scss"
 			],
 			[
-				"map-tetr",
-				"src/scss/components/_map-tetrad-box.scss"
-			],
-			[
 				"tetrad-box",
 				"build/inc/tetrad-box.php"
 			],
@@ -2013,10 +2268,6 @@
 				"build/inc/overlay-controls.php"
 			],
 			[
-				"en",
-				"src/js/app/entry.js"
-			],
-			[
 				"speci",
 				"build/inc/species-list.php"
 			],
@@ -2119,50 +2370,6 @@
 			[
 				"dom",
 				"jr_portfolio/src/js/app/modules/domEls.js"
-			],
-			[
-				"templ",
-				"jr_portfolio/inc/template.php"
-			],
-			[
-				"render",
-				"jr_portfolio/src/js/app/modules/renderTemplates.js"
-			],
-			[
-				"single",
-				"jr_portfolio/src/scss/components/single-item-ajaxed.scss"
-			],
-			[
-				"por",
-				"jr_portfolio/page-portfolio.php"
-			],
-			[
-				"fp",
-				"jr_portfolio/footer-portfolio.php"
-			],
-			[
-				"git",
-				"jr_portfolio/.gitignore"
-			],
-			[
-				"sing",
-				"jr_portfolio/src/scss/components/_single-item.scss"
-			],
-			[
-				"read",
-				"jr_portfolio/src/js/app/modules/readAddressBar.js"
-			],
-			[
-				"inject",
-				"jr_portfolio/src/js/app/modules/injectSpinner.js"
-			],
-			[
-				"packaeg",
-				"jr_portfolio/package.json"
-			],
-			[
-				"tit",
-				"jr_portfolio/src/scss/effeckt/_animate-title.scss"
 			]
 		],
 		"width": 0.0
@@ -2365,7 +2572,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 334.0,
+	"side_bar_width": 295.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

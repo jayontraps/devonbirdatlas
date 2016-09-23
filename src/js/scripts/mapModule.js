@@ -11,6 +11,7 @@ tenkSpecies.js
 
 function MapModule(domContext) {
     this.context = domContext;
+    this.tetradTotal = 1859;
     this.tetrad = {
         active: false,
         currentList: ''
@@ -264,27 +265,41 @@ MapModule.prototype.getData = function() {
 };
 
 MapModule.prototype.getSums = function(data) {
-    var sumConfirmed = 0,
-        sumProbable = 0,
-        sumPossible = 0,
-        sumPresent = 0;
+    var confirmedSum = 0,
+        probableSum = 0,
+        possibleSum = 0,
+        presentSum = 0;
     if (this.dataset !== 'dwdensity' || this.dataset !== 'dbdensity') {
         for (var i = 0; i < data.length; i++) {
-            if (data[i]['Code'] === 'A') {sumConfirmed++;}
-            if (data[i]['Code'] === 'B') {sumProbable++;}
-            if (data[i]['Code'] === 'K') {sumPossible++;}
-            if (data[i]['Code'] === 'N') {sumPresent++;}
+            if (data[i]['Code'] === 'A') {confirmedSum++;}
+            if (data[i]['Code'] === 'B') {probableSum++;}
+            if (data[i]['Code'] === 'K') {possibleSum++;}
+            if (data[i]['Code'] === 'N') {presentSum++;}
         }
     }
+    var presentPercentage = ( presentSum / this.tetradTotal ) * 100,
+        possiblePercentage = ( possibleSum / this.tetradTotal ) * 100,
+        probablePercentage = ( probableSum / this.tetradTotal ) * 100,
+        confimedPercentage = ( confirmedSum / this.tetradTotal ) * 100,
+        totalPercentage = ( (data.length - presentSum) / this.tetradTotal ) * 100;
 
     return {
-        total: data.length + 1,
-        sumPresent: sumPresent,
-        sumPossible: sumPossible,
-        sumProbable: sumProbable,
-        sumConfirmed: sumConfirmed
+        total: data.length - presentSum,
+        totalPercentage: totalPercentage.toFixed(2),
+        presentSum: presentSum,
+        presentPercentage: presentPercentage.toFixed(2),
+        possibleSum: possibleSum,
+        possiblePercentage: possiblePercentage.toFixed(2),
+        probableSum: probableSum,
+        probablePercentage: probablePercentage.toFixed(2),
+        confirmedSum: confirmedSum,
+        confimedPercentage: confimedPercentage.toFixed(2)
     };
 };
+
+MapModule.prototype.getPercentageOfSums = function(argument) {
+    
+}
 
 MapModule.prototype.getLatinName = function() {
 
@@ -435,10 +450,10 @@ MapModule.prototype.updateTeradBox = function () {
     $parentEl.find('.tetrad-title').html(this.tetrad.active);
 
     if (this.dataset === 'dbreed' || this.dataset === 'sitters') {
-        $parentEl.find('.tet-pres').html(this.tetrad.counts.sumPresent);
-        $parentEl.find('.tet-poss').html(this.tetrad.counts.sumPossible);
-        $parentEl.find('.tet-prob').html(this.tetrad.counts.sumProbable);
-        $parentEl.find('.tet-conf').html(this.tetrad.counts.sumConfirmed);
+        $parentEl.find('.tet-pres').html(this.tetrad.counts.presentSum);
+        $parentEl.find('.tet-poss').html(this.tetrad.counts.possibleSum);
+        $parentEl.find('.tet-prob').html(this.tetrad.counts.probableSum);
+        $parentEl.find('.tet-conf').html(this.tetrad.counts.confirmedSum);
         $parentEl.find('.tet-sums').show();
     } else {
         $parentEl.find('.tet-sums').hide();
@@ -460,10 +475,17 @@ MapModule.prototype.updateSums = function(datasetkey) {
         sums = this.counts;
         keyEl = parentEl.querySelector('[data-set-key=dbreed]');
     }
-    keyEl.querySelector('.pres-target').innerHTML = sums.sumPresent;
-    keyEl.querySelector('.conf-target').innerHTML = sums.sumConfirmed;
-    keyEl.querySelector('.prob-target').innerHTML = sums.sumProbable;
-    keyEl.querySelector('.poss-target').innerHTML = sums.sumPossible;
+    keyEl.querySelector('.pres-target').innerHTML = sums.presentSum;
+    keyEl.querySelector('.conf-target').innerHTML = sums.confirmedSum;
+    keyEl.querySelector('.prob-target').innerHTML = sums.probableSum;
+    keyEl.querySelector('.poss-target').innerHTML = sums.possibleSum;
+    keyEl.querySelector('.sum-total-target').innerHTML = sums.total;
+
+    keyEl.querySelector('.presentPercentage').innerHTML = ' (' + sums.presentPercentage + '%)';
+    keyEl.querySelector('.confimedPercentage').innerHTML = ' (' + sums.confimedPercentage + '%)';
+    keyEl.querySelector('.probablePercentage').innerHTML = ' (' + sums.probablePercentage + '%)';
+    keyEl.querySelector('.possiblePercentage').innerHTML = ' (' + sums.possiblePercentage + '%)';
+    keyEl.querySelector('.totalPercentage').innerHTML = ' (' + sums.totalPercentage + '%)';
 };
 
 MapModule.prototype.updateSpeciesSelect = function() {
@@ -553,7 +575,7 @@ MapModule.prototype.unsetSittersUnderlay = function() {
     var $sittersLayer = $('#' + this.context).find('.sitters-underlay'),
         $sittersToggle = $('#' + this.context).find('.sitters-toggle'),
         $sittersKey =  $('#' + this.context).find('[data-set-key=sitters]');
-    $sittersKey.hide();
+    $sittersKey.css('visibility','hidden');
     $sittersLayer.hide(); // remove innerHTML
     $sittersToggle.prop('checked', false);
 }
@@ -569,11 +591,10 @@ MapModule.prototype.toggleSittersUnderlay = function(target) {
 
         if($(target).prop('checked')) {
             $sittersLayer.show();
-            $sittersKey.show();
-            console.log($sittersKey);
+            $sittersKey.css('visibility','visible');
         } else {
             $sittersLayer.hide();
-            $sittersKey.hide();
+            $sittersKey.css('visibility','hidden');
         }
     } else {
         this.getSittersUnderlayData();
@@ -634,7 +655,7 @@ MapModule.prototype.getSittersUnderlayData = function(status) {
             obj.setSittersUnderlay(true);
             obj.setFetchingData(false);
             obj.updateSums('sitters');
-            $('#' + obj.context).find('[data-set-key=sitters]').show();
+            $('#' + obj.context).find('[data-set-key=sitters]').css('visibility', 'visible');
             $('#' + obj.context).find('.sitters-underlay').show();
         }, 800);
     })

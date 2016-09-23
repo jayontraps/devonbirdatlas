@@ -1,32 +1,24 @@
-<table class="key-table state counts ">
+<table data-set-key="sitters" class="key-table state counts sitter-underlay-key" style="visibility:hidden">
     <tbody>
         <tr>
-            <td class="headTd"></td>
-            <td>Present</td>
-            <td>Possible</td>
-            <td>Probable</td>
-            <td>Confirmed</td>
-            <td>Total</td>
-        </tr>
-        <tr>
-            <td class="headTd">2007 - 13:</td>
+            <td class="headTd">1977 - 1985:</td>
             <td>
-                <span class="keysq brst present"></span>
+                <span class="keysq pres"></span>
             </td>
             <td>
-                <span class="keysq brst poss"></span>
+                <span class="keysq poss"></span>
             </td>
             <td>
-                <span class="keysq brst prob"></span>
+                <span class="keysq prob"></span>
             </td>
             <td>
-                <span class="keysq brst confirmed"></span>
+                <span class="keysq conf"></span>
             </td>
             <td>
-                <span class="keysq brst sum-total"></span>
+                <span class="keysq"></span>
             </td>
         </tr>
-        <tr data-set-key="dbreed" >
+         <tr>
             <td class="headTd">No. (%)</td>
             <td>
                 <span class="tet-data pres-target"></span>

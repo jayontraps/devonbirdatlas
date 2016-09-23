@@ -3,7 +3,7 @@
 
 .key-group {
 	width:100%;
-	height: $keys-height;
+	// height: $keys-height;
 	font-size: .8rem;
 	padding: $default_spacing 0;
 	max-width: $lg-map-width - 50px;
@@ -40,6 +40,7 @@
 
 .key-table {
 	width: 100%;
+	margin-bottom: $default_spacing;
 
 	td {
 		font-style:italic;
@@ -56,6 +57,15 @@
 	td.headTd {
 		font-style:normal;
 		text-align:left;
+	}
+}
+
+.double {
+	.key-table {
+		margin-bottom: $default_spacing/2;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
 	}
 }
 
@@ -251,10 +261,6 @@
 
 .sitter-underlay-key {
 	.keysq	{
-
-		&.pres {
-			background-color: $sitters_underlay_pres;
-		}
 		&.poss {
 			background-color: $sitters_underlay_poss;
 		}
@@ -264,7 +270,12 @@
 		&.conf {
 			background-color: $sitters_underlay_conf;
 		}
-}
+	}
+	tr {
+		td:nth-child(2) {
+			visibility: hidden;
+		}
+	}
 }
 
 

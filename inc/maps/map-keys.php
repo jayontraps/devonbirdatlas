@@ -2,6 +2,7 @@
 
     <div class="key-container active" >
         <?php include 'map-key-dbreed.php'; ?>
+        <?php include 'map-key-sitters.php'; ?>
     </div>
 
     <div class="key-container" >
