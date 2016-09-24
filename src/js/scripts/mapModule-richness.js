@@ -50,7 +50,11 @@ MapModule.prototype.getRichnessData = function() {
         }
     })
     .fail(function() {
-        console.log("error");
+        console.log("getRichnessData - error");
+        window.setTimeout(function(){
+            obj.stopSpinner.call(obj, ['map']);
+            obj.setMapErrorMsg(true, 'data-request');
+        }, 800);
     })
     .always(function() {
         console.log("complete");
