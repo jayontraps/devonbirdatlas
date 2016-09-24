@@ -382,9 +382,8 @@ MapModule.prototype.startUpdatingEls = function() {
         return false;
     }
     if (this.request === 'dataset') {
-        // var dataSetTitles = parentEl.querySelector('.dataset-titles');
-        // dataSetTitles.classList.add('update');
-        // scrapped as no layering datasets currently
+        var dataSetTitles = parentEl.querySelector('.dataset-titles');
+        dataSetTitles.classList.add('update');
 
         var keyGroup = parentEl.querySelector('.key-group');
         keyGroup.classList.add('update');
