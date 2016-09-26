@@ -4,11 +4,11 @@
         <label>Data Layer</label>
     </li>
     <li class="checkbox">
-        <input type="checkbox" checked name="sea" class="ov-toggle">
-        <label>Sea</label>
+        <input type="checkbox" checked name="altitude" class="ov-toggle">
+        <label>Above 300m</label>
     </li>
      <li class="checkbox">
-        <input type="checkbox" name="earth" class="ov-toggle">
+        <input type="checkbox" checked name="earth" class="ov-toggle">
         <label>County shade</label>
     </li>
 
@@ -24,7 +24,7 @@
         <input type="checkbox" name="tk-grid" class="ov-toggle">
         <label>10K Grid</label>
     </li>
-    <li class="checkbox">
+  <!--   <li class="checkbox">
         <input type="checkbox" name="grassland" class="ov-toggle">
         <label>Grassland</label>
     </li>
@@ -48,5 +48,5 @@
         <input type="checkbox" name="coniferous-woodland" class="ov-toggle">
         <label>Coniferous Wood</label>
     </li>
-
+ -->
 </ul>

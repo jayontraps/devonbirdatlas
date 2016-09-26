@@ -52,7 +52,7 @@ MapModule.prototype.setGoogleMapLink = function() {
     gMapWrap.empty();
 
     if (this.tetrad.active) {
-        var url = window.location.href.split("?")[0];
+        var url = window.location.href
         var gMapLink = $('<a/>', {
             'href': url + 'gmap/?tetrad=' + this.tetrad.active + '',
             'target': '_blank',
@@ -280,21 +280,18 @@ MapModule.prototype.getSums = function(data) {
 
     return {
         total: data.length - presentSum,
-        totalPercentage: totalPercentage.toFixed(2),
+        totalPercentage: totalPercentage.toFixed(),
         presentSum: presentSum,
-        presentPercentage: presentPercentage.toFixed(2),
+        presentPercentage: presentPercentage.toFixed(),
         possibleSum: possibleSum,
-        possiblePercentage: possiblePercentage.toFixed(2),
+        possiblePercentage: possiblePercentage.toFixed(),
         probableSum: probableSum,
-        probablePercentage: probablePercentage.toFixed(2),
+        probablePercentage: probablePercentage.toFixed(),
         confirmedSum: confirmedSum,
-        confimedPercentage: confimedPercentage.toFixed(2)
+        confimedPercentage: confimedPercentage.toFixed()
     };
 };
 
-MapModule.prototype.getPercentageOfSums = function(argument) {
-
-};
 
 MapModule.prototype.getLatinName = function() {
 
