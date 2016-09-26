@@ -1,5 +1,6 @@
 /* requires:
 mapModule.js
+eventemitter2.js
 */
 
 MapModule.prototype.setOverviewMapState = function(state) {

@@ -18,6 +18,17 @@
     $rangeCondition = "";
   }
 
+  if ($dataset == 'dwdensity') {
+    $sqlQuery = "SELECT distinct Tetrad, count(`Species`) as CountOf from " . $dataset . " group by `Tetrad`";
+  } else {
+    $sqlQuery =  "SELECT distinct Tetrad, count(`Species`) as CountOf from " . $dataset . $rangeCondition . $statusCondition . " group by `Tetrad`";
+  }
+
+ /*
+
+  NOTE:
+  The inner select used for conservation status is running too slow so branching off to richnessDataPrepared.php
+
   if ($status === 'red') {
     $statusCondition = " AND `Species` IN (SELECT `species_name` FROM `metaList` WHERE `status` LIKE 'Red%' )";
   } elseif ($status === 'amber') {
@@ -26,23 +37,15 @@
     $statusCondition = "";
   }
 
-  if ($dataset == 'dwdensity') {
-    $sqlQuery = "SELECT distinct Tetrad, count(`Species`) as CountOf from " . $dataset . " group by `Tetrad`";
-  } else {
-    $sqlQuery =  "SELECT distinct Tetrad, count(`Species`) as CountOf from " . $dataset . $rangeCondition . $statusCondition . " group by `Tetrad`";
-  }
+  example select with conservation status:
 
-  /*
-  example:
   SELECT distinct Tetrad,
   count(`Species`) as CountOf from dbreed
   WHERE `Code`='A' OR `Code`='B'
   AND `Species` IN (SELECT `species_name` FROM `metaList` WHERE `status` LIKE 'Red%')
   group by `Tetrad`
 
-  NOTE:
-  The inner select used for conservation status running too slow so branch of to richnessDataPrepared
-  */
+*/
 
   try {
     $conn = new PDO('mysql:host=localhost;dbname=devon_data', $config['DB_USERNAME'], $config['DB_PASSWORD']);

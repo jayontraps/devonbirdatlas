@@ -5,6 +5,7 @@ chosen.jquery.min.js
 speciesList.js
 latinNames.js
 tenkSpecies.js
+eventemitter2.js
 */
 
 
@@ -51,7 +52,7 @@ MapModule.prototype.setGoogleMapLink = function() {
     gMapWrap.empty();
 
     if (this.tetrad.active) {
-        var url = window.location.href;
+        var url = window.location.href.split("?")[0];
         var gMapLink = $('<a/>', {
             'href': url + 'gmap/?tetrad=' + this.tetrad.active + '',
             'target': '_blank',
@@ -162,9 +163,6 @@ MapModule.prototype.getTetradData = function() {
             obj.stopSpinner.call(obj, ['tetrad-meta']);
             obj.setMapErrorMsg(true, 'tetrad-request');
         }, 800);
-    })
-    .always(function() {
-        // console.log("getTetradData - complete");
     });
 };
 
@@ -248,7 +246,6 @@ MapModule.prototype.getData = function() {
     .done(function() {
         window.setTimeout(function(){
             obj.stopSpinner.call(obj, ['map','tetrad-meta']);
-            // obj.updateStateEls.stop.call(obj, obj.context);
             obj.stopUpdatingEls();
             obj.setFetchingData(false);
         }, 800);
@@ -259,8 +256,6 @@ MapModule.prototype.getData = function() {
             obj.stopSpinner.call(obj, ['map','tetrad-meta']);
             obj.setMapErrorMsg(true, 'data-request');
         }, 800);
-    })
-    .always(function() {
     });
 };
 
@@ -299,7 +294,7 @@ MapModule.prototype.getSums = function(data) {
 
 MapModule.prototype.getPercentageOfSums = function(argument) {
 
-}
+};
 
 MapModule.prototype.getLatinName = function() {
 
@@ -399,7 +394,7 @@ MapModule.prototype.startUpdatingEls = function() {
         tetradMeta.classList.add('update');
         return false;
     }
-}
+};
 
 MapModule.prototype.stopUpdatingEls = function() {
 
@@ -444,7 +439,7 @@ MapModule.prototype.stopUpdatingEls = function() {
         $('#' + this.context).find('.state').removeClass('update');
         return false;
     }
-}
+};
 
 MapModule.prototype.updateTeradBox = function () {
 
@@ -583,7 +578,7 @@ MapModule.prototype.resetDataLayer = function() {
 /* sitters-underlay */
 MapModule.prototype.setSittersUnderlay = function(status) {
     this.sittersUnderlay = status;
-}
+};
 
 MapModule.prototype.unsetSittersUnderlay = function() {
     /* todo */
@@ -595,7 +590,7 @@ MapModule.prototype.unsetSittersUnderlay = function() {
     $sittersKey.css('visibility','hidden');
     $sittersLayer.hide(); // remove innerHTML
     $sittersToggle.prop('checked', false);
-}
+};
 
 MapModule.prototype.toggleSittersUnderlay = function(target) {
     if (!this.species) {
@@ -616,7 +611,7 @@ MapModule.prototype.toggleSittersUnderlay = function(target) {
     } else {
         this.getSittersUnderlayData();
     }
-}
+};
 
 
 MapModule.prototype.getSittersUnderlayData = function(status) {
@@ -683,10 +678,8 @@ MapModule.prototype.getSittersUnderlayData = function(status) {
         console.log("getData - error");
         window.setTimeout(function(){
             obj.stopSpinner.call(obj, ['map','tetrad-meta']);
-            obj.setMapErrorMsg(true, 'data-request');
+            obj.setMapErrorMsg(true, 'data-request');;
         }, 800);
-    })
-    .always(function() {
     });
 };
 

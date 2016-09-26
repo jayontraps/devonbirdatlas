@@ -3,13 +3,57 @@ modernizr-custom.js
 classList.min.js
 chosen.jquery.min.js
 speciesList.js
+eventemitter2.js
 */
+
+window.EVT = new EventEmitter2();
 
 // load from query string
 function getUrlVar(key){
     var result = new RegExp(key + "=([^&]*)", "i").exec(window.location.search);
     return result && unescape(result[1]) || "";
 }
+
+
+var overlay = (function ($) {
+    function show(layer, $context) {
+            var $layer = $('.' + layer);
+        $context.find($layer).addClass('on');
+    }
+
+    function hide(layer, $context) {
+            var $layer = $('.' + layer);
+        $context.find($layer).removeClass('on');
+    }
+    return {
+        show: show,
+        hide: hide
+    };
+}(jQuery));
+
+
+
+// overlay controls
+$('.ov-toggle').on('click', function() {
+    var $this = $(this),
+        layer = $this.attr('name'),
+        context = $this.closest('.container');
+    $this.is(":checked") ? overlay.show(layer, context) : overlay.hide(layer, context);
+});
+
+// toogle double view
+var $wrapper = $('#tetrad-maps');
+function doubleOn($btn) {
+    $wrapper.addClass('double');
+    $btn.addClass('active');
+}
+function doubleOff($btn) {
+    $wrapper.removeClass('double');
+    $btn.removeClass('active');
+}
+
+
+
 
 (function($) {
 
