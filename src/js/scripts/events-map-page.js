@@ -29,7 +29,7 @@ $(document).ready(function(){
         maps.m1_.setDataset('dbreed');
         maps.m2_.setDataset('dbreed');
 
-
+        // get species from query string and load data
         jQuery(document).ready(function($) {
             if (getUrlVar("speciesname") !== "") {
                 $('#m1_ .species-titles').addClass('update');
@@ -157,15 +157,15 @@ $(document).ready(function(){
 
         /* test eventemitter2 */
 
-        EVT.on('species-selected', function(currentMap, species){
-            console.log('species-selected: ', maps[currentMap], species);
-        });
-        EVT.on('dataset-selected', function(currentMap, dataset){
-            console.log('dataset-selected: ', maps[currentMap], dataset);
-        });
-        EVT.on('tetrad-selected', function(currentMap, tetrad){
-            console.log('tetrad-selected: ', maps[currentMap], tetrad);
-        });
+        // EVT.on('species-selected', function(currentMap, species){
+        //     console.log('species-selected: ', maps[currentMap], species);
+        // });
+        // EVT.on('dataset-selected', function(currentMap, dataset){
+        //     console.log('dataset-selected: ', maps[currentMap], dataset);
+        // });
+        // EVT.on('tetrad-selected', function(currentMap, tetrad){
+        //     console.log('tetrad-selected: ', maps[currentMap], tetrad);
+        // });
 
 
     }

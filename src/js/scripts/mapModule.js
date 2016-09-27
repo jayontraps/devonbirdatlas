@@ -52,7 +52,7 @@ MapModule.prototype.setGoogleMapLink = function() {
     gMapWrap.empty();
 
     if (this.tetrad.active) {
-        var url = window.location.href
+        var url = window.location.href.split('?')[0];
         var gMapLink = $('<a/>', {
             'href': url + 'gmap/?tetrad=' + this.tetrad.active + '',
             'target': '_blank',
