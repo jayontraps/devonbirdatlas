@@ -16,6 +16,13 @@ $(document).ready(function(){
 
     if ( typeof ovPage !== 'undefined' && ovPage) {
 
+        $('.sub-menu-nav a').each(function(index, el) {
+            var theLink = $(el).attr('href');
+
+            if ( theLink.indexOf('tetrad-maps') >= 0 ) {
+                $(el).attr('id', 'launch-maps-link');
+            }
+        });
         var $launchLink = $("#launch-maps-link"),
             $launchLinkHref = $launchLink.attr('href');
 

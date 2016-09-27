@@ -51,9 +51,6 @@
     &.on {
         opacity: 1;
     }
-    &.old {
-        background-image: url('../img/all.jpg');
-    }
     &.borders {
         background-image: url('../img/DEVON-outline_3.png');
     }
@@ -72,22 +69,23 @@
     &.rivers {
         background-image: url('../img/rivers.png');
     }
+    /* habitat */
     &.grassland {
-        background-image: url('../img/grassland-2.png');
+        background-image: url('../img/masked-grassland.png');
     }
     &.morland {
-        background-image: url('../img/morland.png');
+        background-image: url('../img/masked-moorland.png');
     }
     &.urban {
-        background-image: url('../img/urban.png');
+        background-image: url('../img/masked-urban.png');
     }
     &.woodland {
-        background-image: url('../img/woodland.png');
+        background-image: url('../img/masked-broadleaf.png');
     }
     &.arable {
-        background-image: url('../img/arable.png');
+        background-image: url('../img/masked-arable.png');
     }
     &.coniferous-woodland {
-        background-image: url('../img/coniferous-woodland.png');
+        background-image: url('../img/masked-con-wood.png');
     }
 }

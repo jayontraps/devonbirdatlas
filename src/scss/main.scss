@@ -4,11 +4,20 @@
 @import "mixins";
 @import "utilities";
 @import "global";
+@import "typography";
 @import "grid";
 @import "header";
+@import "footer";
+
+
+// navigation
+@import "navigation/main-nav";
+
+// plugins
+@import "vendor/chosen";
+@import "components/chosen-custom";
 
 // components
-
 @import "components/checkbox";
 @import "components/button";
 @import "components/state";
@@ -37,15 +46,10 @@
 @import "components/richness-tetrad-results";
 
 
-// plugins
-@import "vendor/chosen";
-@import "components/chosen-custom";
+
 
 // map page layout
 @import "pages/map-page-layout";
 @import "pages/overview-page-layout";
 @import "pages/richness-page";
 
-
-// navigation
-@import "navigation/main-nav";

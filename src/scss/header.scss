@@ -1,14 +1,14 @@
 .header {
-    min-height: 80px;
-    // border-bottom: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    background-color: #fafafa;
     position: relative;
     padding: 1em;
 }
 
-// .nav-wrapper {
-//     position: relative;
-// }
 
 .logo {
+    display: block;
+    text-decoration: none;
     width: 160px;
+    float: left;
 }

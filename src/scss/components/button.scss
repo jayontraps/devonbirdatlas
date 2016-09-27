@@ -33,6 +33,8 @@
 }
 
 #js-compare-toggle {
-    float: right;
-    margin-top: -34px;
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    top: $default_spacing/2;
 }

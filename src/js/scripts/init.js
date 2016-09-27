@@ -96,6 +96,8 @@ function doubleOff($btn) {
                     no_results_text: "Oops, nothing found!",
                     width: "95%"
                 }).ready(function(argument) {
+                    $(".select-species").addClass('select-on');
+
                     if ( typeof mapPage !== 'undefined' && mapPage) {
                         if (getUrlVar("speciesname") !== "") {
                             var chosenList = $('#m1_').find('.select-species');

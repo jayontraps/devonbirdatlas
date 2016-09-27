@@ -32,12 +32,15 @@ p {
     position: relative;
 }
 
+#primary {
+    min-height: 100vh;
+    padding-top: $default_spacing;
+    position: relative;
+}
+
 @media screen and (max-width: $max_width ) {
     .inner-wrap {
         padding: .5em;
     }
 }
 
-a {
-    color: $blue;
-}

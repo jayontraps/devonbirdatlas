@@ -1,5 +1,9 @@
+/* fonts */
 $base_font_size: 14px;
 $base_line_height: 1.5rem;
+
+$heading_font_family: Helvetica, Arial, sans-serif; 
+$heading_font_weight: bold;
 
 $base_font_family: Helvetica, Arial, sans-serif; 
 $base_font_custom: 'Source Sans Pro', sans-serif;
@@ -7,13 +11,47 @@ $base_font_custom: 'Source Sans Pro', sans-serif;
 /* Grid */
 $col_padding: 2rem;
 
-
 // layout
 $max_width: 1200px;
 $max_width_double: 1024px;
 
 // spacing
 $default_spacing: 1.5rem;
+
+// media queries
+$lg_screen: "min-width: 769px";
+$sm_screen: "max-width: 768px";
+
+// colors
+
+$border-color: #999;
+$body_bgc: transparent;
+$body_color: #333333;
+$grey: rgba(0,0,0,.2);
+$blue: #05AFF0;
+$gold: #B05C00;
+$link_blue: #049CD6;
+
+// datasets
+$dbdensity : red;
+$dwdensity : blue;
+$sitters: orange;
+
+// buttons
+$btn_bgc: $body_color;
+$btn_bgc_hover: rgba(0,0,0,.5);
+$btn-active: $border-color;
+
+$sitters_underlay_pres: #FFE0B2;  // #CCCFFF;
+$sitters_underlay_poss: #FFB74D;  // #A7ABE8;
+$sitters_underlay_prob: #FB8C00;  // #8489D4;
+$sitters_underlay_conf: #E65100;  // #191F61;
+
+// borders
+$devon_border: 1px solid $border-color;
+
+
+
 
 // maps
 // desktop
@@ -46,37 +84,6 @@ $sm-ov-map-width: 260px;
 $sm-ov-map-10k-width: 20px;
 // $sm-ov-map-2k-width: 10px;
 $sm-ov-map-2k-width: 4px;
-
-
-
-
-
-
-// colors
-
-$border-color: #999;
-$body_bgc: transparent;
-$body_color: #333333;
-$grey: rgba(0,0,0,.2);
-$blue: #05AFF0;
-
-// datasets
-$dbdensity : red;
-$dwdensity : blue;
-$sitters: orange;
-
-// buttons
-$btn_bgc: $body_color;
-$btn_bgc_hover: rgba(0,0,0,.5);
-$btn-active: $border-color;
-
-$sitters_underlay_pres: #FFE0B2;  // #CCCFFF;
-$sitters_underlay_poss: #FFB74D;  // #A7ABE8;
-$sitters_underlay_prob: #FB8C00;  // #8489D4;
-$sitters_underlay_conf: #E65100;  // #191F61;
-
-// borders
-$devon_border: 1px solid $border-color;
 
 // form els
 // select

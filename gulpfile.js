@@ -11,7 +11,8 @@ var gulp = require('gulp'),
     source = require('vinyl-source-stream'),
     sourcemaps = require('gulp-sourcemaps'),
     browserSync = require('browser-sync'),
-    minifyCss = require('gulp-minify-css');
+    minifyCss = require('gulp-minify-css'),
+    rename = require('gulp-rename');
 
 
 var sass = require('gulp-sass'),
@@ -35,6 +36,7 @@ var devBuild = ((process.env.NODE_ENV || 'dev').trim().toLowerCase() !== 'prod')
 
 var src = 'src/';
 var dest = 'build/';
+var phpTemplates = 'inc/critical-css/';
 
 
 gulp.task('sass', function() {
@@ -61,6 +63,25 @@ gulp.task('minify-css', function() {
             .pipe(minifyCss({compatibility: 'ie8'}))
             .pipe(gulp.dest(dest + 'css'));
     }
+});
+
+/* ABOVE THE FOLD STYLES */
+gulp.task('critical-global', function() {
+    return gulp.src(src + "scss/above-the-fold/critical-global.scss")
+        .pipe(sass({outputStyle: 'nested'}))
+        .pipe(postcss([
+              autoprefixer({
+                browsers: ['last 2 versions']
+            })
+        ]))
+        .pipe(minifyCss())
+        .pipe(gulp.dest(dest + "css/above-the-fold/"))
+});
+
+gulp.task('inject-critical-global', ['critical-global'], function() {
+    gulp.src(dest + "css/above-the-fold/critical-global.css")
+        .pipe(rename(phpTemplates + "critical-global.php"))
+        .pipe(gulp.dest("./"));
 });
 
 
@@ -123,12 +144,12 @@ gulp.task('reload-js', ['lintjs', 'scripts' ], function() {
     browserSync.reload();
 });
 
-gulp.task('reload-css', ['sass'], function() {
-    // browserSync.reload();
+gulp.task('reload-css', ['sass', 'critical-global'], function() {
+    browserSync.reload();
 });
 
 
-gulp.task('watch', ['sass', 'lintjs', 'scripts', 'browser-sync'], function() {
+gulp.task('watch', ['sass', 'inject-critical-global', 'lintjs', 'scripts', 'browser-sync'], function() {
     gulp.watch(src + 'js/**/*.js', ['reload-js']);
     gulp.watch(src + 'scss/**/*.scss', ['reload-css']);
 });

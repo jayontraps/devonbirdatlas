@@ -1,0 +1,53 @@
+/* ==========================
+           TYPOGRAPHY
+   ========================== */
+body {
+    font-size: $base_font_size;
+    font-family: $base_font_family;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading_font_family;
+    font-weight: $heading_font_weight;
+}
+
+a {
+    color: $link_blue;
+}
+h1 {
+    font-size: 1em;
+    line-height: 1.8em;
+}
+
+h2 {
+    font-size: 1em;
+    line-height: 1.8em;
+}
+
+h3 {
+    font-size: .85em;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+
+@media all and ($lg_screen) {
+    h1 {
+        font-size: 1.5em;
+        line-height: 30px;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+}
