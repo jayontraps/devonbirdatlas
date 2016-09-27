@@ -35,6 +35,12 @@
     &:nth-child(12) {
         z-index: 12;
     }
+    &:nth-child(13) {
+        z-index: 13;
+    }
+    &:nth-child(14) {
+        z-index: 14;
+    }
 }
 
 .overlay {
@@ -71,21 +77,27 @@
     }
     /* habitat */
     &.grassland {
-        background-image: url('../img/masked-grassland.png');
+        background-image: url('../img/masked-grassland-2.png');
     }
     &.morland {
-        background-image: url('../img/masked-moorland.png');
+        background-image: url('../img/masked-moorland-2.png');
     }
     &.urban {
-        background-image: url('../img/masked-urban.png');
+        background-image: url('../img/masked-urban-2.png');
     }
     &.woodland {
-        background-image: url('../img/masked-broadleaf.png');
+        background-image: url('../img/masked-broadleaf-2.png');
     }
     &.arable {
-        background-image: url('../img/masked-arable.png');
+        background-image: url('../img/masked-arable-2.png');
     }
     &.coniferous-woodland {
-        background-image: url('../img/masked-con-wood.png');
+        background-image: url('../img/masked-con-wood-2.png');
+    }
+    &.silt {
+        background-image: url('../img/masked-silt-2.png');
+    }
+    &.bog {
+        background-image: url('../img/masked-bog-2.png');
     }
 }

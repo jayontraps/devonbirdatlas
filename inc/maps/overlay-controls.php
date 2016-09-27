@@ -51,4 +51,12 @@
         <input type="checkbox" name="coniferous-woodland" class="ov-toggle">
         <label>Coniferous Wood</label>
     </li>
+    <li class="checkbox">
+        <input type="checkbox" name="silt" class="ov-toggle">
+        <label>Silt and rock</label>
+    </li>
+    <li class="checkbox">
+        <input type="checkbox" name="bog" class="ov-toggle">
+        <label>Water, marsh, bog</label>
+    </li>
 </ul>
