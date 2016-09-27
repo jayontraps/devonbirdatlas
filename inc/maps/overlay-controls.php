@@ -1,4 +1,4 @@
-<ul class="controls">
+<ul class="controls overlay-controls">
     <li class="checkbox">
         <input type="checkbox" checked class="data-layer-toggle">
         <label>Data Layer</label>

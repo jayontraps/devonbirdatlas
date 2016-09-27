@@ -1,10 +1,16 @@
-[data-tetrad="2K"] {
-    &:hover {
-        cursor: pointer;
+// [data-tetrad="2K"] {
+//     &:hover {
+//         cursor: pointer;
+//     }
+// }
+.tetrad-maps, .species-richnes {
+    .map-row > div {
+        > div.selected {
+            background-color: $body_color;
+            background-image: none;
+        }
     }
 }
-
-
 
 .map-row > div {
     margin: 0;
@@ -21,7 +27,7 @@
         position: absolute;
 
         &.selected {
-            border: 3px solid $body_color;
+            // border: 3px solid $body_color;
         }
 
         &:nth-child(2) {

@@ -1,6 +1,6 @@
 /* requires:
 modernizr-custom.js
-classList.min.js
+classList.js
 chosen.jquery.min.js
 speciesList.js
 latinNames.js
