@@ -43,13 +43,25 @@ $('.ov-toggle').on('click', function() {
 
 // toogle double view
 var $wrapper = $('#tetrad-maps');
+var $m1_keyGroup = $('#m1_').find('.key-group'),
+        $m2_keyGroup = $('#m2_').find('.key-group'),
+        $m1_colMap = $('#m1_').find('.column-map'),
+        $m2_colMap = $('#m2_').find('.column-map');
+
 function doubleOn($btn) {
     $wrapper.addClass('double');
     $btn.addClass('active');
+
+    $m1_keyGroup.appendTo( $m1_colMap );
+    $m2_keyGroup.appendTo( $m2_colMap );
 }
 function doubleOff($btn) {
     $wrapper.removeClass('double');
     $btn.removeClass('active');
+    $m1_keyGroup.appendTo('#m1_');
+    $m2_keyGroup.appendTo('#m2_');
+
+    // $('.key-group').appendTo('.container');
 }
 
 

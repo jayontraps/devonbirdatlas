@@ -44,6 +44,10 @@
     font-weight: bold;
 }
 
+.small-text {
+    font-size: .85em;
+}
+
 .no-m-p {
     margin: 0;
     padding: 0;
@@ -60,3 +64,13 @@
     border-left: 4px solid transparent;
     content: "";
 }
+
+.foot-note {
+    color: $foot-note-color;
+}
+
+
+
+
+
+

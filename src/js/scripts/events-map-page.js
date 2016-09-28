@@ -15,19 +15,18 @@ init.js
 $(document).ready(function(){
     if ( typeof mapPage !== 'undefined' && mapPage) {
 
-        $('#js-compare-toggle').on('click', function() {
-            var $btn = $(this);
-            $(this).hasClass('active') ? doubleOff($btn) : doubleOn($btn);
-        });
-
         // setup the mapModules
         var maps = {};
         maps.m1_ = new MapModule('m1_');
         maps.m2_ = new MapModule('m2_');
-
         // set defaults
         maps.m1_.setDataset('dbreed');
         maps.m2_.setDataset('dbreed');
+
+        $('#js-compare-toggle').on('click', function() {
+            var $btn = $(this);
+            $(this).hasClass('active') ? doubleOff($btn) : doubleOn($btn);
+        });
 
         // get species from query string and load data
         jQuery(document).ready(function($) {

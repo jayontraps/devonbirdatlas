@@ -36,14 +36,16 @@ get_header(); ?>
 		                        <?php include('inc/maps/map-grid-1.php'); ?>
 		                    </div>
 		                </div>
-		                <?php include('inc/maps/map-keys.php'); ?>
+		                <!-- <?php // include('inc/maps/map-keys.php'); ?> -->
 		            </div>
 		            <div class="column-meta">
 		                <?php include('inc/maps/map-title.php'); ?>
 		                <?php include('inc/maps/overlay-controls.php'); ?>
+		                <?php include('inc/maps/overlay-notes.php'); ?>
 		                <?php include('inc/maps/tetrad-box.php'); ?>
 		            </div>
 		        </div>
+		        <?php include('inc/maps/map-keys.php'); ?>
 		    </div>
 
 
@@ -66,7 +68,7 @@ get_header(); ?>
 		                        <?php include('inc/maps/map-grid-2.php'); ?>
 		                    </div>
 		                </div>
-		                <?php include('inc/maps/map-keys.php'); ?>
+		                <!-- <?php // include('inc/maps/map-keys.php'); ?> -->
 		            </div>
 
 		            <div class="column-meta">
@@ -74,6 +76,7 @@ get_header(); ?>
 		                <?php include('inc/maps/overlay-controls.php'); ?>
 		                <?php include('inc/maps/tetrad-box.php'); ?>
 		            </div>
+		            <?php include('inc/maps/map-keys.php'); ?>
 		        </div>
 		    </div>
 

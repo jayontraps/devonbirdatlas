@@ -71,7 +71,8 @@
 /* .column-meta */
 
 .column-meta {
-    width: $max_width - $lg-map-width;
+    width: 100%;
+    max-width: $max_width - $lg-map-width;
     position: relative;
     padding-left: $default_spacing;
 }
@@ -90,9 +91,15 @@
     margin-top: $default_spacing;
     padding: $default_spacing;
     position: absolute;
-    top: 198px;
-    min-height: 437px;
-    width: 90%;
+    bottom: 0;
+    min-height: 400px;
+    width: calc(100% - 1.5rem);
+}
+
+@media screen and (max-width: 1025px) {
+    .tetrad-meta {
+        min-height: 300px;
+    }
 }
 
 .double {
@@ -100,6 +107,7 @@
         width: 100%;
         position: relative;
         top: auto;
+        bottom: auto;
     }
 }
 
