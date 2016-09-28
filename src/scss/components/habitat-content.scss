@@ -1,0 +1,75 @@
+.habitat-row {
+    padding-bottom: $default_spacing;
+}
+
+.habitat-intro {
+    p {
+        column-count: 2;
+    }
+}
+
+.habitats {
+    min-height: 500px;
+    border: $devon_border;
+    padding: $default_spacing;
+    display: flex;
+}
+
+.habitat-wrapper {
+    position: relative;
+    width: calc(100% - 200px);
+}
+
+.habitat-app {
+    width: 100%;
+    display: flex;
+    opacity: 1;
+    transition: opacity 200ms ease-out;
+    &.out {
+        opacity: 0;
+    }
+}
+
+.habitat-list {
+    width: 200px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    > li {
+        padding-bottom: $default_spacing/2;
+
+        a {
+            display: block;
+            transition: transform 100ms ease-in;
+            transform:translateX(0px);
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+            &.active {
+                transform:translateX(10px);
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.habitat-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.habitat-title {
+    margin: 0;
+}
+
+.habitat-img {
+    width: 50%;
+    height: 50%;
+    margin-left: $default_spacing*2;
+    margin-bottom: $default_spacing/2;
+    border: $devon_border;
+}
+

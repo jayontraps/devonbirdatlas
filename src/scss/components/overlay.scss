@@ -73,31 +73,31 @@
         background-image: url('../img/earth.png');
     }
     &.rivers {
-        background-image: url('../img/rivers.png');
+        background-image: url('../img/compressed/rivers-min.png');
     }
     /* habitat */
     &.grassland {
-        background-image: url('../img/masked-grassland-2.png');
+        background-image: url('../img/compressed/masked-grassland-2-min.png');
     }
     &.morland {
-        background-image: url('../img/masked-moorland-2.png');
+        background-image: url('../img/compressed/masked-moorland-2-min.png');
     }
     &.urban {
-        background-image: url('../img/masked-urban-2.png');
+        background-image: url('../img/compressed/masked-urban-2-min.png');
     }
     &.woodland {
-        background-image: url('../img/masked-broadleaf-2.png');
+        background-image: url('../img/compressed/masked-broadleaf-2-min.png');
     }
     &.arable {
-        background-image: url('../img/masked-arable-2.png');
+        background-image: url('../img/compressed/masked-arable-2-min.png');
     }
     &.coniferous-woodland {
-        background-image: url('../img/masked-con-wood-2.png');
+        background-image: url('../img/compressed/masked-con-wood-2-min.png');
     }
     &.silt {
-        background-image: url('../img/masked-silt-2.png');
+        background-image: url('../img/compressed/masked-silt-2-min.png');
     }
     &.bog {
-        background-image: url('../img/masked-bog-2.png');
+        background-image: url('../img/compressed/masked-bog-2-min.png');
     }
 }

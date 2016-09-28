@@ -11,6 +11,9 @@ get_header(); ?>
 <div id="primary">
 
 	<div class="inner-wrap group">
+		<div class="ov-row group inner-wrap">
+            <h1 class="no-m-p">Species Richness</h1>
+        </div>
 		<div id="tetrad-maps" class="species-richness group">
 		    <div id="m1_" class="container data-off" data-set="">
 		        <div class="map-full">

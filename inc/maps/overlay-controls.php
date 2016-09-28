@@ -3,10 +3,10 @@
         <input type="checkbox" checked class="data-layer-toggle">
         <label>Data Layer</label>
     </li>
-   <!--  <li class="checkbox">
+    <li class="checkbox">
         <input type="checkbox" checked name="altitude" class="ov-toggle">
         <label>Above 300m</label>
-    </li> -->
+    </li>
     <li class="checkbox">
         <input type="checkbox" checked name="sea" class="ov-toggle">
         <label>Sea</label>
