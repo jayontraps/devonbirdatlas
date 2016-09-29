@@ -230,7 +230,7 @@ MapModule.prototype.getData = function() {
             if (tetrad) {
                 tetrad.classList.add('pres', 'code-' + data[i]['Code']);
             } else {
-                console.log(obj.context + tetArr[i] + ' not found!');
+                // console.log(obj.context + tetArr[i] + ' not found!');
             }
         }
 
