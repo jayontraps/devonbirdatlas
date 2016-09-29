@@ -177,7 +177,7 @@ MapModule.prototype.filterForTenkSpecies = function() {
         return false;
     }
 
-
+    // reset from dbreed10 to currently selected dataset
     this.tenkSpecies = false;
     if ( typeof mapPage !== 'undefined' && mapPage ) {
         var currentDataSet = document.getElementById(this.context).querySelector('.select-data-set');
