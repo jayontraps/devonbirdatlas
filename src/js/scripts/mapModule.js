@@ -18,6 +18,8 @@ function MapModule(domContext) {
         currentList: ''
     };
     this.sittersUnderlay = false;
+    this.failedGetDataRequests = 0;
+    this.failedGetTetradDataRequests = 0;
 };
 
 MapModule.prototype.setDataset = function(dataset) {
@@ -113,41 +115,8 @@ MapModule.prototype.getTetradData = function() {
         obj.tetrad.counts = obj.getSums(data);
         // store on the MapModule object for DOM update later
         obj.tetrad.currentList = obj.templateTetradList(data);
-
-        //  A procedure for soting the list alphabetically
-        // // get the list of names
-        // var orginalList = [];
-
-        // for (var i = 0; i < data.length; i++) {
-        //     orginalList.push(data[i]['Species']);
-        // }
-        // // sort the list to new arr
-        // var sortList = [];
-        // for (var i = 0; i < data.length; i++) {
-        //     sortList.push(data[i]['Species']);
-        // }
-        // sortList.sort();
-
-        // var tetradList = document.createElement('ol');
-        // tetradList.classList.add('tetrad-list');
-
-        // // lookup the index, retreive the Code value and template the list item
-        // var theCode, el, spanEl;
-        // for (var i = 0; i < sortList.length; i++) {
-        //     theCode = data[orginalList.indexOf(sortList[i])]['Code'];
-        //     el = document.createElement('li');
-        //     el.innerHTML = sortList[i].trim();
-        //     spanEl = document.createElement('span');
-        //     spanEl.classList.add('code-' + theCode);
-        //     el.appendChild(spanEl);
-        //     tetradList.appendChild(el);
-        // }
-
-        // obj.tetrad.currentList = tetradList;
-        // // truncate arrays
-        // orginalList.length = 0;
-        // sortList.length = 0;
-
+        // reset obj.failedGetTetradDataRequests
+        obj.failedGetTetradDataRequests = 0;
     })
     .done(function(data) {
         window.setTimeout(function(){
@@ -159,10 +128,19 @@ MapModule.prototype.getTetradData = function() {
     })
     .fail(function() {
         console.log("getTetradData - error");
-        window.setTimeout(function(){
-            obj.stopSpinner.call(obj, ['tetrad-meta']);
-            obj.setMapErrorMsg(true, 'tetrad-request');
-        }, 800);
+
+        if (obj.failedGetTetradDataRequests < 1) {
+            obj.failedGetTetradDataRequests++;
+            // make a second attempt after a pause
+            window.setTimeout(function(){
+                obj.getData();
+            }, 1000);
+        } else {
+            window.setTimeout(function(){
+                obj.stopSpinner.call(obj, ['tetrad-meta']);
+                obj.setMapErrorMsg(true, 'tetrad-request');
+            }, 800);
+        }
     });
 };
 
@@ -242,6 +220,9 @@ MapModule.prototype.getData = function() {
         }
 
         obj.counts = obj.getSums(data);
+
+        // reset obj.failedGetDataRequests
+        obj.failedGetDataRequests = 0;
     })
     .done(function() {
         window.setTimeout(function(){
@@ -252,10 +233,19 @@ MapModule.prototype.getData = function() {
     })
     .fail(function() {
         console.log("getData - error");
-        window.setTimeout(function(){
-            obj.stopSpinner.call(obj, ['map','tetrad-meta']);
-            obj.setMapErrorMsg(true, 'data-request');
-        }, 800);
+
+        if (obj.failedGetDataRequests < 1) {
+            obj.failedGetDataRequests++;
+            // make a second attempt after a pause
+            window.setTimeout(function(){
+                obj.getData();
+            }, 1000);
+        } else {
+            window.setTimeout(function(){
+                obj.stopSpinner.call(obj, ['map','tetrad-meta']);
+                obj.setMapErrorMsg(true, 'data-request');
+            }, 800);
+        }
     });
 };
 
