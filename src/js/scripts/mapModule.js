@@ -20,6 +20,7 @@ function MapModule(domContext) {
     this.sittersUnderlay = false;
     this.failedGetDataRequests = 0;
     this.failedGetTetradDataRequests = 0;
+    this.failedsittersUnderlayRequest = 0;
 };
 
 MapModule.prototype.setDataset = function(dataset) {
@@ -126,15 +127,16 @@ MapModule.prototype.getTetradData = function() {
             obj.setFetchingData(false);
         }, 800);
     })
-    .fail(function() {
+    .fail(function(jqXHR, textStatus, errorThrown) {
         console.log("getTetradData - error");
+        console.log(jqXHR, textStatus, errorThrown);
 
-        if (obj.failedGetTetradDataRequests < 1) {
+        if (obj.failedGetTetradDataRequests < 2) {
             obj.failedGetTetradDataRequests++;
             // make a second attempt after a pause
             window.setTimeout(function(){
-                obj.getData();
-            }, 1000);
+                obj.getTetradData();
+            }, 1400);
         } else {
             window.setTimeout(function(){
                 obj.stopSpinner.call(obj, ['tetrad-meta']);
@@ -231,15 +233,16 @@ MapModule.prototype.getData = function() {
             obj.setFetchingData(false);
         }, 800);
     })
-    .fail(function() {
+    .fail(function(jqXHR, textStatus, errorThrown) {
         console.log("getData - error");
+        console.log(jqXHR, textStatus, errorThrown);
 
-        if (obj.failedGetDataRequests < 1) {
+        if (obj.failedGetDataRequests < 2) {
             obj.failedGetDataRequests++;
             // make a second attempt after a pause
             window.setTimeout(function(){
                 obj.getData();
-            }, 1000);
+            }, 1400);
         } else {
             window.setTimeout(function(){
                 obj.stopSpinner.call(obj, ['map','tetrad-meta']);
@@ -659,14 +662,27 @@ MapModule.prototype.getSittersUnderlayData = function(status) {
         }, 800);
     })
      .done(function(){
+        obj.failedsittersUnderlayRequest = 0;
         obj.logModule();
      })
-    .fail(function() {
-        console.log("getData - error");
-        window.setTimeout(function(){
-            obj.stopSpinner.call(obj, ['map','tetrad-meta']);
-            obj.setMapErrorMsg(true, 'data-request');;
-        }, 800);
+    .fail(function(jqXHR, textStatus, errorThrown) {
+        console.log("getSittersUnderlayData - error");
+        console.log(jqXHR, textStatus, errorThrown);
+
+
+        if (obj.failedsittersUnderlayRequest < 2) {
+            obj.failedsittersUnderlayRequest++;
+            // make a second attempt after a pause
+            window.setTimeout(function(){
+                obj.getSittersUnderlayData();
+            }, 1400);
+        } else {
+           window.setTimeout(function(){
+                obj.stopSpinner.call(obj, ['map','tetrad-meta']);
+                obj.setMapErrorMsg(true, 'data-request');;
+            }, 800);
+        }
+
     });
 };
 
