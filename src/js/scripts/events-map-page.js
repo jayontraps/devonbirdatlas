@@ -167,6 +167,39 @@ $(document).ready(function(){
         // });
 
 
+
+        // test ajax - test page
+        $('#test-call').on('click', testAjax);
+
+        function testAjax(e){
+            maps.m1_.request = 'species';
+            maps.m1_.setSpecies('Nuthatch');
+
+            var formData = {
+                "species" : 'Nuthatch',
+                "data-set" : 'dbreed'
+            };
+
+            $.ajax({
+                    url: config.folder + config.themeUrl + '/ajax/speciesData.php',
+                    type: 'POST',
+                    dataType: 'json',
+                    data:  formData,
+                    timeout: 12000
+            })
+            .done(function(data) {
+                console.log(data);
+                $('<div/>', {
+                    html: data.length
+                }).appendTo('#primary');
+            })
+            .fail(function(jqXHR, textStatus, errorThrown) {
+                console.log(jqXHR, textStatus, errorThrown);
+                $('#count').html('error');
+            });
+
+            maps.m1_.logModule();
+        };
     }
 
 });
