@@ -492,6 +492,11 @@ MapModule.prototype.updateTetradsPresent = function(length) {
     $('#' + this.context).find('.tet_pres').html(length);
 };
 
+MapModule.prototype.resetTetradsPresent = function(length) {
+    $('#' + this.context).find('.tet_pres').html('');
+};
+
+
 MapModule.prototype.updateSelectedTetrad = function(tetradId) {
     // reveal the info box if hidden
     $('#' + this.context).find('.tetrad-meta-wrapper').removeClass('hide');

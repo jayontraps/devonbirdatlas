@@ -56,11 +56,13 @@ $(document).ready(function(){
             maps.m2_.request = 'overview';
             maps.m2_.setDataset('dbdensity');
             maps.m2_.setOverviewMapState('idle');
+            maps.m2_.resetTetradsPresent();
 
             maps.m3_.setSpecies(this.value);
             maps.m3_.request = 'overview';
             maps.m3_.setDataset('dwdensity');
             maps.m3_.setOverviewMapState('idle');
+            maps.m3_.resetTetradsPresent();
 
             $('.state').addClass('update');
             maps.m1_.getSpeciesAccount();
