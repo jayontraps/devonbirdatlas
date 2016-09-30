@@ -160,6 +160,7 @@ $(document).ready(function(){
                 maps.m2_.startSpinner(['map']);
                 maps.m2_.getData();
                 maps.m2_.unsetSittersUnderlay();
+                maps.m2_.updateSpeciesSelect();
                 maps.m2_.logModule();
             }
         });
