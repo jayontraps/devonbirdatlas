@@ -162,6 +162,8 @@ $(document).ready(function(){
                 maps.m2_.getData();
                 maps.m2_.unsetSittersUnderlay();
                 maps.m2_.updateSpeciesSelect();
+                maps.m2_.updateKeys();
+                maps.m2_.updateDatasetHeadings();
                 maps.m2_.logModule();
             }
         });
