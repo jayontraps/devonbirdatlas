@@ -51,17 +51,18 @@ var $m1_keyGroup = $('#m1_').find('.key-group'),
 function doubleOn($btn) {
     $wrapper.addClass('double');
     $btn.addClass('active');
-
     $m1_keyGroup.appendTo( $m1_colMap );
     $m2_keyGroup.appendTo( $m2_colMap );
+    EVT.emit('double-on');
+    $btn.html('Single map view');
 }
 function doubleOff($btn) {
     $wrapper.removeClass('double');
     $btn.removeClass('active');
     $m1_keyGroup.appendTo('#m1_');
     $m2_keyGroup.appendTo('#m2_');
-
-    // $('.key-group').appendTo('.container');
+    EVT.emit('double-off');
+    $btn.html('Compare maps');
 }
 
 

@@ -27,6 +27,14 @@
         }
     }
     .d-set-title {
-        font-size: $base_font_size;
+        // font-size: $base_font_size;
+    }
+}
+
+.double {
+    .breeding-toggles {
+        .d-set-title {
+            // font-size: 1em;
+        }
     }
 }

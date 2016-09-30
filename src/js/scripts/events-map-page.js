@@ -55,15 +55,12 @@ $(document).ready(function(){
 
             maps[currentMap].request = 'species';
             maps[currentMap].setSpecies(species);
-
-            EVT.emit('species-selected', currentMap, species);
-
             maps[currentMap].setFetchingData(true);
             maps[currentMap].resetDataLayer();
             maps[currentMap].startSpinner(['map']);
             maps[currentMap].getData();
             maps[currentMap].unsetSittersUnderlay();
-            maps[currentMap].logModule();
+            // maps[currentMap].logModule();
         });
 
 
@@ -78,16 +75,13 @@ $(document).ready(function(){
 
             maps[currentMap].request = 'dataset';
             maps[currentMap].setDataset(dataset);
-
-            EVT.emit('dataset-selected', currentMap, dataset);
-
             maps[currentMap].setFetchingData(true);
             maps[currentMap].resetDataLayer();
             maps[currentMap].startSpinner(['map']);
             maps[currentMap].getData();
             maps[currentMap].getTetradData();
             maps[currentMap].unsetSittersUnderlay();
-            maps[currentMap].logModule();
+            // maps[currentMap].logModule();
         });
 
 
@@ -108,13 +102,10 @@ $(document).ready(function(){
             }
             maps[currentMap].request = 'tetrad';
             maps[currentMap].updateSelectedTetrad(tetradId);
-
-            EVT.emit('tetrad-selected', currentMap, tetradId);
-
             maps[currentMap].setFetchingData(true);
             maps[currentMap].setTetradStatus(tetradName, tetradId);
             maps[currentMap].getTetradData();
-            maps[currentMap].logModule();
+            // maps[currentMap].logModule();
         });
 
 
@@ -137,7 +128,7 @@ $(document).ready(function(){
             maps[currentMap].getData();
             maps[currentMap].updateSpeciesSelect();
             maps[currentMap].unsetSittersUnderlay();
-            maps[currentMap].logModule();
+            // maps[currentMap].logModule();
         });
 
 
@@ -154,14 +145,28 @@ $(document).ready(function(){
         });
 
 
-        /* test eventemitter2 */
+        /* use eventemitter2 to load second map on btn click */
 
-        // EVT.on('species-selected', function(currentMap, species){
-        //     console.log('species-selected: ', maps[currentMap], species);
-        // });
-        // EVT.on('dataset-selected', function(currentMap, dataset){
-        //     console.log('dataset-selected: ', maps[currentMap], dataset);
-        // });
+        EVT.on('double-on', function(currentMap, species){
+            console.log('double-on');
+            if (maps.m1_.species) {
+                if (maps.m2_.fetchingData) {
+                    return false;
+                }
+                maps.m2_.request = 'species';
+                maps.m2_.setSpecies(maps.m1_.species);
+                maps.m2_.setFetchingData(true);
+                maps.m2_.resetDataLayer();
+                maps.m2_.startSpinner(['map']);
+                maps.m2_.getData();
+                maps.m2_.unsetSittersUnderlay();
+                maps.m2_.logModule();
+            }
+        });
+
+        EVT.on('double-off', function(currentMap, dataset){
+            console.log('double-off');
+        });
         // EVT.on('tetrad-selected', function(currentMap, tetrad){
         //     console.log('tetrad-selected: ', maps[currentMap], tetrad);
         // });

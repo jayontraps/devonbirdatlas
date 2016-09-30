@@ -14,5 +14,4 @@
     <div class="overlay coniferous-woodland"></div>
     <div class="overlay silt"></div>
     <div class="overlay bog"></div>
-
 </div>

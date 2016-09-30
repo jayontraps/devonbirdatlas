@@ -10,6 +10,8 @@
     color:$border-color;
 }
 
+
+
 .controls {
     list-style: none;
     margin: 0;
@@ -26,4 +28,13 @@
     li {
         max-width: 197px;
     }
+}
+
+.double {
+    .latin-name {
+        margin: 0 0 1rem 0;
+    }
+    // .controls {
+    //     font-size: .9em;
+    // }
 }

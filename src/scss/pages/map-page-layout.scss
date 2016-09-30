@@ -1,9 +1,4 @@
 .tetrad-maps, .species-richness {
-    // width: $max_width;
-    // margin: 0 auto;
-    // padding-top: $default_spacing;
-    // position: relative;
-
     &.double {
         width: $max_width_double;
         display: flex;
@@ -21,13 +16,11 @@
 /* .container */
 
 .container {
-    // width: $max_width;
     width: 100%;
 }
 
 .double {
     .container {
-        // width: $max_width_double / 2;
         width: 50%;
     }
 }
