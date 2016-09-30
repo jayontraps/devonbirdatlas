@@ -154,6 +154,7 @@ $(document).ready(function(){
                     return false;
                 }
                 maps.m2_.request = 'species';
+                maps.m2_.setDataset('dbreed');
                 maps.m2_.setSpecies(maps.m1_.species);
                 maps.m2_.setFetchingData(true);
                 maps.m2_.resetDataLayer();
@@ -168,6 +169,10 @@ $(document).ready(function(){
         EVT.on('double-off', function(currentMap, dataset){
             console.log('double-off');
         });
+
+
+
+
         // EVT.on('tetrad-selected', function(currentMap, tetrad){
         //     console.log('tetrad-selected: ', maps[currentMap], tetrad);
         // });

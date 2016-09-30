@@ -61,8 +61,10 @@ function doubleOff($btn) {
     $btn.removeClass('active');
     $m1_keyGroup.appendTo('#m1_');
     $m2_keyGroup.appendTo('#m2_');
-    EVT.emit('double-off');
+    $('#m2_').find('.select-data-set').val('dbreed');
     $btn.html('Compare maps');
+
+    EVT.emit('double-off');
 }
 
 

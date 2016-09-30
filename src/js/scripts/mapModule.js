@@ -158,6 +158,8 @@ MapModule.prototype.filterForTenkSpecies = function() {
     }
 
     // reset from dbreed10 to currently selected dataset
+    /* todo */
+    // this has the final say on setting dataset.. pulling from the DOM - not ideal
     this.tenkSpecies = false;
     if ( typeof mapPage !== 'undefined' && mapPage ) {
         var currentDataSet = document.getElementById(this.context).querySelector('.select-data-set');
