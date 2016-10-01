@@ -86,6 +86,11 @@ MapModule.prototype.templateTetradList = function(data) {
     return tetradList;
 };
 
+MapModule.prototype.resetTetradInput = function() {
+    $('#' + this.context).find('.tetrad-input').val('');
+    $('#' + this.context).find('.tetrad-input-error').hide();
+};
+
 /* GETTING DATA */
 
 MapModule.prototype.getTetradData = function() {

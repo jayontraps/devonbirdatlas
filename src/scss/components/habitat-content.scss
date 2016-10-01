@@ -9,20 +9,27 @@
 }
 
 .habitats {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
     min-height: 500px;
     border: $devon_border;
     padding: $default_spacing;
     display: flex;
+    justify-content: space-between;
 }
 
 .habitat-wrapper {
     position: relative;
     width: calc(100% - 200px);
+    max-width: 800px;
+    // float: right;
 }
 
 .habitat-app {
     width: 100%;
-    display: flex;
+    max-width: 800px;
+    // display: flex;
     opacity: 1;
     transition: opacity 200ms ease-out;
     &.out {
@@ -54,21 +61,21 @@
     }
 }
 
-.habitat-inner {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
+// .habitat-inner {
+//     width: 100%;
+//     // display: flex;
+//     // flex-direction: column;
+// }
 
 
 .habitat-title {
-    margin: 0;
+    margin: 0 0 $default_spacing/2;
 }
 
 .habitat-img {
-    width: 50%;
-    height: 50%;
-    margin-left: $default_spacing*2;
+    // width: 50%;
+    // height: 50%;
+    // margin-left: $default_spacing*2;
     margin-bottom: $default_spacing/2;
     border: $devon_border;
 }

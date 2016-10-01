@@ -38,3 +38,21 @@
     right: 0;
     top: 0;
 }
+
+.input-inline {
+    border-radius: 0;
+    display: inline-block;
+    border: $devon_border;
+    background-color: #fff;
+    color: $border-color;
+    line-height: 1em;
+    padding: .1em;
+}
+
+.input-inline-submit {
+    vertical-align: middle;
+    border: 1px solid $blue;
+    background-color: #fff;
+    color: $blue;
+    line-height: 1em;
+}

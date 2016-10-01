@@ -3,6 +3,11 @@
     <?php include('map-error.php'); ?>
     <div class="tetrad-meta-wrapper">
         <h3 class="tetrad-title">Click on the map for tetrad information</h3>
+        <form rel='tetrad-input'>
+            <input class='tetrad-input input-inline' type="text" placeholder='Enter tetrad code'/>
+            <input type="submit" value="Submit" class="input-inline-submit">
+            <span class="tetrad-input-error">No tetrad found</span>
+        </form>
         <div class="tet-sums">
             <ul class="tet-sums-list">
                 <li>Present: <span class="tet-pres"></span></li>

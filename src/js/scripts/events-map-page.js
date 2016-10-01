@@ -4,10 +4,12 @@ classList.js
 chosen.jquery.min.js
 speciesList.js
 latinNames.js
+tetradList.js
 mapModule.js
 mapModule-richness.js
 mapModule-overview.js
 eventemitter2.js
+
 init.js
 */
 /* https://github.com/mkleehammer/gulp-deporder */
@@ -105,6 +107,7 @@ $(document).ready(function(){
             maps[currentMap].setFetchingData(true);
             maps[currentMap].setTetradStatus(tetradName, tetradId);
             maps[currentMap].getTetradData();
+            maps[currentMap].resetTetradInput();
             // maps[currentMap].logModule();
         });
 
@@ -174,10 +177,33 @@ $(document).ready(function(){
 
 
 
+        // capture tetrad input
+        $('.container').on('submit', '[rel=tetrad-input]', function(event) {
+            event.preventDefault();
 
-        // EVT.on('tetrad-selected', function(currentMap, tetrad){
-        //     console.log('tetrad-selected: ', maps[currentMap], tetrad);
-        // });
+            var currentMap = event.delegateTarget.id,
+                $form = $(event.target),
+                tetradName = $form.find( ".tetrad-input" ).val().toUpperCase();
+
+            if (tetradList.indexOf(tetradName) >= 0) {
+                $form.find('.tetrad-input-error').hide();
+                EVT.emit('input-tetrad', currentMap, tetradName);
+            } else {
+                console.log('nope');
+                $form.find('.tetrad-input-error').show();
+                $form.find( ".tetrad-input" ).val('');
+            }
+        });
+
+        /* use eventemitter2 to input new tetrad request */
+        EVT.on('input-tetrad', function(currentMap, tetradName){
+            var tetradId = currentMap + tetradName;
+            maps[currentMap].request = 'tetrad';
+            maps[currentMap].updateSelectedTetrad(tetradId);
+            maps[currentMap].setFetchingData(true);
+            maps[currentMap].setTetradStatus(tetradName, tetradId);
+            maps[currentMap].getTetradData();
+        });
 
 
 

@@ -78,7 +78,11 @@
 
 .tetrad-title {
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: $default_spacing/2;
+}
+
+[rel=tetrad-input] {
+    margin-bottom: $default_spacing/2;
 }
 
 .tet-sums-list {
@@ -88,5 +92,16 @@
     li {
         display: inline-block;
         margin-right: 1rem;
+    }
+}
+
+
+
+.tetrad-input-error {
+    margin-left: $default_spacing/2;
+    color: red;
+    display: none;
+    &.on {
+        display: block;
     }
 }
