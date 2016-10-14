@@ -48,7 +48,12 @@
         margin: 0;
         padding-bottom: $default_spacing/2;
     }
-    column-count: 2;
+    .species-ov-img {
+        display: block;
+        border: 1px solid black;
+        float: right;
+        margin: 0 0 2rem 2rem;
+    }
 }
 
 .ov-map-title {

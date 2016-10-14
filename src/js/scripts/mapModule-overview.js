@@ -49,5 +49,13 @@ MapModule.prototype.templateSpeciesAccount = function(data, latinName) {
     }
     document.querySelector('.account-text').innerHTML = data[0].content.rendered;
     document.getElementById('species-name').innerHTML = this.species;
+    if ( data[0].better_featured_image ) {
+        var imgSrc = data[0].better_featured_image.media_details.sizes.medium.source_url;
+        $('<img/>', {
+            'class': 'species-ov-img',
+            'src': imgSrc,
+            'alt': data[0].better_featured_image.media_details.image_meta.title
+        }).prependTo('.account-text');
+    }
     $('.state').removeClass('update');
 };

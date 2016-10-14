@@ -85,7 +85,7 @@ get_header(); ?>
         <div class="ov-row group inner-wrap species-account state">
             <h1 class="species-title" id="species-name"></h1>
             <h3 class="latin-name"></h3>
-            <div class="account-text"></div>
+            <div class="account-text group"></div>
         </div>
 
     </div>

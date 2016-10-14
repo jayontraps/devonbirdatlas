@@ -145,7 +145,7 @@ gulp.task('reload-js', ['lintjs', 'scripts' ], function() {
 });
 
 gulp.task('reload-css', ['sass', 'inject-critical-global'], function() {
-    browserSync.reload();
+    // browserSync.reload();
 });
 
 
