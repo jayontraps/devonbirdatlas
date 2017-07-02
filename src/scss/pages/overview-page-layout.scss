@@ -48,11 +48,21 @@
         margin: 0;
         padding-bottom: $default_spacing/2;
     }
+
+
+    .species-ov-img-wrapper {
+        float: right;
+        margin: 0 0 2rem 2rem;
+    }
+
+    .species-ov-img-caption {
+        color: $border-color;
+        padding-top: 1em;
+    }
+
     .species-ov-img {
         display: block;
         border: 1px solid black;
-        float: right;
-        margin: 0 0 2rem 2rem;
     }
 }
 

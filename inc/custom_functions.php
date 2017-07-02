@@ -3,9 +3,9 @@
 function enqueue_styles_scripts() {
 
    // wp_enqueue_script( 'devonatlas-modenizr', get_template_directory_uri() . '/js/vendor/modernizr.custom.98000.js', array(), false);
-    wp_enqueue_style( 'devonatlas-style', get_template_directory_uri() . '/build/css/main.css', array(), '211' );
+    wp_enqueue_style( 'devonatlas-style', get_template_directory_uri() . '/build/css/main.css', array(), '212' );
 
-    wp_enqueue_script( 'devonatlas-main', get_template_directory_uri() . '/build/js/scripts.js', array('jquery'),'211', true);
+    wp_enqueue_script( 'devonatlas-main', get_template_directory_uri() . '/build/js/scripts.js', array('jquery'),'212', true);
 
 
     // if ( is_page_template( 'page-search-app.php' ) ) {

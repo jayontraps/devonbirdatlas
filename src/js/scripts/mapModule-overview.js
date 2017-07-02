@@ -51,11 +51,19 @@ MapModule.prototype.templateSpeciesAccount = function(data, latinName) {
     document.getElementById('species-name').innerHTML = this.species;
     if ( data[0].better_featured_image ) {
         var imgSrc = data[0].better_featured_image.media_details.sizes.medium.source_url;
-        $('<img/>', {
+        var caption = $('<div/>', {
+            'class': 'species-ov-img-caption',
+            'text': data[0].better_featured_image.caption
+        });
+        var image = $('<img/>', {
             'class': 'species-ov-img',
             'src': imgSrc,
-            'alt': data[0].better_featured_image.media_details.image_meta.title
-        }).prependTo('.account-text');
+            'alt': this.species
+        });
+        $( "<div class='species-ov-img-wrapper'></div>" )
+        .append(image)
+        .append(caption)
+        .prependTo('.account-text');
     }
     $('.state').removeClass('update');
 };

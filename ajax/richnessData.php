@@ -2,8 +2,8 @@
   require 'config.php';
 
   // try {
-  //   $conn = new PDO('mysql:host=localhost;dbname=devon_data', $config['DB_USERNAME'], $config['DB_PASSWORD']);
-
+    // $conn = new PDO('mysql:host=' . $config['DB_HOST'] . ';dbname=devon_data', $config['DB_USERNAME'], $config['DB_PASSWORD']);
+    //
   //   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
   //   // $stmt = $conn->prepare("select distinct Tetrad, count(`Species`) as CountOf from `dwdensity` group by `Tetrad`");

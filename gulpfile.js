@@ -11,11 +11,8 @@ var gulp = require('gulp'),
     source = require('vinyl-source-stream'),
     sourcemaps = require('gulp-sourcemaps'),
     browserSync = require('browser-sync'),
-    minifyCss = require('gulp-minify-css'),
-    rename = require('gulp-rename');
-
-
-var sass = require('gulp-sass'),
+    rename = require('gulp-rename')
+    sass = require('gulp-sass'),
     postcss = require('gulp-postcss'),
     autoprefixer = require('autoprefixer'),
     lost    = require('lost'),
@@ -47,13 +44,26 @@ gulp.task('sass', function() {
         .pipe(postcss([
               lost(),
               autoprefixer({
-                browsers: ['last 2 versions']
+                browsers: ['last 5 versions']
             })
         ]))
         .pipe(gulpif(devBuild, sourcemaps.write()))
         .pipe(gulpif(!devBuild, minifyCss()))
         .pipe(gulp.dest(dest + "css"))
         .pipe(browserSync.stream());
+});
+
+gulp.task('prod-sass', function() {
+    return gulp.src(src + "scss/main.scss")
+        .pipe(sass({outputStyle: 'nested'}))
+        .pipe(postcss([
+              lost(),
+              autoprefixer({
+                browsers: ['last 5 versions']
+            })
+        ]))
+        .pipe(minifyCss())
+        .pipe(gulp.dest(dest + "css"));
 });
 
 
@@ -71,7 +81,7 @@ gulp.task('critical-global', function() {
         .pipe(sass({outputStyle: 'nested'}))
         .pipe(postcss([
               autoprefixer({
-                browsers: ['last 2 versions']
+                browsers: ['last 5 versions']
             })
         ]))
         .pipe(minifyCss())
@@ -97,6 +107,19 @@ gulp.task('scripts', function() {
         .pipe(concat('scripts.js'))
         .pipe(gulpif(devBuild, sourcemaps.write()))
         .pipe(gulpif(!devBuild, uglify()))
+        .pipe(gulp.dest(dest + 'js/'));
+});
+
+gulp.task('prod-scripts', function() {
+    return gulp.src([
+        '!' + src + 'js/scripts/rigsConservationList.js',
+        '!' + src + 'js/scripts/metaList.js',
+        // '!' + src + 'js/scripts/eventemitter2.js',
+        src + 'js/scripts/*.js'
+        ])
+        .pipe(deporder())
+        .pipe(concat('scripts.js'))
+        .pipe(uglify())
         .pipe(gulp.dest(dest + 'js/'));
 });
 
@@ -133,7 +156,7 @@ gulp.task('lintjs', function() {
 
 gulp.task('browser-sync', function() {
     browserSync({
-         proxy: "localhost/devon_atlas"
+         proxy: "devonbirds.dev"
         // server: {
         //     baseDir: "./build"
         // }

@@ -7,6 +7,7 @@ eventemitter2.js
 */
 
 window.EVT = new EventEmitter2();
+console.log('setup');
 
 // load from query string
 function getUrlVar(key){
