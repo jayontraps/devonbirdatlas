@@ -1,0 +1,56 @@
+@mixin breakpoint($point) {
+
+
+  @if $point == mobile {
+    @media (min-width: $mobile)  { @content; }
+  }
+
+ @else if $point == tablet-portrait {
+    @media (min-width: $tablet_portrait)  { @content; }
+  }
+  
+  @else if $point == tablet {
+    @media (min-width: $tablet)  { @content; }
+  }  
+ 
+  @else if $point == tablet-between {
+    @media (min-width: $tab_between)  { @content; }
+  }  
+
+ 
+  @else if $point == tablet-landscape {
+    @media (min-width: $tablet_landscape)  { @content; }
+  }  
+
+  @else if $point == netbook {
+    @media (min-width: $netbook)  { @content; }
+  }   
+
+  @else if $point == small-screen {
+    @media (min-width: $small-screen)  { @content; }
+  }  
+
+  @else if $point == medium-screen {
+    @media (min-width: $medium-screen)  { @content; }
+  }
+
+  @else if $point == large-screen {
+    @media (min-width: $large-screen)  { @content; }
+  }
+
+}
+
+
+//http://css-tricks.com/video-screencasts/132-quick-useful-case-sass-math-mixins/
+
+@mixin defineCols($numPerRow, $margin) {
+  width: ((100% - (($numPerRow - 1) * $margin)) / $numPerRow);
+  &:nth-child(n) {
+    margin-bottom: $margin;
+    margin-right: $margin;
+  }
+  &:nth-child(#{$numPerRow}n) {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}

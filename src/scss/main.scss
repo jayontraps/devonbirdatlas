@@ -8,16 +8,19 @@
 @import "grid";
 @import "header";
 @import "footer";
-
+@import "svg";
 
 // navigation
 @import "navigation/main-nav";
+@import "navigation/off-canvas";
+
 
 // plugins
 @import "vendor/chosen";
 @import "components/chosen-custom";
 
 // components
+@import "components/bx-slider";
 @import "components/checkbox";
 @import "components/button";
 @import "components/state";
@@ -25,6 +28,16 @@
 @import "components/select-inputs";
 @import "components/spinner";
 @import "components/media";
+
+// pages
+@import "pages/banner-image.scss";
+@import "pages/page-layout.scss";
+@import "pages/image-panel";
+@import "pages/home-page-panels.scss";
+@import "pages/h-panels.scss";
+@import "vendor/bx-slider";
+
+
 @import "components/tetrad-grid";
 @import "components/tetrad-grid-overview";
 @import "components/overview-map-state";

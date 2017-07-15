@@ -1,6 +1,7 @@
 .header {
-    border-bottom: 1px solid #e4e4e4;
-    background-color: #fafafa;
+    // box-shadow: $box-shadow;
+    border-bottom: 1px solid $border_color;
+    background-color: $light_grey;
     position: relative;
     padding: 1em;
 }

@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="inner-wrap">
+	<div id="primary" class="inner-wrap group">
 
 		<?php
 		while ( have_posts() ) : the_post();

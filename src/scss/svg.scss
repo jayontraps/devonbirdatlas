@@ -1,0 +1,10 @@
+.icon-slides {
+    display: inline-block;
+    width: 64px;
+    height:64px;
+    fill: whitesmoke;
+    transition: all 0.2s ease;
+    &:hover {
+        fill: $blue;
+    }
+}

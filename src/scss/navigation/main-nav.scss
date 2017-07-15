@@ -1,9 +1,14 @@
 
-.desktop-nav-wrap {
-
+.parent-pageid-806 {
+    .menu-item-2387 {
+        a {
+            color: $currentPageBlue;
+        }
+    }
 }
 
 .desktop-nav {
+    display: none;
     list-style: none;
     position: absolute;
     right: 0;
@@ -20,6 +25,11 @@
          &:last-of-type {
             a {
                 padding-right: 0;
+            }
+        }
+        &.current-menu-item {
+            a {
+                color: $currentPageBlue;
             }
         }
     }
@@ -48,6 +58,7 @@
 
 
 .sub-menu-nav {
+    display: none;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -55,12 +66,22 @@
         margin-left: .75em;
         &.current_page_item {
             a {
-                text-decoration: underline;
+                font-weight: bold;
+                color: $currentPageBlue;
             }
         }
     }
 }
 
+
+@media screen and ($lg_screen) {
+    .sub-menu-nav {
+        display: block;
+    }
+    .desktop-nav {
+        display: block;
+    }
+}
 
 
 

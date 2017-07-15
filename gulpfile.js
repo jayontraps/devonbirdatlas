@@ -110,6 +110,16 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest(dest + 'js/'));
 });
 
+gulp.task('home-scripts', function() {
+    return gulp.src([
+        src + 'js/plugins/jquery.bxslider.js',
+        src + 'js/plugins/init.js'
+        ])
+        .pipe(concat('home.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest(dest + 'js/'));
+})
+
 gulp.task('prod-scripts', function() {
     return gulp.src([
         '!' + src + 'js/scripts/rigsConservationList.js',
@@ -163,16 +173,16 @@ gulp.task('browser-sync', function() {
     });
 });
 
-gulp.task('reload-js', ['lintjs', 'scripts' ], function() {
+gulp.task('reload-js', ['lintjs', 'scripts', 'home-scripts' ], function() {
     browserSync.reload();
 });
 
-gulp.task('reload-css', ['sass', 'inject-critical-global'], function() {
+gulp.task('reload-css', ['sass'], function() {
     // browserSync.reload();
 });
 
 
-gulp.task('watch', ['sass', 'inject-critical-global', 'lintjs', 'scripts', 'browser-sync'], function() {
+gulp.task('watch', ['sass', 'lintjs', 'scripts', 'home-scripts', 'browser-sync'], function() {
     gulp.watch(src + 'js/**/*.js', ['reload-js']);
     gulp.watch(src + 'scss/**/*.scss', ['reload-css']);
 });

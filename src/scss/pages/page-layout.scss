@@ -1,0 +1,17 @@
+@media screen and ($lg_screen) {
+    .site-column {
+        float: left;
+    }
+
+    .main-col {
+        width: 70%;
+        padding-right: 4rem;
+    }
+
+    .side-col {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}

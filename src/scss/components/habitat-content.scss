@@ -2,16 +2,21 @@
     padding-bottom: $default_spacing;
 }
 
-.habitat-intro {
-    p {
-        column-count: 2;
+
+
+@media screen and ($lg_screen) {
+    .habitat-intro {
+        p {
+            column-count: 3;
+            column-gap: 20px;
+        }
     }
 }
 
 .habitats {
     width: 100%;
     max-width: 1080px;
-    margin: 0 auto;
+    // margin: 0 auto;
     min-height: 500px;
     border: $devon_border;
     padding: $default_spacing;

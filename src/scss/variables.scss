@@ -2,10 +2,10 @@
 $base_font_size: 14px;
 $base_line_height: 1.5rem;
 
-$heading_font_family: Helvetica, Arial, sans-serif; 
+$heading_font_family: Helvetica Neue, Helvetica, Arial, sans-serif;
 $heading_font_weight: bold;
 
-$base_font_family: Helvetica, Arial, sans-serif; 
+$base_font_family: Helvetica Neue, Helvetica, Arial, sans-serif;
 $base_font_custom: 'Source Sans Pro', sans-serif;
 
 /* Grid */
@@ -14,6 +14,7 @@ $col_padding: 2rem;
 // layout
 $max_width: 1200px;
 $max_width_double: 1024px;
+$max_width_home: 1100px;
 
 // spacing
 $default_spacing: 1.5rem;
@@ -23,6 +24,11 @@ $lg_screen: "min-width: 769px";
 $sm_screen: "max-width: 768px";
 
 // colors
+$white: #fff;
+$whitesmoke: #fafafa;
+$light_grey: rgb(242,242,242);
+$grey_mid: #8C8C8C;
+
 
 $border-color: #999;
 $body_bgc: transparent;
@@ -32,6 +38,10 @@ $foot-note-color: $border-color;
 $blue: #05AFF0;
 $gold: #B05C00;
 $link_blue: #049CD6;
+$currentPageBlue: darken(#049CD6, 20);
+$dark_grey: #414044;
+
+
 
 // datasets
 $dbdensity : red;
@@ -93,8 +103,28 @@ $select-height: 26px;
 
 
 
+// screen sizes
+$mobile: 25rem; // 400px
+$tablet_portrait: 46rem; // 736px
+$tablet: 48.75rem;  //  780px;
+$tab_between: 56.25rem; // 900px
+$tablet_landscape: 64rem; // 1024px
+$netbook: 67.5rem; // 1080px
+$small-screen: 75rem; // 1200px
+$medium-screen: 80rem;  //  1280px;
+$large-screen: 90rem;   //  1440px;
+
+$border_color: rgba(0,0,0,.1);
 
 
+$box-shadow: 0 2px 0 rgba(0,0,0,.1);
 
+/* off-canvas-nav */
+$top_bar_top_position: 12px;
+$top_bar_mobile_height: 52px;
+$off_canvas_menu_left_gutter: 2em;
+$off_canvas_menu_font_size: .9em;
 
-
+// lightbox
+$lightbox_bgc: rgba(248, 248, 248, 0.85);
+$lightbox_bgc_dark: rgba(0, 0, 0, 0.85);

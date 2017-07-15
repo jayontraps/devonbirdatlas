@@ -8,6 +8,10 @@ function enqueue_styles_scripts() {
     wp_enqueue_script( 'devonatlas-main', get_template_directory_uri() . '/build/js/scripts.js', array('jquery'),'212', true);
 
 
+    if ( is_page_template( 'page-home.php' ) ) {
+        wp_enqueue_script( 'devonatlas-home', get_template_directory_uri() . '/build/js/home.js', array('jquery'), '125', true);
+    }
+
     // if ( is_page_template( 'page-search-app.php' ) ) {
     //     wp_enqueue_script( 'devonatlas-app', get_template_directory_uri() . '/build/app.min.js', array('jquery'), '125', true);
     // }

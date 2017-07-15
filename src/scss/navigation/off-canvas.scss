@@ -1,0 +1,135 @@
+.menu-toggle {
+    display: block;
+    position: absolute;
+    top: $top_bar_top_position;
+    right: $top_bar_top_position;
+    padding: .3em;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+.off-canvas {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999999;
+    transition: transform 250ms ease-out;
+    transform: translateX(-100%);
+    padding: 0;
+    &.opened {
+        transform: translateX(0);
+    }
+
+    .sub-nav {
+        padding: 0;
+        padding-left: calc(30px - .5em);
+        li {
+            margin-right: .75em;
+        }
+    }
+}
+
+.close-nav {
+    width: 100%;
+    height: $top_bar_mobile_height;
+    background-color: $whitesmoke;
+    border-bottom: $devon_border;
+    position: absolute;
+    top: 0;
+    left: 0;
+    .icon-close {
+        position: absolute;
+        top: 12px;
+        left: 82vw;
+        width: 23px;
+        height: 23px;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.close-nav-col {
+    width: 20vw;
+    height: 100%;
+    position: absolute;
+    top: $top_bar_mobile_height;
+    right: 0;
+    background-color: transparent;
+}
+
+.off-canvas__wrap {
+    width: 80vw;
+    min-height: 150vh;
+    position: relative;
+    z-index: 2;
+    padding: 2em 0 2em 0;
+    background-color: $whitesmoke;
+    border-right: $devon_border;
+}
+
+.off-canvas__menu {
+    list-style: none;
+    padding: 0;
+    background-color: $whitesmoke;
+    a {
+        position: relative;
+        display: block;
+        padding: .8em 0 .8em $off_canvas_menu_left_gutter;
+        color: $body_color;
+        .right-arrow {
+            position: absolute;
+            top: 1em;
+            right: 1em;
+        }
+    }
+
+    li:last-of-type {
+        padding-bottom: .5em;
+    }
+    li:first-of-type {
+        padding-top: .5em;
+    }
+}
+
+.alt-user-menu {
+    border-top:  $devon_border;
+    a {
+        color: $grey;
+    }
+}
+
+.shop-by-links {
+    text-transform: uppercase;
+}
+
+.off-canvas-login {
+    background-color: $whitesmoke;
+    border: none;
+    padding: 20px 0px 20px 30px;
+}
+
+
+
+@media screen and ($lg_screen) {
+    .off-canvas {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+    .menu-toggle {
+        display: none;
+    }
+}

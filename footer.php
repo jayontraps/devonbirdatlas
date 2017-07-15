@@ -12,12 +12,34 @@
 ?>
 
 
-    <footer id="colophon" class="footer" role="contentinfo">
-        <div class="inner-wrap"></div>
+    <footer id="colophon" class="footer clearfix" role="contentinfo">
+        <div class="inner-wrap">
+            <p>Copyright &copy; Devon Bird Atlas. All rights reserved.</p>
+        </div>
     </footer>
 
 
 </div><!-- #page -->
+
+<div id="js_off_canvas" class="off-canvas">
+  <div id="js_close_nav" class="close-nav">
+    <svg class='icon icon-close'>
+      <use xlink:href='#icon-open-menu'></use>
+    </svg>
+  </div>
+  <div id="js_close_nav_col" class="close-nav-col"></div>
+  <div class="off-canvas__wrap">
+    <div class="off-canvas__menu">
+        <nav role="navigation" class="cf mobile-nav-wrap" id="sm-screen-nav" itemscope itemtype='https://schema.org/SiteNavigationElement'>
+      <?php wp_nav_menu( array(
+      'theme_location' => 'mobile',
+      'menu_class'      => 'mobile-nav' ) ); ?>
+  </nav>
+    </div>
+  </div>
+</div>
+
+<div id="js_overlay" class="body-overlay"></div>
 
 <?php wp_footer(); ?>
 
@@ -31,6 +53,7 @@
   ga('send', 'pageview');
 
 </script>
+
 
 </body>
 </html>

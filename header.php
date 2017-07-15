@@ -12,6 +12,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<?php include "inc/inc-svg-defs.php"; ?>
 <div id="page" class="site">
 
 	<header id="masthead" class="header" role="banner">
@@ -20,6 +21,10 @@
             <?php include "inc/branding.php";?>
             <?php include "inc/main-nav.php";?>
             <?php include "inc/sub-nav.php";?>
+
+            <div id="js_open_nav"  class="menu-toggle">
+                <svg class="icon icon-menu"><use xlink:href="#icon-menu"></use></svg>
+            </div>
 
         </div>
     </header>

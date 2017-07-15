@@ -1,0 +1,45 @@
+.h-panels {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.h-panel {
+    max-width: 400px;
+    position: relative;
+    float: left;
+    background-color: $light_grey;
+    border-bottom: 2px solid $border_color;
+    margin:  0 auto 3rem auto;
+}
+
+.h-panel-inner {
+    padding: 1rem;
+}
+
+.h-panel-img {
+    display: block;
+}
+
+.h-panel-title {
+    padding: 1rem;
+    margin: 0;
+    color: $whitesmoke;
+    background-color: $dark_grey;
+}
+
+@media screen and ($lg_screen) {
+    .h-panels {
+        // padding: 0 3rem 3rem 3rem;
+        flex-direction: row;
+    }
+
+    .h-panel {
+        max-width: 400px;
+        margin: 0 3rem 0 0;
+         &:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+}
+
