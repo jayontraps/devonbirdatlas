@@ -18,9 +18,9 @@
 	<header id="masthead" class="header" role="banner">
         <div class="inner-wrap group">
 
-            <?php include "inc/branding.php";?>
-            <?php include "inc/main-nav.php";?>
-            <?php include "inc/sub-nav.php";?>
+            <?php include ( get_template_directory() . "/inc/branding.php"); ?>
+            <?php include ( get_template_directory() . "/inc/main-nav.php"); ?>
+            <?php include ( get_template_directory() . "/inc/sub-nav.php"); ?>
 
             <div id="js_open_nav"  class="menu-toggle">
                 <svg class="icon icon-menu"><use xlink:href="#icon-menu"></use></svg>

@@ -4,21 +4,25 @@
 
 
 
-@media screen and ($lg_screen) {
-    .habitat-intro {
-        p {
-            column-count: 3;
-            column-gap: 20px;
-        }
-    }
-}
+// @media screen and ($lg_screen) {
+//     .habitat-intro {
+//         p {
+//             column-count: 2;
+//             column-gap: 30px;
+//         }
+//     }
+// }
 
 .habitats {
-    width: 100%;
-    max-width: 1080px;
+    clear: both;
+    margin-top: $default_spacing;
+    // width: 100%;
+    // max-width: 1080px;
     // margin: 0 auto;
     min-height: 500px;
-    border: $devon_border;
+    // border: $devon_border;
+    border-bottom: 1px solid $border_color;
+    background-color: $light_grey;
     padding: $default_spacing;
     display: flex;
     justify-content: space-between;
@@ -27,13 +31,13 @@
 .habitat-wrapper {
     position: relative;
     width: calc(100% - 200px);
-    max-width: 800px;
+    // max-width: 800px;
     // float: right;
 }
 
 .habitat-app {
     width: 100%;
-    max-width: 800px;
+    max-width: 600px;
     // display: flex;
     opacity: 1;
     transition: opacity 200ms ease-out;
@@ -47,6 +51,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
+
     > li {
         padding-bottom: $default_spacing/2;
 
@@ -74,6 +79,7 @@
 
 
 .habitat-title {
+    display: none;
     margin: 0 0 $default_spacing/2;
 }
 

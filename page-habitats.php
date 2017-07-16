@@ -10,7 +10,7 @@ get_header(); ?>
 
 	<div id="primary" class="inner-wrap">
 
-		<div class="habitat-row habitat-intro">
+		<div class="main-col site-column habitat-row habitat-intro">
 			<?php
 			while ( have_posts() ) : the_post();
 
@@ -24,6 +24,12 @@ get_header(); ?>
 			endwhile; // End of the loop.
 			?>
 		</div>
+
+
+		<div class="side-col site-column">
+			<?php include( get_template_directory() . '/inc/right-column-image.php'); ?>
+		</div>
+
 
 		<div class="habitat-row habitats">
 			<?php
@@ -63,8 +69,8 @@ get_header(); ?>
 			<?php endif; ?>
 
 			<div id="habitat-wrapper" class="habitat-wrapper">
-				<?php include('inc/maps/spinner.php'); ?>
-			    <?php include('inc/maps/map-error.php'); ?>
+				<?php include( get_template_directory() .'/inc/maps/spinner.php'); ?>
+			    <?php include( get_template_directory() .'/inc/maps/map-error.php'); ?>
 				<div id="habitat-app" class="group habitat-app"></div>
 			</div>
 
