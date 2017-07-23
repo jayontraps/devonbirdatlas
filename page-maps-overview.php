@@ -25,7 +25,7 @@ get_header(); ?>
         <div class="ov-row group inner-wrap">
             <div class="ov-maps-wrap">
                 <div class="ov-map-lg" data-set="dbreed">
-                    <h4 class="ov-map-title">Breeding distribution 2007 - 13</h4>
+                    <h4 class="ov-map-title">Breeding distribution 2007-13</h4>
                     <div id="m1_" class="container" >
                         <div class="map-border">
                             <div class="map-container clearfix">
@@ -44,7 +44,7 @@ get_header(); ?>
                 <div class="ov-map-sm-wrap">
 
                     <div class="ov-map-sm" data-set="dbdensity">
-                        <h4 class="ov-map-title">Breeding-period abundance 2007 - 13</h4>
+                        <h4 class="ov-map-title">Breeding-period abundance 2007-13</h4>
                         <div id="m2_" class="container" >
                             <div class="map-border">
                                 <div class="map-container clearfix">
@@ -61,7 +61,7 @@ get_header(); ?>
                     </div>
 
                     <div class="ov-map-sm" data-set="dwdensity">
-                        <h4 class="ov-map-title">Winter-period abundance 2007 - 13</h4>
+                        <h4 class="ov-map-title">Winter-period abundance 2007-13</h4>
                          <div id="m3_" class="container" >
                             <div class="map-border">
                                 <div class="map-container clearfix">

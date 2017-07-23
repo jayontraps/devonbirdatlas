@@ -89,7 +89,7 @@
 			<div class="panel-sub__inner">
 				<h2 class="panel-sub__title"><?php echo $panel_sub_heading; ?></h2>
 				<?php if($panel_sub_button_link ): ?>
-					<a href="<?php echo $panel_sub_button_link; ?>" class="panel-sub__btn devon-btn">
+					<a target="_blank" href="<?php echo $panel_sub_button_link; ?>" class="panel-sub__btn devon-btn">
 				<?php endif; ?>
 					<?php echo $panel_sub_btn_text; ?>
 				<?php if($panel_sub_button_link ): ?>

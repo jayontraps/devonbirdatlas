@@ -9,7 +9,7 @@
             <td>Total</td>
         </tr>
         <tr>
-            <td class="headTd">2007 - 13:</td>
+            <td class="headTd">2007-13:</td>
             <td>
                 <span class="keysq brst present"></span>
             </td>

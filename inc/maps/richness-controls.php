@@ -3,7 +3,7 @@
     <ul class="controls">
         <li class="checkbox">
             <input type="checkbox" class="richness-toggle" id="js_winter_data" data-set="dwdensity">
-            <label class="b">Winter Season 2007 - 11&nbsp;</label>
+            <label class="b">Winter Season 2007-11&nbsp;</label>
         </li>
     </ul>
 
@@ -12,7 +12,7 @@
     <div class="col-1-2">
 
         <ul>
-            <li class="top-level-li"><span class="head">2007 - 13</span>
+            <li class="top-level-li"><span class="head">2007-13</span>
                 <ul>
                     <li>
                         <span class="sub">All</span> species
@@ -118,7 +118,7 @@
 
     <div class="col-1-2">
         <ul>
-            <li class="top-level-li"><span class="head">1977 - 85</span>
+            <li class="top-level-li"><span class="head">1977-85</span>
                 <ul>
                     <li>
                         <span class="sub">All</span> species
