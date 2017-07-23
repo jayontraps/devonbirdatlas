@@ -1,7 +1,7 @@
 <table data-set-key="sitters-underlay" class="key-table state counts sitter-underlay-key" style="visibility:hidden">
     <tbody>
         <tr>
-            <td class="headTd">1977 - 1985:</td>
+            <td class="headTd">1977-1985:</td>
             <td>
                 <span class="keysq pres no-data"></span>
             </td>
