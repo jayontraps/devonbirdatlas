@@ -100,7 +100,7 @@
 
 
 
-		<div class="home-inner-wrap">
+		<div>
 			<?php if( have_rows('home_panels') ): ?>
 				<div class="h-panels">
 				<?php while( have_rows('home_panels') ): the_row();
@@ -115,10 +115,10 @@
 						<h2 class="h-panel-title"><?php echo $heading; ?></h2>
 						<div class="h-panel-inner">
 							<p><?php echo $copy; ?></p>
-							<?php if( $link ): ?>
-								<a class="devon-btn" href="<?php echo $link; ?>">Explore</a>
-							<?php endif; ?>
 						</div>
+						<?php if( $link ): ?>
+							<a class="devon-btn" href="<?php echo $link; ?>">Explore</a>
+						<?php endif; ?>
 				</div>
 				<?php endwhile; ?>
 				</div><!-- .home-panels -->
