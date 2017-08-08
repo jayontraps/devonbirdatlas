@@ -2,7 +2,7 @@
 modernizr-custom.js
 classList.js
 chosen.jquery.min.js
-speciesList.js
+speciesListWithAccounts.js
 eventemitter2.js
 */
 
