@@ -45,7 +45,7 @@
   */
 
   try {
-    $conn = new PDO('mysql:host=' . $config['DB_HOST'] . ';dbname=devon_data', $config['DB_USERNAME'], $config['DB_PASSWORD']);
+    $conn = new PDO('mysql:host=' . $config['DB_HOST'] . ';dbname=devon_data_edit', $config['DB_USERNAME'], $config['DB_PASSWORD']);
 
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 

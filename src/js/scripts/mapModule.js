@@ -3,6 +3,8 @@ modernizr-custom.js
 classList.js
 chosen.jquery.min.js
 speciesListWithAccounts.js
+speciesListSuppressed.js
+speciesListSchedule_1.js
 latinNames.js
 tenkSpecies.js
 eventemitter2.js
@@ -21,6 +23,10 @@ function MapModule(domContext) {
     this.failedGetDataRequests = 0;
     this.failedGetTetradDataRequests = 0;
     this.failedsittersUnderlayRequest = 0;
+    this.errorMsg = {
+        general: "We're sorry, something went wrong! Please refresh you browser and try again",
+        suppressed: "Distribution details of some Schedule 1 species and some other rare or scarce breeding species have been with-held to protect the birds from disturbance or persecution."
+    }
 };
 
 MapModule.prototype.setDataset = function(dataset) {
@@ -67,6 +73,7 @@ MapModule.prototype.setGoogleMapLink = function() {
     }
 };
 
+
 MapModule.prototype.templateTetradList = function(data) {
     var tetradList = document.createElement('ol');
     tetradList.classList.add('tetrad-list');
@@ -74,13 +81,16 @@ MapModule.prototype.templateTetradList = function(data) {
     // lookup the index, retreive the Code value and template the list item
     var theCode, el, spanEl;
     for (var i = 0; i < data.length; i++) {
-        theCode = data[i].Code;
-        el = document.createElement('li');
-        el.innerHTML = data[i].Species.trim();
-        spanEl = document.createElement('span');
-        spanEl.classList.add('code-' + theCode);
-        el.appendChild(spanEl);
-        tetradList.appendChild(el);
+        // filter out schedule 1 species
+        if ($.inArray(data[i].Species.trim(), schedule_1_species) == -1) {
+            theCode = data[i].Code;
+            el = document.createElement('li');
+            el.innerHTML = data[i].Species.trim();
+            spanEl = document.createElement('span');
+            spanEl.classList.add('code-' + theCode);
+            el.appendChild(spanEl);
+            tetradList.appendChild(el);
+        }
     }
 
     return tetradList;
@@ -145,7 +155,7 @@ MapModule.prototype.getTetradData = function() {
         } else {
             window.setTimeout(function(){
                 obj.stopSpinner.call(obj, ['tetrad-meta']);
-                obj.setMapErrorMsg(true, 'tetrad-request');
+                obj.setMapErrorMsg(true, 'tetrad-request', obj.errorMsg.general);
             }, 800);
         }
     });
@@ -171,6 +181,14 @@ MapModule.prototype.filterForTenkSpecies = function() {
         this.setDataset(currentDataSet.value);
     }
 };
+
+MapModule.prototype.checkSuppressedSpeciesList = function() {
+
+    if (speciesListSuppressed.length && speciesListSuppressed.indexOf(this.species) >= 0) {
+        this.setMapErrorMsg(true, 'data-request', this.errorMsg.suppressed);
+        console.log(this.species + ' data has been suppressed.');
+    }
+}
 
 MapModule.prototype.getData = function() {
 
@@ -205,6 +223,11 @@ MapModule.prototype.getData = function() {
             }
         }
 
+        if (data.length <= 0) {
+            obj.checkSuppressedSpeciesList();
+            return;
+        }
+
         var tetArr = [];
         for (var i = 0; i < data.length; i++) {
             tetArr.push(data[i]['Tetrad']);
@@ -216,11 +239,8 @@ MapModule.prototype.getData = function() {
             var tetrad = document.getElementById(obj.context + tetArr[i]);
             if (tetrad) {
                 tetrad.classList.add('pres', 'code-' + data[i]['Code']);
-            } else {
-                // console.log(obj.context + tetArr[i] + ' not found!');
             }
         }
-
     })
     .done(function(data) {
         // refresh active tetrad
@@ -253,7 +273,7 @@ MapModule.prototype.getData = function() {
         } else {
             window.setTimeout(function(){
                 obj.stopSpinner.call(obj, ['map','tetrad-meta']);
-                obj.setMapErrorMsg(true, 'data-request');
+                obj.setMapErrorMsg(true, 'data-request', obj.errorMsg.general);
             }, 800);
         }
     });
@@ -292,7 +312,6 @@ MapModule.prototype.getSums = function(data) {
     };
 };
 
-
 MapModule.prototype.getLatinName = function() {
 
     if (typeof latinNames !== 'undefined' && latinNames.length) {
@@ -316,13 +335,14 @@ MapModule.prototype.getLatinName = function() {
 
 /* DOM */
 
-MapModule.prototype.setMapErrorMsg = function(status, context) {
+MapModule.prototype.setMapErrorMsg = function(status, context, msg) {
 
     var $container;
 
     context === "tetrad-request" ? $container = $('.tetrad-meta') : $container = $('.map-container');
 
     var $errorMsg = $('#' + this.context).find($container).find('.error-wrap');
+    $errorMsg.find('.error-msg h3').html(msg);
     if (status) {
         $errorMsg.css('display', 'flex');
         return false;
@@ -691,7 +711,7 @@ MapModule.prototype.getSittersUnderlayData = function(status) {
         } else {
            window.setTimeout(function(){
                 obj.stopSpinner.call(obj, ['map','tetrad-meta']);
-                obj.setMapErrorMsg(true, 'data-request');;
+                obj.setMapErrorMsg(true, 'data-request', obj.errorMsg.general);
             }, 800);
         }
 

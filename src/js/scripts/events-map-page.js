@@ -14,7 +14,7 @@ init.js
 */
 /* https://github.com/mkleehammer/gulp-deporder */
 
-$(document).ready(function(){
+// $(document).ready(function(){
     if ( typeof mapPage !== 'undefined' && mapPage) {
 
         // setup the mapModules
@@ -54,7 +54,7 @@ $(document).ready(function(){
             if (maps[currentMap].fetchingData) {
                 return false;
             }
-
+            maps[currentMap].setMapErrorMsg(false, 'data-request');
             maps[currentMap].request = 'species';
             maps[currentMap].setSpecies(species);
             maps[currentMap].setFetchingData(true);
@@ -74,7 +74,7 @@ $(document).ready(function(){
             if (maps[currentMap].fetchingData) {
                 return false;
             }
-
+            maps[currentMap].setMapErrorMsg(false, 'data-request');
             maps[currentMap].request = 'dataset';
             maps[currentMap].setDataset(dataset);
             maps[currentMap].setFetchingData(true);
@@ -120,7 +120,7 @@ $(document).ready(function(){
             if (maps[currentMap].fetchingData) {
                 return false;
             }
-
+            maps[currentMap].setMapErrorMsg(false, 'data-request');
             maps[currentMap].request = 'species';
             maps[currentMap].setSpecies(species);
 
@@ -241,4 +241,4 @@ $(document).ready(function(){
         };
     }
 
-});
+// });

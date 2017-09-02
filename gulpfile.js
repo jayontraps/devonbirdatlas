@@ -99,7 +99,7 @@ gulp.task('scripts', function() {
     return gulp.src([
         '!' + src + 'js/scripts/rigsConservationList.js',
         '!' + src + 'js/scripts/metaList.js',
-        // '!' + src + 'js/scripts/eventemitter2.js',
+        '!' + src + 'js/scripts/speciesListFull.js',
         src + 'js/scripts/*.js'
         ])
         .pipe(gulpif(devBuild, sourcemaps.init()))
@@ -125,7 +125,6 @@ gulp.task('prod-scripts', function() {
         '!' + src + 'js/scripts/rigsConservationList.js',
         '!' + src + 'js/scripts/metaList.js',
         '!' + src + 'js/scripts/speciesListFull.js',
-        // '!' + src + 'js/scripts/eventemitter2.js',
         src + 'js/scripts/*.js'
         ])
         .pipe(deporder())

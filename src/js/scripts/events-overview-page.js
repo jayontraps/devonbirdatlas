@@ -12,7 +12,7 @@ init.js
 */
 /* https://github.com/mkleehammer/gulp-deporder */
 
-$(document).ready(function(){
+// $(document).ready(function(){
 
     if ( typeof ovPage !== 'undefined' && ovPage) {
 
@@ -45,6 +45,7 @@ $(document).ready(function(){
 
         $('.select-species').on('change', function(event) {
             maps.m1_.setSpecies(this.value);
+            maps.m1_.setMapErrorMsg(false, 'data-request');
             maps.m1_.request = 'overview';
             maps.m1_.setDataset('dbreed');
             maps.m1_.startSpinner(['map']);
@@ -53,12 +54,14 @@ $(document).ready(function(){
             appendSpeciesToLink(this.value);
 
             maps.m2_.setSpecies(this.value);
+            maps.m2_.setMapErrorMsg(false, 'data-request');
             maps.m2_.request = 'overview';
             maps.m2_.setDataset('dbdensity');
             maps.m2_.setOverviewMapState('idle');
             maps.m2_.resetTetradsPresent();
 
             maps.m3_.setSpecies(this.value);
+            maps.m3_.setMapErrorMsg(false, 'data-request');
             maps.m3_.request = 'overview';
             maps.m3_.setDataset('dwdensity');
             maps.m3_.setOverviewMapState('idle');
@@ -74,4 +77,4 @@ $(document).ready(function(){
         });
     }
 
-});
+// });
