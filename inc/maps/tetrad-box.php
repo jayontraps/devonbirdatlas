@@ -1,4 +1,5 @@
 <div class="tetrad-meta state">
+    <?php include('tetrad-message.php'); ?>
     <?php include('spinner.php'); ?>
     <?php include('map-error.php'); ?>
     <div class="tetrad-meta-wrapper">

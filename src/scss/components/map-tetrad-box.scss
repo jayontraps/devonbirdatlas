@@ -105,3 +105,17 @@
         display: block;
     }
 }
+
+.tetrad-message {
+    position: absolute;
+    color: #999;
+    bottom: -70px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
