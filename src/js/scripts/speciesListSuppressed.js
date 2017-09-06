@@ -1,1 +1,1 @@
-var speciesListSuppressed = ["Hobby", "Bittern", "Red Kite", "Marsh Harrier", "Merlin", "Peregrine", "Little Ringed Plover", "Golden Plover", "Dunlin", "Common Sandpiper", "Long-eared Owl", "Woodlark", "Nightingale", "Black Redstart", "Yellow Wagtail", "Serin"];
+var speciesListSuppressed = ["Hobby", "Bittern", "Red Kite", "Marsh Harrier", "Merlin", "Peregrine", "Little Ringed Plover", "Golden Plover", "Dunlin", "Common Sandpiper", "Long-eared Owl", "Woodlark", "Nightingale", "Black Redstart", "Yellow Wagtail", "Serin", "Goshawk"];
